@@ -1,13 +1,14 @@
-baseurl: https://example.com
+publishDir: docs/
+baseurl: https://kotaz.github.io
 languageCode: ru-ru
 theme: hugo-theme-stack
 paginate: 10
-title: МойКурс
+title: KotazIO
 
 languages:
     ru:
         languageName: Русский
-        title: МойКурс
+        title: KotazIO
         weight: 1
 
 # Change it to your Disqus shortname before using
@@ -36,20 +37,18 @@ params:
     favicon:
 
     footer:
-        since: 2022
-        customText: Made with love
+        since: 2020
+        customText: Сделано с 💖
 
     dateFormat:
-        #! published: Jan 02, 2006
-        #! lastUpdated: Jan 02, 2006 15:04 MST
         published: 01.02.2006
         lastUpdated: 01.02.2006 15:04
 
     sidebar:
         emoji: 🍥
-        subtitle: Мини-блог с курсами python
+        subtitle: Мини-блог, сайт для различного контента
         avatar:
-            enabled: true
+            enabled: false
             local: false
             src: /img/avatar.png
 
