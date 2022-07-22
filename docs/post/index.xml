@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on МойКурс</title>
+        <link>https://example.com/post/</link>
+        <description>Recent content in Posts on МойКурс</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ru-ru</language>
+        <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Введение в Python</title>
+        <link>https://example.com/p/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-python/</link>
+        <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-python/</guid>
+        <description>&lt;h1 id=&#34;статья-в-процессе&#34;&gt;Статья в процессе&amp;hellip;&lt;/h1&gt;
+</description>
+        </item>
+        <item>
+        <title>Первый пост</title>
+        <link>https://example.com/p/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%BF%D0%BE%D1%81%D1%82/</link>
+        <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%BF%D0%BE%D1%81%D1%82/</guid>
+        <description>&lt;h1 id=&#34;добро-пожаловать&#34;&gt;Добро пожаловать&lt;/h1&gt;
+&lt;p&gt;Тут будут публиковаться различные гайды и курсы по различным темам&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

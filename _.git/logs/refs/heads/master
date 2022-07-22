@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 77f955e96610e20786adff4b4e53b05e8ce068c5 Kotaz <semechkagent@gmail.com> 1658504528 +0300	commit (initial): Первый билд сайта
+77f955e96610e20786adff4b4e53b05e8ce068c5 dedb49bd107a58a536ea8e740232b13d241c1b68 Kotaz <semechkagent@gmail.com> 1658504950 +0300	commit: Сайт
+dedb49bd107a58a536ea8e740232b13d241c1b68 0a2f8635323751a95880079d34cb8c546da60323 Kotaz <semechkagent@gmail.com> 1658504965 +0300	commit: Попытка коммита
+0a2f8635323751a95880079d34cb8c546da60323 d07f6978c22e617e7e0029baee65266345b94ae5 Kotaz <semechkagent@gmail.com> 1658505237 +0300	commit: Удаление гитигнора
+d07f6978c22e617e7e0029baee65266345b94ae5 8bc46a0f342143f21ed65e590df25bb54098b119 Kotaz <semechkagent@gmail.com> 1658505382 +0300	commit: Переименовка папки
+8bc46a0f342143f21ed65e590df25bb54098b119 d4117a9464cd8614c592bb08007fd99242389eee Kotaz <semechkagent@gmail.com> 1658506055 +0300	commit: Удален сабмодуль
+d4117a9464cd8614c592bb08007fd99242389eee c2805ff3b4d0cdebbcd6845fb7265d431545d24d Kotaz <semechkagent@gmail.com> 1658506151 +0300	commit: Гитигнор
+c2805ff3b4d0cdebbcd6845fb7265d431545d24d 008075ec381cf4676e012846a75f6e81262190e3 Kotaz <semechkagent@gmail.com> 1658506286 +0300	pull --rebase (finish): refs/heads/master onto 220014f31ff44026fa8cab9afa5fb4b55942c2d5
+008075ec381cf4676e012846a75f6e81262190e3 c074aacb79801fa650b90774dab2039192ef91a3 Kotaz <semechkagent@gmail.com> 1658506482 +0300	commit: Избавление от темы
