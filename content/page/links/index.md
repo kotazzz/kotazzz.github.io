@@ -13,6 +13,7 @@ menu:
       icon: link
 
 comments: false
+slug: links
 ---
 
 Тут пока что только одна ссылка :)

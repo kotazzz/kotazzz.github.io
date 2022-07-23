@@ -3,12 +3,9 @@ author: Kotaz
 title: Первый пост
 date: 2022-07-22
 description: Небольшая сводка
-categories: [
-    "Другое"
-]
-tags: [
-    "Другое",
-]
+categories: ["Другое"]
+tags: ["Другое"]
+slug: first
 ---
 
 # Добро пожаловать

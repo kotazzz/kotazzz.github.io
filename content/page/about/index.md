@@ -3,8 +3,6 @@ title: Об авторе
 description: Небольшая справка об авторе
 date: "2022-07-22"
 aliases:
-  - about-us
-  - about-hugo
   - contact
 license: CC BY-NC-ND
 lastmod: "2022-07-22"
@@ -13,6 +11,7 @@ menu:
     weight: -90
     params:
       icon: user
+slug: about
 ---
 
 Сайт сейчас организован, как блог и каждая страница сделана ввиде записи.

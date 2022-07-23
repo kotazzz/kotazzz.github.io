@@ -5,6 +5,7 @@ date: 2022-07-22
 description: Установка и запуск Python
 categories: ["courses"]
 tags: ["Python"]
+slug: py01
 image: 00_placeholder.jpg
 ---
 
