@@ -3,7 +3,7 @@ author: Kotaz
 title: Первый пост
 date: 2022-07-22
 description: Небольшая сводка
-categories: ["Другое"]
+categories: ["other"]
 tags: ["Другое"]
 slug: first
 ---

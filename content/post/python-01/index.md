@@ -1,7 +1,7 @@
 ---
 author: Kotaz
 title: Введение в Python
-date: 2022-07-22
+date: 2022-07-22 00:00:00
 description: Установка и запуск Python
 categories: ["courses"]
 tags: ["Python"]
