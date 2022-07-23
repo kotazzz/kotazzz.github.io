@@ -1,4 +1,1501 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on KotazIO</title><link>https://kotaz.github.io/tags/python/</link><description>Recent content in Python on KotazIO</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kotaz.github.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Введение в Python</title><link>https://kotaz.github.io/p/py01/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://kotaz.github.io/p/py01/</guid><description>&lt;img src="https://kotaz.github.io/p/py01/00_placeholder.jpg" alt="Featured image of post Введение в Python" />&lt;h1 id="установка-python">Установка Python&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on KotazIO</title><link>https://kotaz.github.io/tags/python/</link><description>Recent content in Python on KotazIO</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><lastBuildDate>Sat, 23 Jul 2022 04:00:00 +0000</lastBuildDate><atom:link href="https://kotaz.github.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Циклы Python</title><link>https://kotaz.github.io/p/py05/</link><pubDate>Sat, 23 Jul 2022 04:00:00 +0000</pubDate><guid>https://kotaz.github.io/p/py05/</guid><description>&lt;h1 id="циклы-for-и-while-операторы-break-и-continue-волшебное-слово-else">Циклы for и while, операторы break и continue, волшебное слово else&lt;/h1>
+&lt;p>Я расскажу о циклах for и while, операторах break и continue, а также о слове else, которое, будучи употребленное с циклом, может сделать программный код несколько более понятным.&lt;/p>
+&lt;h2 id="цикл-while">Цикл while&lt;/h2>
+&lt;p>While - один из самых универсальных циклов в Python, поэтому довольно медленный. Выполняет тело цикла до тех пор, пока условие цикла истинно.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">while&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">15&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">7&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">9&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">11&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">13&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="цикл-for">Цикл for&lt;/h2>
+&lt;h3 id="общее-понятие">Общее понятие&lt;/h3>
+&lt;p>Цикл for уже чуточку сложнее, чуть менее универсальный, но выполняется гораздо быстрее цикла while. Этот цикл проходится по любому итерируемому объекту (например строке или списку), и во время каждого прохода выполняет тело цикла.
+Цикл for используется в том случае, когда необходимо выполнить некоторую часть кода до тех пор, пока не будет выполнено заданное условие. Цикл for также называют циклом c предусловием. Лучше использовать цикл for, если количество итераций известно заранее.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="s1">&amp;#39;hello world&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">hheelllloo&lt;/span> &lt;span class="n">wwoorrlldd&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="range">&lt;code>range()&lt;/code>&lt;/h3>
+&lt;p>Мы используем встроенную функцию Python range. Функция range создаст список длинной в «n» элементов. В Python версии 2.Х существует другая функция под названием xrange, которая является генератором чисел и не такая ресурсоемкая, как range. Ранее разработчики сменили xrange на range в Python 3. Вот пример:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="c1"># ответ: range(0, 5)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Как вы видите, функция range взяла целое число и вернула объект range. Функция range также принимает начальное значение, конечное значение и значение шага. Вот еще два примера:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># range(5, 10)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">b&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">list&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># [1, 3, 5, 7, 9]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>В пером примере показано, что вы можете передать начальное и конечное значение, и функция range вернет числа, начиная с начального значения вплоть до (но не включая) последнее значение. Например, при запросе 5-10 мы получим 5-9. Во втором примере видно, как использовать функцию списка (list) для того, чтобы функция range вернула каждый второй элемент, между 1 и 10. Так что она начинает с 1, пропускает 2 и так далее. Теперь вы, наверное, гадаете, что же именно она будет делать с циклами? Что-ж, есть один простой способ показать, как работает цикл с использованием функции range! Давайте взглянем:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">number&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Что здесь произошло? Давайте почитаем слева на право, чтобы понять это. Для каждого числа в диапазоне 5 мы вводим число. Мы знаем, что если мы вызываем range со значением 5, мы получим список из 5 элементов. Так что каждый раз, проходя через цикл, она выводит каждый из элементов. Цикл for, показанный выше, может быть эквивалентом следующего:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">number&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">]:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Мы попробуем применить цикл в функции range, но нам нужно вывести только целые числа. Чтобы сделать это, нам нужно использовать условный оператор вместо параметра шага range. Это можно сделать следующим образом:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">number&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="nb">range&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">number&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 6&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 8&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Вы наверное гадаете, что вообще здесь происходит? Что еще за знак процента? В Python, % называется оператором модуля. Когда вы используете оператор модуля, он возвращает остаток. Когда вы делите целое число на два, вы получаете число без остатка, так что мы выводим эти числа. Вам, возможно, не захочется использовать оператор модуля часто в будущем, но в моей работе он нередко помогает. Теперь мы можем взглянуть на цикл while.&lt;/p>
+&lt;h3 id="словари">Словари&lt;/h3>
+&lt;p>Функция range лишь делает результат несколько меньшим. Цикл for может обходить любой итератор Python. Мы уже видели, как именно он может работать со списком. Давайте взглянем, может ли он выполнять итерацию со словарем.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a_dict&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s2">&amp;#34;one&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;two&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;three&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">key&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">a_dict&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">key&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Когда вы используете for в словаре, вы увидите, что он автоматически перебирает ключи. Вам не нужно указывать ключ for в a_dict.keys() (впрочем, это также работает). Python делает только нужные нам вещи. Вы возможно думаете, почему ключи выводятся в другом порядке, отличном от того, какой был указан в словаре? Как мы знаем из соответствующей статьи, словари не упорядочены, так что мы можем выполнять итерацию над ними, при этом ключи могут быть в любом порядке. Теперь, зная, что ключи могут быть отсортированы, вы можете отсортировать их до итерации. Давайте немного изменим словарь, чтобы увидеть, как это работает.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a_dict&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;one&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;two&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;three&amp;#34;&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">keys&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">a_dict&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">keys&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">keys&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">sorted&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">keys&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">key&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">keys&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">key&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 3&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Давайте остановимся и разберемся с тем, что делает этот код. Во-первых, мы создали словарь, в котором ключи выступают в качестве целых чисел, вместо строк. Далее, мы извлекли ключи из словаря. Каждый раз, когда вы взываете метод keys(), он возвращает неупорядоченный список ключей. Если вы выведите их, и увидите, что они расположен в порядке по возрастанию, то это просто случайность. Теперь у нас есть доступ к ключам словаря, которые хранятся в переменной, под названием keys. Мы сортируем наш список, после чего используем цикл for в нем. Теперь мы готовы к тому, чтобы сделать все немного интереснее.&lt;/p>
+&lt;h2 id="оператор-continue">Оператор continue&lt;/h2>
+&lt;p>Оператор continue начинает следующий проход цикла, минуя оставшееся тело цикла (for или while)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="s1">&amp;#39;hello world&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;o&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="k">continue&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">hheellll&lt;/span> &lt;span class="n">wwrrlldd&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="оператор-break">Оператор break&lt;/h2>
+&lt;p>Оператор break досрочно прерывает цикл.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="s1">&amp;#39;hello world&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;o&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="k">break&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">hheellll&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="волшебное-слово-else">Волшебное слово else&lt;/h2>
+&lt;p>Слово else, примененное в цикле for или while, проверяет, был ли произведен выход из цикла инструкцией break, или же &amp;ldquo;естественным&amp;rdquo; образом. Блок инструкций внутри else выполнится только в том случае, если выход из цикла произошел без помощи break.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="s1">&amp;#39;hello world&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s1">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="k">break&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Буквы a в строке нет&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Буквы&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">в&lt;/span> &lt;span class="n">строке&lt;/span> &lt;span class="n">нет&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Инструкция if</title><link>https://kotaz.github.io/p/py04/</link><pubDate>Sat, 23 Jul 2022 03:00:00 +0000</pubDate><guid>https://kotaz.github.io/p/py04/</guid><description>&lt;h1 id="инструкция-if">Инструкция &lt;code>if&lt;/code>&lt;/h1>
+&lt;p>Условная инструкция if-elif-else (её ещё иногда называют оператором ветвления) - основной инструмент выбора в Python. Проще говоря, она выбирает, какое действие следует выполнить, в зависимости от значения переменных в момент проверки условия.&lt;/p>
+&lt;h2 id="синтаксис">Синтаксис&lt;/h2>
+&lt;p>Сначала записывается часть if с условным выражением, далее могут следовать одна или более необязательных частей elif, и, наконец, необязательная часть else. Общая форма записи условной инструкции if выглядит следующим образом:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">test1&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">state1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">elif&lt;/span> &lt;span class="n">test2&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">state2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">state3&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Простой пример (напечатает &amp;rsquo;true&amp;rsquo;, так как 1 - истина):&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;true&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;false&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Чуть более сложный пример (его результат будет зависеть от того, что ввёл пользователь):&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">input&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Low&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">elif&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">5&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">&amp;lt;=&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Mid&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;High&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="проверка-истинности-в-python">Проверка истинности в Python&lt;/h2>
+&lt;ul>
+&lt;li>Любое число, не равное 0, или непустой объект - истина.&lt;/li>
+&lt;li>Числа, равные 0, пустые объекты и значение None - ложь&lt;/li>
+&lt;li>Операции сравнения применяются к структурам данных рекурсивно&lt;/li>
+&lt;li>Операции сравнения возвращают True или False&lt;/li>
+&lt;li>Логические операторы and и or возвращают истинный или ложный объект-операнд&lt;/li>
+&lt;/ul>
+&lt;h2 id="логические-операторы">Логические операторы&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>X and Y&lt;/code>: Истина, если оба значения X и Y истинны.&lt;/li>
+&lt;li>&lt;code>X or Y&lt;/code>: Истина, если хотя бы одно из значений X или Y истинно.&lt;/li>
+&lt;li>&lt;code>not X&lt;/code>: Истина, если X ложно.&lt;/li>
+&lt;li>&lt;code>X is Y&lt;/code>: Истина, если объект X является объектом Y.&lt;/li>
+&lt;li>&lt;code>X is not Y&lt;/code>: Истина, если объект X не является объектом Y.&lt;/li>
+&lt;li>&lt;code>X == Y&lt;/code>: Истина, если значения X и Y равны.&lt;/li>
+&lt;li>&lt;code>X != Y&lt;/code>: Истина, если значения X и Y не равны.&lt;/li>
+&lt;li>&lt;code>X &amp;gt; Y&lt;/code>: Истина, если значение X больше значения Y.&lt;/li>
+&lt;li>&lt;code>X &amp;gt;= Y&lt;/code>: Истина, если значение X больше или равно значению Y.&lt;/li>
+&lt;li>&lt;code>X &amp;lt; Y&lt;/code>: Истина, если значение X меньше значения Y.&lt;/li>
+&lt;li>&lt;code>X &amp;lt;= Y&lt;/code>: Истина, если значение X меньше или равно значению Y.&lt;/li>
+&lt;/ul>
+&lt;h2 id="трехместное-выражение-ifelse">Трехместное выражение if/else&lt;/h2>
+&lt;p>Следующая инструкция:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">X&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">A&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Y&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">A&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Z&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>довольно короткая, но, тем не менее, занимает целых 4 строки. Специально для таких случаев и было придумано выражение if/else:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">A&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Y&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">X&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="n">Z&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>В данной инструкции интерпретатор выполнит выражение Y, если X истинно, в противном случае выполнится выражение Z.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">A&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;t&amp;#39;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="s1">&amp;#39;spam&amp;#39;&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="s1">&amp;#39;f&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">A&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;t&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Почему моя программа не работает? (FAQ)</title><link>https://kotaz.github.io/p/py03/</link><pubDate>Sat, 23 Jul 2022 02:00:00 +0000</pubDate><guid>https://kotaz.github.io/p/py03/</guid><description>&lt;h1 id="почему-моя-программа-не-работает-faq">Почему моя программа не работает? (FAQ)&lt;/h1>
+&lt;h2 id="не-работает-функция-input-пишет-syntaxerror">Не работает функция &lt;code>input&lt;/code>. Пишет &lt;code>SyntaxError&lt;/code>&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">input&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">hello&lt;/span> &lt;span class="n">world&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;string&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">hello&lt;/span> &lt;span class="n">world&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">SyntaxError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">unexpected&lt;/span> &lt;span class="n">EOF&lt;/span> &lt;span class="k">while&lt;/span> &lt;span class="n">parsing&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Вы запустили Python 2.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong> Установить Python 3.&lt;/p>
+&lt;h2 id="где-то-увидел-простую-программу-а-она-не-работает">Где-то увидел простую программу, а она не работает&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">raw_input&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span> &lt;span class="n">name&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Ошибка&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;a.py&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span> &lt;span class="n">name&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">SyntaxError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">invalid&lt;/span> &lt;span class="n">syntax&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Вам подсунули программу на Python 2.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong> Прочитать об отличиях Python 2 от Python 3. Переписать её на Python 3. Например, данная программа на Python 3 будет выглядеть так:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">input&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="typeerror-cant-convert-int-object-to-str-implicitly">&lt;code>TypeError: Can't convert 'int' object to str implicitly&lt;/code>&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">input&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">8&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Traceback&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">most&lt;/span> &lt;span class="n">recent&lt;/span> &lt;span class="n">call&lt;/span> &lt;span class="n">last&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;&amp;lt;stdin&amp;gt;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">module&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">TypeError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Can&lt;/span>&lt;span class="s1">&amp;#39;t convert &amp;#39;&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="s1">&amp;#39; object to str implicitly&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Нельзя складывать строку с числом.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong> Привести строку к числу с помощью функции int(). Кстати, заметьте, что функция input() всегда возвращает строку!&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">input&lt;/span>&lt;span class="p">())&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">8&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">13&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="syntaxerror-invalid-syntax">&lt;code>SyntaxError: invalid syntax&lt;/code>&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Ура!&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;a.py&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">SyntaxError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">invalid&lt;/span> &lt;span class="n">syntax&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Забыто двоеточие.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Ура!&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="syntaxerror-invalid-syntax-2">&lt;code>SyntaxError: invalid syntax&lt;/code> 2&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Ура!&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;a.py&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">SyntaxError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">invalid&lt;/span> &lt;span class="n">syntax&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Забыто равно.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Ура!&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="nameerror-name-a-is-not-defined">&lt;code>NameError: name 'a' is not defined&lt;/code>&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Переменная &amp;ldquo;a&amp;rdquo; не существует. Возможно, вы опечатались в названии или забыли инициализировать её.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong> Исправить опечатку.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="indentationerror-expected-an-indented-block">&lt;code>IndentationError: expected an indented block&lt;/code>&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Нужен отступ.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="taberror-inconsistent-use-of-tabs-and-spaces-in-indentation">&lt;code>TabError: inconsistent use of tabs and spaces in indentation&lt;/code>&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">...&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Ура!&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;a.py&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Ура!&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">^&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">TabError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">inconsistent&lt;/span> &lt;span class="n">use&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">tabs&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">spaces&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">indentation&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Смешение пробелов и табуляции в отступах.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong> Исправить отступы.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Ура!&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="unboundlocalerror-local-variable-a-referenced-before-assignment">&lt;code>UnboundLocalError: local variable 'a' referenced before assignment&lt;/code>&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">f&lt;/span>&lt;span class="p">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">a&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Traceback&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">most&lt;/span> &lt;span class="n">recent&lt;/span> &lt;span class="n">call&lt;/span> &lt;span class="n">last&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;a.py&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">7&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">module&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">f&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;a.py&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">f&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">a&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">UnboundLocalError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">local&lt;/span> &lt;span class="n">variable&lt;/span> &lt;span class="s1">&amp;#39;a&amp;#39;&lt;/span> &lt;span class="n">referenced&lt;/span> &lt;span class="n">before&lt;/span> &lt;span class="n">assignment&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Попытка обратиться к локальной переменной, которая ещё не создана.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">f&lt;/span>&lt;span class="p">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">global&lt;/span> &lt;span class="n">a&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">a&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="программа-выполнилась-но-в-файл-ничего-не-записалось--записалось-не-всё">Программа выполнилась, но в файл ничего не записалось / записалось не всё&lt;/h2>
+&lt;p>Пример кода:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">f&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;output.txt&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;w&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">encoding&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;utf-8&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">write&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;bla&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Причина:&lt;/strong> Не закрыт файл, часть данных могла остаться в буфере.&lt;/p>
+&lt;p>&lt;strong>Решение:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">f&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;output.txt&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;w&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">encoding&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;utf-8&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">write&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;bla&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Основы Python</title><link>https://kotaz.github.io/p/py02/</link><pubDate>Fri, 22 Jul 2022 01:00:00 +0000</pubDate><guid>https://kotaz.github.io/p/py02/</guid><description>&lt;h1 id="начало-работы-с-языком">Начало работы с языком&lt;/h1>
+&lt;p>Сейчас большинство операций с кодом будет проводиться внутри файла. Если вы хотите повторить то, что происходит тут, создайте файл и пишите код туда. О том, как запустить файл, можно узнать в прошлом уроке.&lt;/p>
+&lt;h2 id="вывод">Вывод&lt;/h2>
+&lt;h3 id="вывод-на-экран">Вывод на экран&lt;/h3>
+&lt;p>Выводимые данные можно перечислять через запятую&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Hello, world!&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;A&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;B&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># A B&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 1 2 3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">False&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># True False None&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;a&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># a 1 True&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Так же можно проводить простые вычисления&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 3 7&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># -2&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="sep-">&lt;code>sep =&lt;/code>&lt;/h3>
+&lt;p>&lt;code>sep&lt;/code> — это может быть строка, которую необходимо вставлять между значениями, по умолчанию — пробел.&lt;/p>
+&lt;p>Вставим список слов в print и разделим их с помощью символа новой строки. Еще раз: по умолчанию разделитель добавляет пробел между каждым словом.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;туториал&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;по&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;функции&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;print()&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># туториал по функции print()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>\n&lt;/code> перенесет каждое слово на новую строку&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;туториал&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;по&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;функции&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;print()&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sep&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\n&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># туториал&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># по&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># функции&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># print()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="end-">&lt;code>end =&lt;/code>&lt;/h3>
+&lt;p>&lt;code>end&lt;/code> — это строка, которая добавляется после последнего значения. По умолчанию — это перенос на новую строку (&lt;code>\n&lt;/code>). С помощью аргумента end программист может самостоятельно определить окончание выражения print.&lt;/p>
+&lt;p>Предположим, есть две строки, а задача состоит в том, чтобы объединить их, оставив пробел. Для этого нужно в первой функции print указать первую строку, str1 и аргумент end с кавычками. В таком случае на экран выведутся две строки с пробелом между ними.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">str1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;туториал по&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">str2&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s1">&amp;#39;функции print()&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">str1&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">str2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># туториал по&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># функции print()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">str1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39; &amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">str2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># туториал по функции print()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Возьмем другой пример, где есть функция, которая должна выводить значения списка на одной строке. Этого можно добиться с помощью такого значения аргумента end:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">value&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">items&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="n">item&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">items&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">item&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">end&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39; &amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">value&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 1 2 3 4&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="переменные">Переменные&lt;/h2>
+&lt;p>Переменные содержат данные. Благодаря этому к ним можно обращаться, заново использовать, вызывать, назначать и так далее.
+Понимать переменные важно для работы с любой логикой в программировании. Это то, что знает любой программист вне зависимости от языка программирования, и поэтому это так важно для начинающих.
+Простейшее определение переменной — это именованный контейнер для данных, к которым нужно обращаться в программе. Есть 2 основные причины для этого:&lt;/p>
+&lt;ul>
+&lt;li>Зачастую данные — это больше чем 2 символа.&lt;/li>
+&lt;li>Обычно к ним нужно обращаться по несколько раз.&lt;/li>
+&lt;/ul>
+&lt;h3 id="где-используется">Где используется?&lt;/h3>
+&lt;ul>
+&lt;li>Сложно представить программирование без переменных. Это как обращаться к людям, не используя их имена и фамилии. Можно только представить, насколько это было бы неудобно.&lt;/li>
+&lt;li>В программировании переменные используются для определения и обращения к данным разных размеров, типов и форм.&lt;/li>
+&lt;/ul>
+&lt;h3 id="правила-использования">Правила использования&lt;/h3>
+&lt;ul>
+&lt;li>При присвоении значения переменная всегда находится слева, а данные — справа.&lt;/li>
+&lt;li>Имя переменной может начинаться с символа или нижнего подчеркивания (&lt;code>_&lt;/code>), но не с числа.&lt;/li>
+&lt;li>Для вывода значения переменной с помощью функции print нужно передавать ее без кавычек.&lt;/li>
+&lt;li>Переменные создаются по принципу: &lt;code>&amp;lt;имя&amp;gt; = &amp;lt;значение&amp;gt;&lt;/code>.&lt;/li>
+&lt;li>Не смотря на поддержку русских названий переменных, рекомендуется использовать латинские названия.&lt;/li>
+&lt;li>Есть негласные правила для названий. Для переменных, объектов, функций, иногда констант это snake_case (маленькми буквами, слова отделяются нижним подчеркиванием), а для классов - CamelCase (большими буквами, первая буква большая). Для констант применяется так же UPPER_CASE (большими буквами, через нижнее подчеркивание).&lt;/li>
+&lt;li>Так же рекомендуется избегать транслита. Лучше назвать переменную variable, а не peremennaya.&lt;/li>
+&lt;/ul>
+&lt;h3 id="частые-ошибки">Частые ошибки&lt;/h3>
+&lt;ul>
+&lt;li>Начинать имя переменной с цифры.&lt;/li>
+&lt;li>Использовать символы (кроме нижнего подчеркивания) в имени переменной.&lt;/li>
+&lt;li>Использовать в переменной пробелы.&lt;/li>
+&lt;/ul>
+&lt;h3 id="примеры-использования-переменных">Примеры использования переменных&lt;/h3>
+&lt;p>Предположим, что есть большое число: &lt;code>149597970&lt;/code>. Оно обозначает расстояние между Солнцем и Землей в километрах.
+Предположим, что к этому значению нужно обратиться для выполнения вычислений. Вместо того, чтобы каждый раз вводить его, можно просто использовать переменную. Вот так:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">sun_to_earth&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">149597970&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">sun_to_earth&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sun_to_earth&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">sun_to_earth&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">149597971&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;strong>Разберем код примера:&lt;/strong>
+Сначала создается переменная &lt;code>sun_to_earth&lt;/code>, и ей присваивается значение &lt;code>149597970&lt;/code>.
+Переменной &lt;code>sun_to_earth&lt;/code> присваивается новое значение — &lt;code>149597971&lt;/code>.&lt;/p>
+&lt;p>Переменные - это место в памяти, куда можно сохранить данные.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="c1"># 3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">b&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;123&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">c&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">True&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">d&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">None&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">c&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 1 123 True None&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Парочка интересных моментов языка&lt;/p>
+&lt;ol>
+&lt;li>При выводе на экран значение переменной никуда не девается и мы можем вывести значение сколько раз угодно&lt;/li>
+&lt;li>print все еще может выводить значения одновременно с переменным&lt;/li>
+&lt;li>В отличии от многих других языков в python отсутствует типизация и ему абсолютно параллельно, что мы будем присваивать переменной - новое число или новую строку. Делать мы можем это сколько раз угодно. При новом присваивании питон автоматически меняет тип переменной&lt;/li>
+&lt;li>Мы можем указывать эту переменную в вычислениях, про операции с переменными и константами мы поговорим отдельно&lt;/li>
+&lt;li>Мы можем резко поменять то, что хранится в переменной - было число, стало строка&lt;/li>
+&lt;/ol>
+&lt;h2 id="ввод">Ввод&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">input&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Введите ваше имя: &amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Вводим имя&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Привет, &amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Выводим приветствие&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>input - это функция, которая требует 1 аргумент, это строка, которая будет выведена перед вводом. Возвращает введенную строку.
+print - к слову, тоже функция, но на вход принимает любое количество аргументов, которые будут распечатаны. Возвращает None.&lt;/p>
+&lt;h2 id="типы-данных">Типы данных&lt;/h2>
+&lt;p>Основных типо данных несколько. Сейчас говорится не о всех&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Тип&lt;/th>
+&lt;th>Описание&lt;/th>
+&lt;th>Пример&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>int&lt;/td>
+&lt;td>Целое число&lt;/td>
+&lt;td>123&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>float&lt;/td>
+&lt;td>Число с плавающей точкой&lt;/td>
+&lt;td>1.23&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>str&lt;/td>
+&lt;td>Строка&lt;/td>
+&lt;td>&amp;ldquo;Hello, world!&amp;rdquo;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>bool&lt;/td>
+&lt;td>Логическое значение&lt;/td>
+&lt;td>True, False&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>complex&lt;/td>
+&lt;td>Комплексное число&lt;/td>
+&lt;td>1 + 2j&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>none&lt;/td>
+&lt;td>Значение не определено&lt;/td>
+&lt;td>None&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>list&lt;/td>
+&lt;td>Список&lt;/td>
+&lt;td>[1, 2, 3]&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>set&lt;/td>
+&lt;td>Множество&lt;/td>
+&lt;td>{1, 2, 3}&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>tuple&lt;/td>
+&lt;td>Кортеж&lt;/td>
+&lt;td>(1, 2, 3)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>dict&lt;/td>
+&lt;td>Словарь&lt;/td>
+&lt;td>{1: &amp;ldquo;one&amp;rdquo;, 2: &amp;ldquo;two&amp;rdquo;}&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="строки">Строки&lt;/h3>
+&lt;h4 id="про-кавычки">Про кавычки&lt;/h4>
+&lt;p>&lt;code>&amp;quot;1&amp;quot;&lt;/code> и &lt;code>'1'&lt;/code> - эти 2 записи - одно и тоже
+&lt;code>&amp;quot;строка в &amp;quot;кавычках&amp;quot;&amp;quot;&lt;/code> - такая запись вызовет ошибки, изза того, что питон запутается в одинаковых кавычках
+&lt;code>'тут &amp;quot;кавычки&amp;quot;'&lt;/code> - тут питон не запутался в кавычках, так как они разные
+&lt;code>&amp;quot;тут 'кавычки'&amp;quot;&lt;/code> - кавычки можно комбинировать, все четыре типа кавычек (&lt;code>'&lt;/code>, &lt;code>&amp;quot;&lt;/code>, &lt;code>&amp;quot;&amp;quot;&amp;quot;&lt;/code>, &lt;code>'''&lt;/code>) можно комбинировать, главное, что бы строка начиналась и заканчивалась одним типом кавычек
+&lt;code>'текст \'в\' кавычках'&lt;/code> - тут с помощью &lt;code>\&lt;/code> кавычки были &lt;em>экранизированы&lt;/em>, и теперь питон не запутается
+&lt;code>&amp;quot; 123 \&amp;quot; 123&amp;quot;&lt;/code> - тот же самый случай с другими кавычками&lt;/p>
+&lt;h4 id="про-">Про &lt;code>\&lt;/code>&lt;/h4>
+&lt;p>&lt;code>\&lt;/code> внутри строки отвечает за вывод некоторых символов и экранизацию, пока что просто помните, что:
+&lt;code>\&amp;quot; \'&lt;/code> - &amp;ldquo;защищеные&amp;rdquo; от поломки кода кавычки, которые можно использовать в тексте
+&lt;code>\\&lt;/code> - вывод &lt;code>\&lt;/code> без каких либо экранизаций и прочего
+&lt;code>\n \t&lt;/code> - новая строка и табуляция (как при нажатии на Tab)&lt;/p>
+&lt;h4 id="про-мультистроки">Про мультистроки&lt;/h4>
+&lt;p>Иногда бывает очень много текста, который содержит переносы строк (&lt;code>\n&lt;/code>), тогда можно использовать мультистроки, который можно растягивать на любое количество строк кода, в то время как обычные - нельзя:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">Этот текст содержит множество
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">переносов
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">строк
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">и огромное количество текста...
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Убрать первый перенос строки&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;&lt;/span>&lt;span class="se">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="se">&lt;/span>&lt;span class="s2">123
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">123
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ol>
+&lt;li>&lt;code>'''&lt;/code> и &lt;code>&amp;quot;&amp;quot;&amp;quot;&lt;/code> - опять же одно и тоже&lt;/li>
+&lt;li>Экранизировать &lt;code>'&lt;/code> внутри &lt;code>'''&lt;/code> или &lt;code>&amp;quot;&lt;/code> внутри &lt;code>&amp;quot;&amp;quot;&amp;quot;&lt;/code> - не надо, питон запутается лишь если вы напечатаете сразу 3 кавычки подряд внутри мультстроки&lt;/li>
+&lt;li>Если вы сразу после первой тройной кавычки ставите перенос строки - то при выводе на экран у вас выведется одна пустая строка. Что бы этого избежать - поставьте &lt;code>\&lt;/code> который уберет эту лишнюю пустую строку. Так же можно писать любой текст сразу после тройных кавычек вместо &lt;code>\&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h3 id="целые-числа-int-комплексные-complex-и-вещественные-числа-float">Целые числа (int), комплексные (complex) и вещественные числа (float)&lt;/h3>
+&lt;h4 id="целые-числа-int">Целые числа (int)&lt;/h4>
+&lt;p>Числа в Python 3 ничем не отличаются от обычных чисел. Они поддерживают набор самых обычных математических операций:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Операция&lt;/th>
+&lt;th>Описание&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>x + y&lt;/td>
+&lt;td>Сложение&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x - y&lt;/td>
+&lt;td>Вычитание&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x * y&lt;/td>
+&lt;td>Умножение&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x / y&lt;/td>
+&lt;td>Деление&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x // y&lt;/td>
+&lt;td>Получение целой части от деления&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x % y&lt;/td>
+&lt;td>Остаток от деления&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>-x&lt;/td>
+&lt;td>Смена знака числа&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>abs(x)&lt;/td>
+&lt;td>Модуль числа&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>divmod(x, y)&lt;/td>
+&lt;td>Пара (x // y, x % y)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x ** y&lt;/td>
+&lt;td>Возведение в степень&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>pow(x, y[, z])&lt;/td>
+&lt;td>xy по модулю (если модуль задан)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="длинная-арфиметика">Длинная арфиметика&lt;/h4>
+&lt;p>Также нужно отметить, что целые числа в python 3, в отличие от многих других языков, поддерживают длинную арифметику (однако, это требует больше памяти).&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">255&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">34&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">289&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">5&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">20&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">6.666666666666667&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">20&lt;/span> &lt;span class="o">//&lt;/span> &lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">6&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">20&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="o">**&lt;/span> &lt;span class="mi">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">81&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">pow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">81&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">pow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">27&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="o">**&lt;/span> &lt;span class="mi">150&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">369988485035126972924700782451696644186473100389722973815184405301748249&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="побитовые-операции">Побитовые операции&lt;/h4>
+&lt;p>Над целыми числами также можно производить битовые операции&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Операция&lt;/th>
+&lt;th>Описание&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>x | y&lt;/td>
+&lt;td>Побитовое &lt;em>или&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x ^ y&lt;/td>
+&lt;td>Побитовое &lt;em>исключающее или&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x &amp;amp; y&lt;/td>
+&lt;td>Побитовое &lt;em>и&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x &amp;laquo; n&lt;/td>
+&lt;td>Битовый сдвиг влево&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>x &amp;raquo; y&lt;/td>
+&lt;td>Битовый сдвиг вправо&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>~x&lt;/td>
+&lt;td>Инверсия битов&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="дополнительные-методы">Дополнительные методы&lt;/h4>
+&lt;p>int.bit_length() - количество бит, необходимых для представления числа в двоичном виде, без учёта знака и лидирующих нулей.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">n&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">37&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">bin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;-0b100101&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bit_length&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">6&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>int.to_bytes(length, byteorder, *, signed=False) - возвращает строку байтов, представляющих это число.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1024&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_bytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;big&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sa">b&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\x04\x00&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1024&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_bytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;big&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sa">b&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">1024&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_bytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;big&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">signed&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sa">b&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\xff\xff\xff\xff\xff\xff\xff\xff\xfc\x00&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1000&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">to_bytes&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bit_length&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">//&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;little&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sa">b&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\xe8\x03&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">classmethod&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">from_bytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">bytes&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">signed&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">False&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">возвращает&lt;/span> &lt;span class="n">число&lt;/span> &lt;span class="n">из&lt;/span> &lt;span class="n">данной&lt;/span> &lt;span class="n">строки&lt;/span> &lt;span class="n">байтов&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">from_bytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">b&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\x00\x10&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;big&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">16&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">from_bytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">b&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\x00\x10&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;little&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">4096&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">from_bytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">b&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\xfc\x00&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;big&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">signed&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">-&lt;/span>&lt;span class="mi">1024&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">from_bytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">b&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="se">\xfc\x00&lt;/span>&lt;span class="s1">&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;big&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">signed&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">False&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">64512&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">from_bytes&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="mi">255&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="n">byteorder&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;big&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">16711680&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="системы-счисления">Системы счисления&lt;/h4>
+&lt;p>Те, у кого в школе была информатика, знают, что числа могут быть представлены не только в десятичной системе счисления. К примеру, в компьютере используется двоичный код, и, к примеру, число 19 в двоичной системе счисления будет выглядеть как 10011. Также иногда нужно переводить числа из одной системы счисления в другую. Python для этого предоставляет несколько функций:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>int([object], [основание системы счисления])&lt;/code> - преобразование к целому числу в десятичной системе счисления. По умолчанию система счисления десятичная, но можно задать любое основание от 2 до 36 включительно.&lt;/li>
+&lt;li>&lt;code>bin(x)&lt;/code> - преобразование целого числа в двоичную строку.&lt;/li>
+&lt;li>&lt;code>hex(х)&lt;/code> - преобразование целого числа в шестнадцатеричную строку.&lt;/li>
+&lt;li>&lt;code>oct(х)&lt;/code> - преобразование целого числа в восьмеричную строку.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;19&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Переводим строку в число&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">b&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;19.5&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Строка не является целым числом&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Traceback&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">most&lt;/span> &lt;span class="n">recent&lt;/span> &lt;span class="n">call&lt;/span> &lt;span class="n">last&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="ow">in&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">ValueError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">invalid&lt;/span> &lt;span class="n">literal&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="k">with&lt;/span> &lt;span class="n">base&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s1">&amp;#39;19.5&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">c&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">19.5&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Применённая к числу с плавающей точкой, отсекает дробную часть&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">c&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">19&lt;/span> &lt;span class="mi">19&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">bin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">19&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;0b10011&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">oct&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">19&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;0o23&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">hex&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">19&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;0x13&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mb">0b10011&lt;/span> &lt;span class="c1"># Так тоже можно записывать числовые константы&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">19&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;10011&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">19&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;0b10011&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">19&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="вещественные-числа-float">Вещественные числа (float)&lt;/h4>
+&lt;p>Вещественные числа поддерживают те же операции, что и целые. Однако (из-за представления чисел в компьютере) вещественные числа неточны, и это может привести к ошибкам:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">0.9999999999999999&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Для высокой точности используют другие объекты (например Decimal и Fraction)).&lt;/p>
+&lt;p>Также вещественные числа не поддерживают длинную арифметику:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="o">**&lt;/span> &lt;span class="mi">1000&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mf">0.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Traceback&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">most&lt;/span> &lt;span class="n">recent&lt;/span> &lt;span class="n">call&lt;/span> &lt;span class="n">last&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="ow">in&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">OverflowError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">int&lt;/span> &lt;span class="n">too&lt;/span> &lt;span class="n">large&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="n">convert&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nb">float&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Простенькие примеры работы с числами:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">c&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">150&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">d&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mf">12.9&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">c&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">d&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">162.9&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">p&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">abs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="n">c&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Модуль числа&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">137.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">round&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">p&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Округление&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">137&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Дополнительные методы&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>float.as_integer_ratio()&lt;/code> - пара целых чисел, чьё отношение равно этому числу.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>float.is_integer()&lt;/code> - является ли значение целым числом.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>float.hex()&lt;/code> - переводит float в hex (шестнадцатеричную систему счисления).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>classmethod float.fromhex(s)&lt;/code> - float из шестнадцатеричной строки.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mf">10.5&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">hex&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1">&amp;#39;0x1.5000000000000p+3&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">float&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fromhex&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;0x1.5000000000000p+3&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">10.5&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Помимо стандартных выражений для работы с числами (а в Python их не так уж и много), в составе Python есть несколько полезных модулей.&lt;/p>
+&lt;p>Модуль math предоставляет более сложные математические функции.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="nn">math&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">math&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">pi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">3.141592653589793&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">math&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">85&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">9.219544457292887&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Модуль random реализует генератор случайных чисел и функции случайного выбора.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="nn">random&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">random&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">random&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">0.15651968855132303&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="комплексные-числа-complex">Комплексные числа (complex)&lt;/h4>
+&lt;p>В Python встроены также и комплексные числа:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">complex&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">y&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">complex&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">y&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">z&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">y&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">z&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">6&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">z&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">y&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">z&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="n">z&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">x&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="n">y&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">z&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="mf">0.44&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mf">0.08&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">conjugate&lt;/span>&lt;span class="p">())&lt;/span> &lt;span class="c1"># Сопряжённое число&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">imag&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Мнимая часть&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">2.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">real&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Действительная часть&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">1.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="n">y&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Комплексные числа нельзя сравнить&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Traceback&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">most&lt;/span> &lt;span class="n">recent&lt;/span> &lt;span class="n">call&lt;/span> &lt;span class="n">last&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">File&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">line&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="ow">in&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="ne">TypeError&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">unorderable&lt;/span> &lt;span class="n">types&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nb">complex&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="nb">complex&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">y&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Но можно проверить на равенство&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kc">False&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">abs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Модуль комплексного числа&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">5.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&amp;gt;&lt;/span> &lt;span class="nb">pow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Возведение в степень&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">24&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Для работы с комплексными числами используется также модуль cmath.&lt;/p>
+&lt;h2 id="завершение">Завершение&lt;/h2>
+&lt;p>Статья может быть моментами неточной. Я буду рад почитать ваши комментари :)&lt;/p></description></item><item><title>Введение в Python</title><link>https://kotaz.github.io/p/py01/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://kotaz.github.io/p/py01/</guid><description>&lt;img src="https://kotaz.github.io/p/py01/00_placeholder.jpg" alt="Featured image of post Введение в Python" />&lt;h1 id="установка-python">Установка Python&lt;/h1>
 &lt;h2 id="установка-на-windows">Установка на Windows&lt;/h2>
 &lt;p>Я не буду долго зацикливаться на этом этапе. Скачать установщик можно на &lt;a class="link" href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener"
 >python.org&lt;/a>. Если качать Python с других сайтов, можно подцепить вирус или троян. Скачивайте программы только с официальных сайтов. После загрузки отметьте &lt;code>Add to path&lt;/code> и проследуйте инструкциям. В windows 10 может появиться предупреждение с кнопкой щита (&lt;code>Disable Length Limit &lt;/code>), стоит нажать на нее.&lt;/p>
@@ -129,148 +1626,4 @@ data-flex-basis="663px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="завершение">Завершение&lt;/h2>
-&lt;p>Статья может быть моментами неточной. Я буду рад почитать ваши комментари :)&lt;/p></description></item><item><title>Основы Python</title><link>https://kotaz.github.io/p/py02/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://kotaz.github.io/p/py02/</guid><description>&lt;h1 id="начало-работы-с-языком">Начало работы с языком&lt;/h1>
-&lt;p>Сейчас большинство операций с кодом будет проводиться внутри файла. Если вы хотите повторить то, что происходит тут, создайте файл и пишите код туда. О том, как запустить файл, можно узнать в прошлом уроке.&lt;/p>
-&lt;h2 id="вывод">Вывод&lt;/h2>
-&lt;ul>
-&lt;li>Выводимые данные можно перечислять через запятую&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Hello, world!&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;A&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;B&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># A B&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 1 2 3&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">False&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># True False None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;a&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># a 1 True&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;ul>
-&lt;li>Так же можно проводить простые вычисления&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;span class="lnt">9
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 3&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 3 7&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># -2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">6&lt;/span> &lt;span class="o">/&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 3.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">3.1&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># -6.2&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span> &lt;span class="o">**&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 9 (3 в степени 2)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span> &lt;span class="o">**&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 27 (3 в степени 3)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">13&lt;/span> &lt;span class="o">//&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 2 (деление без остатка)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">13&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 3 (остаток от деления)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="переменные">Переменные&lt;/h2>
-&lt;p>Переменные - это место в памяти, куда можно сохранить данные. Переменные называются по принципу: &lt;code>&amp;lt;имя&amp;gt; = &amp;lt;значение&amp;gt;&lt;/code>. Не смотря на поддержку русских названий переменных, рекомендуется использовать латинские названия. Для переменных, объектов, функций, это snake_case (маленькми буквами, слова отделяются нижним подчеркиванием), а для классов - CamelCase (большими буквами, первая буква большая).&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="c1"># 3&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">b&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;123&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">c&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">True&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">d&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">None&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">c&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 1 123 True None&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="ввод">Ввод&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-py" data-lang="py">&lt;span class="line">&lt;span class="cl">&lt;span class="n">name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">input&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Введите ваше имя: &amp;#34;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Вводим имя&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Привет, &amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">name&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># Выводим приветствие&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>input - это функция, которая требует 1 аргумент, это строка, которая будет выведена перед вводом. Возвращает введенную строку.
-print - к слову, тоже функция, но на вход принимает любое количество аргументов, которые будут распечатаны. Возвращает None.&lt;/p>
-&lt;h2 id="типы-данных">Типы данных&lt;/h2>
-&lt;p>Основных типо данных несколько. Сейчас говорится не о всех&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Тип&lt;/th>
-&lt;th>Описание&lt;/th>
-&lt;th>Пример&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>int&lt;/td>
-&lt;td>Целое число&lt;/td>
-&lt;td>123&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>float&lt;/td>
-&lt;td>Число с плавающей точкой&lt;/td>
-&lt;td>1.23&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>str&lt;/td>
-&lt;td>Строка&lt;/td>
-&lt;td>&amp;ldquo;Hello, world!&amp;rdquo;&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>bool&lt;/td>
-&lt;td>Логическое значение&lt;/td>
-&lt;td>True, False&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>complex&lt;/td>
-&lt;td>Комплексное число&lt;/td>
-&lt;td>1 + 2j&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>none&lt;/td>
-&lt;td>Значение не определено&lt;/td>
-&lt;td>None&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>list&lt;/td>
-&lt;td>Список&lt;/td>
-&lt;td>[1, 2, 3]&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>set&lt;/td>
-&lt;td>Множество&lt;/td>
-&lt;td>{1, 2, 3}&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>tuple&lt;/td>
-&lt;td>Кортеж&lt;/td>
-&lt;td>(1, 2, 3)&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>dict&lt;/td>
-&lt;td>Словарь&lt;/td>
-&lt;td>{1: &amp;ldquo;one&amp;rdquo;, 2: &amp;ldquo;two&amp;rdquo;}&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="завершение">Завершение&lt;/h2>
 &lt;p>Статья может быть моментами неточной. Я буду рад почитать ваши комментари :)&lt;/p></description></item></channel></rss>
