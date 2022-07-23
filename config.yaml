@@ -1,5 +1,5 @@
 publishDir: docs/
-baseurl: https://kotaz.github.io
+baseurl: https://kotazzz.github.io
 languageCode: ru-ru
 theme: hugo-theme-stack
 paginate: 10
