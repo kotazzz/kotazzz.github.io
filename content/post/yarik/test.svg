@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400pt" height="368pt" viewBox="0.00 0.00 400.11 368.00">
+<g id="graph0" class="graph" transform="translate(4,364) scale(1)" data-name="G">
+
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-364 396.11,-364 396.11,4 -4,4" style=""/>
+<g id="clust1" class="cluster" data-name="cluster_0">
+
+<polygon fill="lightgrey" stroke="lightgrey" points="8,-8 8,-316 348,-316 348,-8 8,-8" style=""/>
+<text text-anchor="middle" x="178" y="-299.4" font-family="Times,serif" font-size="14.00" style="">Глава 1</text>
+</g>
+<!-- a1 -->
+<g id="node1" class="node" pointer-events="visible" data-name="a1">
+
+<polygon fill="white" stroke="white" points="112.5,-246.7 112.5,-282.7 261.5,-282.7 261.5,-246.7 112.5,-246.7" style=""/>
+<text text-anchor="middle" x="187" y="-260.5" font-family="Times,serif" font-size="14.00" style="">Появление на острове</text>
+</g>
+<!-- a2 -->
+<g id="node2" class="node" pointer-events="visible" data-name="a2">
+
+<polygon fill="white" stroke="white" points="115.81,-168.1 115.81,-209.7 258.19,-209.7 258.19,-168.1 115.81,-168.1" style=""/>
+<text text-anchor="middle" x="187" y="-193.1" font-family="Times,serif" font-size="14.00" style="">Надо жать QWE, что </text>
+<text text-anchor="middle" x="187" y="-176.3" font-family="Times,serif" font-size="14.00" style="">бы выбраться</text>
+</g>
+<!-- a1&#45;&gt;a2 -->
+<g id="edge1" class="edge" data-name="a1-&gt;a2">
+
+<path fill="none" stroke="black" d="M187,-246.58C187,-238.69 187,-229.08 187,-220.03" style=""/>
+<polygon fill="black" stroke="black" points="190.5,-219.8 187,-209.8 183.5,-219.8 190.5,-219.8" style=""/>
+</g>
+<!-- a3 -->
+<g id="node3" class="node" pointer-events="visible" data-name="a3">
+
+<polygon fill="white" stroke="white" points="16.25,-89.5 16.25,-131.1 203.75,-131.1 203.75,-89.5 16.25,-89.5" style=""/>
+<text text-anchor="middle" x="110" y="-114.5" font-family="Times,serif" font-size="14.00" style="">Герой выжил. </text>
+<text text-anchor="middle" x="110" y="-97.7" font-family="Times,serif" font-size="14.00" style="">Он начинает изучать остров</text>
+</g>
+<!-- a2&#45;&gt;a3 -->
+<g id="edge2" class="edge" data-name="a2-&gt;a3">
+
+<path fill="none" stroke="black" d="M166.77,-167.77C157.75,-158.8 146.99,-148.1 137.28,-138.43" style=""/>
+<polygon fill="black" stroke="black" points="139.65,-135.86 130.1,-131.29 134.72,-140.83 139.65,-135.86" style=""/>
+</g>
+<!-- go -->
+<g id="node5" class="node" pointer-events="visible" data-name="go">
+
+<polygon fill="white" stroke="white" points="222.25,-92.3 222.25,-128.3 339.75,-128.3 339.75,-92.3 222.25,-92.3" style=""/>
+<text text-anchor="middle" x="281" y="-106.1" font-family="Times,serif" font-size="14.00" style="">Плохая концовка</text>
+</g>
+<!-- a2&#45;&gt;go -->
+<g id="edge4" class="edge" data-name="a2-&gt;go">
+
+<path fill="none" stroke="black" d="M211.7,-167.77C224.01,-157.74 238.99,-145.54 251.86,-135.04" style=""/>
+<polygon fill="black" stroke="black" points="254.43,-137.47 259.97,-128.44 250.01,-132.04 254.43,-137.47" style=""/>
+</g>
+<!-- a4 -->
+<g id="node4" class="node" pointer-events="visible" data-name="a4">
+
+<polygon fill="white" stroke="white" points="21.5,-16.5 21.5,-52.5 198.5,-52.5 198.5,-16.5 21.5,-16.5" style=""/>
+<text text-anchor="middle" x="110" y="-30.3" font-family="Times,serif" font-size="14.00" style="">Дальше сюжет развивается</text>
+</g>
+<!-- a3&#45;&gt;a4 -->
+<g id="edge3" class="edge" data-name="a3-&gt;a4">
+
+<path fill="none" stroke="black" d="M110,-89.13C110,-81 110,-71.5 110,-62.76" style=""/>
+<polygon fill="black" stroke="black" points="113.5,-62.64 110,-52.64 106.5,-62.64 113.5,-62.64" style=""/>
+</g>
+<!-- end -->
+<g id="node7" class="node" pointer-events="visible" data-name="end">
+
+<polygon fill="none" stroke="black" points="392.21,-52.71 355.79,-52.71 355.79,-16.29 392.21,-16.29 392.21,-52.71" style=""/>
+<polyline fill="none" stroke="black" points="367.79,-52.71 355.79,-40.71 " style=""/>
+<polyline fill="none" stroke="black" points="355.79,-28.29 367.79,-16.29 " style=""/>
+<polyline fill="none" stroke="black" points="380.21,-16.29 392.21,-28.29 " style=""/>
+<polyline fill="none" stroke="black" points="392.21,-40.71 380.21,-52.71 " style=""/>
+<text text-anchor="middle" x="374" y="-30.3" font-family="Times,serif" font-size="14.00" style="">end</text>
+</g>
+<!-- a3&#45;&gt;end -->
+<g id="edge6" class="edge" data-name="a3-&gt;end">
+
+<path fill="none" stroke="black" d="M204.01,-89.5C258.04,-77.81 319.83,-63.82 346.34,-54.71" style=""/>
+<polygon fill="black" stroke="black" points="347.66,-57.95 355.66,-51 345.07,-51.44 347.66,-57.95" style=""/>
+</g>
+<!-- start -->
+<g id="node6" class="node" pointer-events="visible" data-name="start">
+
+<polygon fill="none" stroke="black" points="187,-360 147.76,-342 187,-324 226.24,-342 187,-360" style=""/>
+<polyline fill="none" stroke="black" points="158.67,-347 158.67,-337 " style=""/>
+<polyline fill="none" stroke="black" points="176.09,-329 197.91,-329 " style=""/>
+<polyline fill="none" stroke="black" points="215.33,-337 215.33,-347 " style=""/>
+<polyline fill="none" stroke="black" points="197.91,-355 176.09,-355 " style=""/>
+<text text-anchor="middle" x="187" y="-337.8" font-family="Times,serif" font-size="14.00" style="">start</text>
+</g>
+<!-- start&#45;&gt;a1 -->
+<g id="edge5" class="edge" data-name="start-&gt;a1">
+
+<path fill="none" stroke="black" d="M187,-323.91C187,-314.77 187,-303.29 187,-292.94" style=""/>
+<polygon fill="black" stroke="black" points="190.5,-292.72 187,-282.72 183.5,-292.72 190.5,-292.72" style=""/>
+</g>
+</g>
+</svg>

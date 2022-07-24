@@ -1,0 +1,24 @@
+digraph G {
+
+  subgraph cluster_0 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    a1 [shape=record,label="Появление на острове"];
+    a2 [shape=record,label="Надо жать QWE, что \nбы выбраться"];
+    a3 [shape=record,label="Герой выжил. \nОн начинает изучать остров"];
+    a4 [shape=record,label="Дальше сюжет развивается"];
+    a1 -> a2 -> a3 -> a4;
+    a2 -> go;
+    
+    go [shape=record,label="Плохая концовка"];
+    label = "Глава 1";
+  }
+
+  start -> a1;
+  a3 -> end;
+  
+
+  start [shape=Mdiamond];
+  end [shape=Msquare];
+}
