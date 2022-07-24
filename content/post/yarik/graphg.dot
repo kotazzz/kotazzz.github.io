@@ -2,23 +2,52 @@ digraph G {
 
   subgraph cluster_0 {
     style=filled;
-    color=lightgrey;
-    node [style=filled,color=white];
-    a1 [shape=record,label="Появление на острове"];
-    a2 [shape=record,label="Надо жать QWE, что \nбы выбраться"];
-    a3 [shape=record,label="Герой выжил. \nОн начинает изучать остров"];
-    a4 [shape=record,label="Дальше сюжет развивается"];
-    a1 -> a2 -> a3 -> a4;
-    a2 -> go;
+    color="#eaeeb5";
     
-    go [shape=record,label="Плохая концовка"];
+    node [shape=record,style=filled,color=gray31];
+    node [fillcolor="#e6ce9a"];
+    a1 [label="Появление на острове"];
+    a2 [label="Надо жать QWE, что \nбы выбраться"];
+    a3 [label="Герой выжил. \nОн начинает изучать остров"];
+    
+    
+    a4 [label="Осмотр. Найдена рыба"];
+    a5 [label="Отпустить\nДоброта+1"];
+    a6 [label="Взять с собой\nДоброта-1"];
+    a7 [label="Оставить на берегу\nДоброта-1"];
+
+    
+    a8 [label="Нашел кость. Ничего особенного. \nЗатем его найдут аборигены, они представятся"];
+    
+    a81 [label="Сдаться\nМнение+0"];
+    a82 [label="Предложить рыбу\nМнение+1"];
+    a83 [label="Напасть\nНадо прожать QWE"];
+
+    a831 [label="Смог. Был связан\nМнение-1"];
+    a832 [label="Не смог. Убит"];
+
+    a9 [label="Приведен в племя"];
+    
+
+    a1 -> a2 -> a3 -> a4;
+    a4 -> {a5;a6;a7} -> a8;
+    a8 -> {a81; a82; a83};
+    a83 -> a831; a83 -> a832;
+    {a81; a82; a831} -> a9;
+
+    a2 -> go;
+    a832 -> go;
+    
+    go [label="Плохая концовка",fillcolor="#e38888"];
     label = "Глава 1";
   }
-
-  start -> a1;
-  a3 -> end;
   
 
-  start [shape=Mdiamond];
-  end [shape=Msquare];
+  start -> a1;
+  go -> end;
+  
+
+  start [shape=Mdiamond,style=filled,fillcolor="#5759de",color="#3336de"];
+  end [shape=Msquare,style=filled,fillcolor="#5759de",color="#3336de"];
+  bgcolor="#9ab5e6";
 }
