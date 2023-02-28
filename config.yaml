@@ -49,7 +49,7 @@ params:
         subtitle: Мини-блог, сайт для различного контента
         avatar:
             enabled: false
-            local: false
+            local: true
             src: /img/avatar.png
 
     article:
@@ -58,7 +58,7 @@ params:
         readingTime: true
         license:
             enabled: true
-            default: Licensed under MIT License
+            default: MIT License
 
     comments:
         enabled: true

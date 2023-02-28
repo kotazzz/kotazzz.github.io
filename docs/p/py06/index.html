@@ -209,7 +209,10 @@
     </ol>
 </aside>
 <main class="main full-width">
-    <article class="has-image main-article">
+    
+    
+<article class="has-image main-article">
+    
     <header class="article-header">
         <div class="article-image">
             <a href="/p/py06/">
@@ -275,7 +278,7 @@
 
 
                 <time class="article-time--reading">
-                    Время чтения: 2 мин.
+                    Время чтения: 5 мин.
                 </time>
             </div>
         
@@ -285,12 +288,20 @@
     
 </div>
 </header>
-
     <section class="article-content">
     
     
     <h1 id="функции">Функции</h1>
 <p>Давненько не было ничего на сайте, да? Я решил написать пару постов, и, скорее всего опять исчезнуть куда то&hellip; Вернемся к теме</p>
+<h2 id="зачем-и-где-используется">Зачем и где используется</h2>
+<p>Функции являются неотъемлемой частью любого языка программирования, включая Python. Они используются для разбиения большой, сложной программы на более мелкие, более управляемые части. Функции помогают уменьшить повторяемость кода, улучшить организацию кода и модульность, а также упростить обслуживание и отладку кода.</p>
+<p>Вот несколько причин, по которым нам нужны функции в Python:</p>
+<p>Организация кода: Функции позволяют вам разбивать ваш код на более мелкие и управляемые фрагменты. Вы можете разделить свой код на более мелкие функции, каждая из которых выполняет определенную задачу, что облегчает его чтение и понимание.</p>
+<p>Возможность повторного использования: функции могут быть повторно использованы в разных частях программы или в разных программах в целом. Написав функцию один раз, вы можете использовать ее несколько раз, экономя время и усилия.</p>
+<p>Ясность кода: Функции делают код более читаемым и понятным. Разбивая сложные задачи на более мелкие функции, вы можете писать код, который легче читать и следовать за ним.</p>
+<p>Обслуживание кода: Функции могут быть легко изменены или обновлены. Изменяя код в одной функции, вы можете обновить всю программу без необходимости изменять каждую строку кода.</p>
+<p>Отладка: Функции помогают изолировать ошибки и облегчают их выявление и исправление. Разбивая программу на более мелкие функции, вы можете определить, где произошла ошибка, и отладить эту конкретную функцию.</p>
+<p>Таким образом, функции являются важным инструментом в Python, который помогает программистам упорядочить свой код, сделать его более многоразовым, более удобным для чтения и понимания, а также более простым в обслуживании и отладке.</p>
 <h2 id="начало">Начало</h2>
 <p><strong>Функции</strong> - это одна из основных конструкций языка Python, которая позволяет разбивать программу на более мелкие и понятные блоки. Функции могут принимать аргументы и возвращать значения, а также быть вызваны в любой части программы.
 Определение функций в Python начинается с ключевого слова def, за которым следует имя функции и в скобках список аргументов функции. После этого идет двоеточие и тело функции, которое состоит из одного или нескольких операторов, которые выполняются при вызове функции. Вот пример определения функции:</p>
@@ -368,7 +379,103 @@
 <pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">greet</span><span class="p">(</span><span class="s2">&#34;Bob&#34;</span><span class="p">,</span> <span class="s2">&#34;Hi&#34;</span><span class="p">)</span>  <span class="c1"># выводит &#34;Hi, Bob!&#34;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="продолжение-следует">Продолжение следует?</h2>
+</div><h2 id="args-и-kwargs-в-python"><code>*args</code> и <code>**kwargs</code> в Python</h2>
+<p><code>*args</code> и <code>**kwargs</code> являются синтаксическими конструкциями в языке Python, которые позволяют передавать переменное количество аргументов в функцию.
+<code>*args</code> (или звёздочка аргументов) используется для передачи произвольного количества аргументов без ключевых слов. Аргументы передаются в виде кортежа.</p>
+<p>Вот пример:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">my_function</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="s1">&#39;baz&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>В этом примере мы создали функцию my_function, которая принимает произвольное количество аргументов (<code>*args</code>) и выводит каждый аргумент на отдельной строке. При вызове функции мы передали три аргумента <code>('foo', 'bar', 'baz')</code>.</p>
+<p><code>**kwargs</code></p>
+<p><code>**kwargs</code> (или двойная звёздочка аргументов) используется для передачи произвольного количества именованных аргументов. Аргументы передаются в виде словаря.</p>
+<p>Вот пример:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="err">`</span><span class="o">**</span><span class="n">kwargs</span><span class="err">`</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">my_function</span><span class="p">(</span><span class="n">foo</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">baz</span><span class="o">=</span><span class="s1">&#39;qux&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>В этом примере мы создали функцию my_function, которая принимает произвольное количество именованных аргументов (<code>**kwargs</code>) и выводит каждый аргумент и его значение на отдельной строке. При вызове функции мы передали два именованных аргумента <code>(foo='bar', baz='qux')</code>.</p>
+<p>Комбинирование <code>*args</code> и <code>**kwargs</code></p>
+<p><code>*args</code> и <code>**kwargs</code> можно использовать вместе, чтобы передать функции произвольное количество позиционных и именованных аргументов.</p>
+<p>Вот пример:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">my_function</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">baz</span><span class="o">=</span><span class="s1">&#39;qux&#39;</span><span class="p">,</span> <span class="n">spam</span><span class="o">=</span><span class="s1">&#39;eggs&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>В этом примере мы создали функцию my_function, которая принимает произвольное количество позиционных аргументов (<code>*args</code>) и произвольное количество именованных аргументов (<code>**kwargs</code>). При вызове функции мы передали два позиционных аргумента (&lsquo;foo&rsquo;, &lsquo;bar&rsquo;) и два именованных аргумента (baz=&lsquo;qux&rsquo;, spam=&lsquo;eggs&rsquo;).</p>
+<p>Использование <code>*args</code> и <code>**kwargs</code> позволяет создавать более гибкие функции, которые могут принимать различное количество аргументов. Это особенно полезно, когда заранее неизвестно, сколько именно аргументов может понадобиться при вызове функции.</p>
+<p>Одним из примеров использования <code>*args</code> может быть функция, которая суммирует произвольное количество чисел:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>В данном случае <code>*args</code> используется для того, чтобы принять произвольное количество аргументов и передать их функции в виде кортежа. Затем мы используем функцию <code>sum()</code>, чтобы сложить все элементы кортежа.</p>
+<p>Аналогично, <code>**kwargs</code> позволяет передавать произвольное количество именованных аргументов в функцию. Они будут переданы в виде словаря:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">print_kwargs</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">print_kwargs</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">city</span><span class="o">=</span><span class="s2">&#34;New York&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>В данном примере мы используем <code>**kwargs</code> для передачи произвольного количества именованных аргументов в функцию. Затем мы используем цикл for для вывода каждой пары ключ-значение.</p>
+<p>Использование <code>*args</code> и <code>**kwargs</code> может значительно упростить написание функций, делая их более гибкими и удобными для использования. Однако, следует учитывать, что избыточное использование этих аргументов может привести к усложнению кода и его менее явному пониманию.</p>
 
 </section>
 
@@ -392,7 +499,7 @@
 
 
 
-        <span>Licensed under MIT License</span>
+        <span>MIT License</span>
     </section>
     </footer>
 
@@ -423,6 +530,8 @@
     
 </article>
 
+
+
     
 
     
@@ -431,6 +540,54 @@
     <h2 class="section-title">Также рекомендуем</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/py08/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py08/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py08. zip() и enumerate()"
+                        data-key="py08" 
+                        data-hash="md5-NXM&#43;oyXzhYEX/zkozdrHrQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py08. zip() и enumerate()</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py07/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py07/00_placeholder.5190d36cabbab6e587ca051ff3a143ee_hu15a98e546981c427ea81cd5703498a1d_32502_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py07. Списки. Исчерпывающее руководство"
+                        data-key="py07" 
+                        data-hash="md5-UZDTbKu6tuWHygUf86FD7g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py07. Списки. Исчерпывающее руководство</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
@@ -499,54 +656,6 @@
 
         <div class="article-details">
             <h2 class="article-title">Py03. Почему моя программа не работает? (FAQ)</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/py02/">
-        
-        
-            <div class="article-image">
-                <img src="/p/py02/00_placeholder.5870c6672aa786f0856125c7c7252597_hu277611839423b3830d80bc9be9a9459c_33437_250x150_fill_q75_box_smart1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Py02. Основы Python"
-                        data-key="py02" 
-                        data-hash="md5-WHDGZyqnhvCFYSXHxyUllw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Py02. Основы Python</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/py01/">
-        
-        
-            <div class="article-image">
-                <img src="/p/py01/00_placeholder.53618445609ff585c9dd27f206f7f27f_hu2c7e018ed9f753eaee0b80b8a0ca4196_10087_250x150_fill_q75_box_smart1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Py01. Введение в Python"
-                        data-key="py01" 
-                        data-hash="md5-U2GERWCf9YXJ3SfyBvfyfw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Py01. Введение в Python</h2>
         </div>
     </a>
 </article>
@@ -722,9 +831,10 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
+    <li><a href="#зачем-и-где-используется">Зачем и где используется</a></li>
     <li><a href="#начало">Начало</a></li>
     <li><a href="#return-и-параметры-значение-по-умолчанию"><code>return</code> и параметры. Значение по умолчанию</a></li>
-    <li><a href="#продолжение-следует">Продолжение следует?</a></li>
+    <li><a href="#args-и-kwargs-в-python"><code>*args</code> и <code>**kwargs</code> в Python</a></li>
   </ol>
 </nav>
         </div>

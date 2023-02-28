@@ -1,6 +1,7 @@
-<article class="{{ if .Params.image }}has-image {{ end }}main-article">
-    {{ partial "article/components/header" . }}
 
+<article class="{{ if .Params.image }}has-image {{ end }}main-article">
+    
+    {{ partial "article/components/header" . }}
     {{ partial "article/components/content" . }}
 
     {{ partial "article/components/footer" . }}
@@ -9,3 +10,4 @@
         {{ partialCached "article/components/math.html" . }}
     {{ end }}
 </article>
+

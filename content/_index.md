@@ -6,3 +6,5 @@ menu:
         params:
             icon: home
 ---
+
+# Добро пожаловать!
