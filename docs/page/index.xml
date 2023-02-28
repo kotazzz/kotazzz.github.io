@@ -1,2 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on KotazIO</title><link>https://kotazzz.github.io/page/</link><description>Recent content in Pages on KotazIO</description><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Архивы</title><link>https://kotazzz.github.io/archives/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://kotazzz.github.io/archives/</guid><description/></item><item><title>Об авторе</title><link>https://kotazzz.github.io/about/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://kotazzz.github.io/about/</guid><description>&lt;p>Сайт сейчас организован, как блог и каждая страница сделана ввиде записи.&lt;/p>
-&lt;p>Что бы найти необходимые страницы, воспользуйся поиском, метками, архивом или категориями. Так же ты можешь лично со мной связаться через социальные сети.&lt;/p></description></item><item><title>Поиск</title><link>https://kotazzz.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kotazzz.github.io/search/</guid><description/></item><item><title>Ссылки</title><link>https://kotazzz.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kotazzz.github.io/links/</guid><description>&lt;p>Тут пока что только одна ссылка :)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on KotazIO</title>
+        <link>https://kotazzz.github.io/page/</link>
+        <description>Recent content in Pages on KotazIO</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ru-ru</language>
+        <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Архивы</title>
+        <link>https://kotazzz.github.io/archives/</link>
+        <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Об авторе</title>
+        <link>https://kotazzz.github.io/about/</link>
+        <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/about/</guid>
+        <description>&lt;p&gt;Сайт сейчас организован, как блог и каждая страница сделана ввиде записи.&lt;/p&gt;
+&lt;p&gt;Что бы найти необходимые страницы, воспользуйся поиском, метками, архивом или категориями. Так же ты можешь лично со мной связаться через социальные сети.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Поиск</title>
+        <link>https://kotazzz.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Ссылки</title>
+        <link>https://kotazzz.github.io/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/links/</guid>
+        <description>&lt;p&gt;Тут пока что только одна ссылка :)&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

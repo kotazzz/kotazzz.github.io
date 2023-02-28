@@ -1,12 +1,12 @@
 ---
 author: Kotaz
-title: Почему моя программа не работает? (FAQ)
+title: Py03. Почему моя программа не работает? (FAQ)
 date: 2022-07-23 02:00:00
 description: FAQ по ошибкам
 categories: ["courses"]
 tags: ["Python"]
 slug: py03
-# image: 00_placeholder.jpg
+image: 00_placeholder.jpg
 ---
 
 # Почему моя программа не работает? (FAQ)

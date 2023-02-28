@@ -1,12 +1,12 @@
 ---
 author: Kotaz
-title: Циклы Python
+title: Py05. Циклы Python
 date: 2022-07-23 04:00:00
 description: Циклы for и while, операторы break и continue, волшебное слово else
 categories: ["courses"]
 tags: ["Python"]
 slug: py05
-# image: 00_placeholder.jpg
+image: 00_placeholder.png
 ---
 
 # Циклы for и while, операторы break и continue, волшебное слово else

@@ -1,12 +1,12 @@
 ---
 author: Kotaz
-title: Инструкция if
+title: Py04. Инструкция if
 date: 2022-07-23 03:00:00
 description: Базовая информация по ветвлениям в Python
 categories: ["courses"]
 tags: ["Python"]
 slug: py04
-# image: 00_placeholder.jpg
+image: 00_placeholder.png
 ---
 
 # Инструкция `if`

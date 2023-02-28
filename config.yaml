@@ -41,8 +41,8 @@ params:
         customText: Сделано с 💖
 
     dateFormat:
-        published: 01.02.2006
-        lastUpdated: 01.02.2006 15:04
+        published: 02.01.2006
+        lastUpdated: 02.01.2006 15:04
 
     sidebar:
         emoji: 🍥

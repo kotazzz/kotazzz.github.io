@@ -1,12 +1,12 @@
 ---
 author: Kotaz
-title: Основы Python
+title: Py02. Основы Python
 date: 2022-07-22 01:00:00
 description: Познакомимся с переменными, вводом, выводом и типами
 categories: ["courses"]
 tags: ["Python"]
 slug: py02
-# image: 00_placeholder.jpg
+image: 00_placeholder.jpg
 ---
 
 # Начало работы с языком

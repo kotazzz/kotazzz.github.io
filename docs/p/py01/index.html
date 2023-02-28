@@ -1,53 +1,815 @@
-<!doctype html><html lang=ru-ru dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Установка и запуск Python"><title>Введение в Python</title><link rel=canonical href=https://kotazzz.github.io/p/py01/><link rel=stylesheet href=/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css><meta property="og:title" content="Введение в Python"><meta property="og:description" content="Установка и запуск Python"><meta property="og:url" content="https://kotazzz.github.io/p/py01/"><meta property="og:site_name" content="KotazIO"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Python"><meta property="article:published_time" content="2022-07-22T00:00:00+00:00"><meta property="article:modified_time" content="2022-07-22T00:00:00+00:00"><meta property="og:image" content="https://kotazzz.github.io/p/py01/00_placeholder.jpg"><meta name=twitter:title content="Введение в Python"><meta name=twitter:description content="Установка и запуск Python"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://kotazzz.github.io/p/py01/00_placeholder.jpg"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Показать/скрыть меню">
-<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><div class=site-meta><h1 class=site-name><a href=/>KotazIO</a></h1><h2 class=site-description>Мини-блог, сайт для различного контента</h2></div></header><ol class=social-menu><li><a href=https://github.com/kotazzz target=_blank title=GitHub><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>Главная</span></a></li><li><a href=/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>Об авторе</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Архивы</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Поиск</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>Ссылки</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>Тёмный режим</span></li></div></ol></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/py01/><img src=/p/py01/00_placeholder_hu2c7e018ed9f753eaee0b80b8a0ca4196_10087_800x0_resize_q75_box.jpg srcset="/p/py01/00_placeholder_hu2c7e018ed9f753eaee0b80b8a0ca4196_10087_800x0_resize_q75_box.jpg 800w, /p/py01/00_placeholder_hu2c7e018ed9f753eaee0b80b8a0ca4196_10087_1600x0_resize_q75_box.jpg 1600w" width=800 height=451 loading=lazy alt="Featured image of post Введение в Python"></a></div><div class=article-details><header class=article-category><a href=/categories/courses/ style=background-color:#2a9d8f;color:#fff>Курсы</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/py01/>Введение в Python</a></h2><h3 class=article-subtitle>Установка и запуск Python</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>07.22.2022</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>Время чтения: 3 мин.</time></div></footer></div></header><section class=article-content><h1 id=установка-python>Установка Python</h1><h2 id=установка-на-windows>Установка на Windows</h2><p>Я не буду долго зацикливаться на этом этапе. Скачать установщик можно на <a class=link href=https://www.python.org/downloads/windows/ target=_blank rel=noopener>python.org</a>. Если качать Python с других сайтов, можно подцепить вирус или троян. Скачивайте программы только с официальных сайтов. После загрузки отметьте <code>Add to path</code> и проследуйте инструкциям. В windows 10 может появиться предупреждение с кнопкой щита (<code>Disable Length Limit </code>), стоит нажать на нее.</p><h2 id=установка-на-linux>Установка на Linux</h2><p>Для каждого дистрибутива есть свой пакетный менеджер, попробуйте найти информацию в интернете</p><ul><li><code>apt install python</code> - <strong>ubuntu</strong> и другие системы, использующие apt</li><li><code>pkg/apt install python</code> - <strong>Термукс</strong> (если вы собираетесь использовать телефон)</li><li><code>pacman -S python</code> - <strong>arch</strong> linux и другие системы, использующие pacman</li><li><code>yum install python</code> - <strong>centos</strong> и другие системы, использующие yum</li><li><code>dnf install python</code> - <strong>fedora</strong> и другие системы, использующие dnf</li><li><code>zypper install python</code> - <strong>opensuse</strong> и другие системы, использующие zypper</li></ul><p>В случае ошибок прав используйте sudo в начале команды, что бы запустить процесс установки от имени администратора. В большинстве случаев вас попросят подтвердить операцию - введите Y и нажмите Enter.</p><h2 id=проверка-и-интерактивный-режим>Проверка и интерактивный режим</h2><p>В постах, где используется &#187;> и &mldr; - используется интерактивный режим. Язык питон интерпретируемый (так же как и javascript, например) - то есть каждое действие в языке сначала читается, потом сразу выполняется. В других (компилируемых) языках (c++, java, etc&mldr;) сначала создается готовый файл, а потом его можно сразу запустить без дополнительных инструментов</p><blockquote><p>Компилятор (англ. compiler - составитель, собиратель) читает всю программу целиком, делает ее перевод и создает законченный вариант программы на машинном языке, который затем и выполняется. Результат работы компилятора — бинарный исполняемый файл.
-Интерпретатор (англ. interpreter - истолкователь, устный переводчик) переводит и выполняет программу строка за строкой.</p></blockquote><p>Когда установка закончится, нужно проверить, что всё было сделано правильно. Для этого в командной строке наберите py (латиницей) или python и нажмите клавишу ввода. Если всё хорошо, в ответ Python вам напишет номер своей версии и сборки и предложит несколько команд для знакомства с собой:
-<img src=/p/py01/01_interactive.png width=827 height=299 srcset="/p/py01/01_interactive_hueb22682bc7e1478fbe0fe04605ee7ff3_15401_480x0_resize_box_3.png 480w, /p/py01/01_interactive_hueb22682bc7e1478fbe0fe04605ee7ff3_15401_1024x0_resize_box_3.png 1024w" loading=lazy alt="Интерактивный режим" class=gallery-image data-flex-grow=276 data-flex-basis=663px></p><p>Пожалуй, самый простой способ запускать программы на языке Python - это вводить инструкции непосредственно в командной строке интерпретатора, которая иногда называется интерактивной оболочкой. Например, выведем на экран &ldquo;hello world&rdquo; и рассмотрим парочку примеров:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
-</span><span class=lnt>7
-</span><span class=lnt>8
-</span><span class=lnt>9
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-py data-lang=py><span class=line><span class=cl><span class=o>&gt;&gt;&gt;</span> <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Hello, world!&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=n>Hello</span><span class=p>,</span> <span class=n>world</span><span class=err>!</span>
-</span></span><span class=line><span class=cl><span class=o>&gt;&gt;&gt;</span> <span class=c1># Это комментарий, пайтон ничего не делает</span>
-</span></span><span class=line><span class=cl><span class=o>&gt;&gt;&gt;</span> <span class=c1># Или Попробуем вывести на экран число пять:</span>
-</span></span><span class=line><span class=cl><span class=o>&gt;&gt;&gt;</span> <span class=mi>5</span>
-</span></span><span class=line><span class=cl><span class=mi>5</span>
-</span></span><span class=line><span class=cl><span class=o>&gt;&gt;&gt;</span> <span class=c1># Посчитаем 2+2*2:</span>
-</span></span><span class=line><span class=cl><span class=o>&gt;&gt;&gt;</span> <span class=mi>2</span><span class=o>+</span><span class=mi>2</span><span class=o>*</span><span class=mi>2</span>
-</span></span><span class=line><span class=cl><span class=mi>6</span>
-</span></span></code></pre></td></tr></table></div></div><p>Заходя в пперед, есть более сложные операторы, которые требуют ввода на несколько строк, в таком случае, приглашение меняется с <code>>>></code> на <code>...</code>. Этот режим продолжается до тех пор, пока вы не нажмете Enter, оставив пустую строку:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-py data-lang=py><span class=line><span class=cl><span class=o>&gt;&gt;&gt;</span> <span class=k>if</span> <span class=mi>2</span><span class=o>+</span><span class=mi>2</span><span class=o>*</span><span class=mi>2</span> <span class=o>==</span> <span class=mi>6</span><span class=p>:</span>
-</span></span><span class=line><span class=cl><span class=o>...</span>     <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Верно!&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=o>...</span> <span class=k>else</span><span class=p>:</span>
-</span></span><span class=line><span class=cl><span class=o>...</span>     <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Неверно!&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl><span class=o>...</span>
-</span></span><span class=line><span class=cl><span class=n>Верно</span><span class=err>!</span>
-</span></span></code></pre></td></tr></table></div></div><h2 id=запуск-файлов>Запуск файлов</h2><p>Алгоритм действий прост:</p><ul><li>Создаем файл любым способом. Файл должен оканчиваться на <code>.py</code>. Например, <code>hello.py</code>.</li><li>Запускаем терминал/консоль (или запускаем прямо в папке с файлом)<ul><li>Windows: <code>Windows</code> + <code>R</code> - Вводим <code>cmd</code> - Enter</li><li>Linux <code>Ctrl</code> + <code>Shift</code> + <code>T</code></li></ul></li><li>Передвигаемся к файлу<ul><li>Вариант 1: <code>cd ПОЛНЫЙ_ПУТЬ_К_ФАЙЛУ</code><ul><li><code>cd C:\Users\Вася\Desktop\hello.py</code> - Windows</li><li><code>cd /home/user/hello.py</code> - Linux</li></ul></li><li>Вариант 2: Постепенно предвижение<ul><li><code>cd ВЛОЖЕННАЯ_ПАПКА</code> - перейти в папку</li><li><code>cd ..</code> - для передвижения на уровень вверх</li><li>Linux <code>ls</code> / Windows <code>dir</code> - для просмотра содержимого папки</li></ul></li></ul></li><li>Вводим команду для запуска файла<ul><li>Вариант 1: <code>python hello.py</code> - универсальный метод для запуска любого файла на Python</li><li>Вариант 2: <code>python3 hello.py</code> - указываем, что используем имеено Python 3.x.x</li><li>Вариант 3: <code>py -3 hello.py</code> - лучший метод для Windows</li></ul></li></ul><p>Мои примеры будут приближены к Linux, поэтому мои действия:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>~$ touch hello.py <span class=c1># Создаем файл</span>
-</span></span><span class=line><span class=cl>~$ nano hello.py <span class=c1># Открываем файл в редакторе nano, редактируем и сохраняем</span>
-</span></span><span class=line><span class=cl>~$ cat hello.py <span class=c1># Выводим содержимое файла</span>
-</span></span><span class=line><span class=cl>print<span class=o>(</span><span class=s2>&#34;Hello, world!&#34;</span><span class=o>)</span>
-</span></span><span class=line><span class=cl>~$ python hello.py <span class=c1># Запускаем файл</span>
-</span></span><span class=line><span class=cl>Hello, world!
-</span></span></code></pre></td></tr></table></div></div><h2 id=завершение>Завершение</h2><p>Статья может быть моментами неточной. Я буду рад почитать ваши комментари :)</p></section><footer class=article-footer><section class=article-tags><a href=/tags/python/>Python</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under MIT License</span></section></footer><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css integrity="sha256-J+iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s=" crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js integrity="sha256-InsNdER1b2xUewP+pKCUJpkhiqwHgqiPXDlIk7GzBu4=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI=" crossorigin=anonymous defer></script><script>window.addEventListener("DOMContentLoaded",()=>{renderMathInElement(document.querySelector(`.article-content`),{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})})</script></article><aside class=related-content--wrapper><h2 class=section-title>Также рекомендуем</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/py05/><div class=article-details><h2 class=article-title>Циклы Python</h2></div></a></article><article><a href=/p/py04/><div class=article-details><h2 class=article-title>Инструкция if</h2></div></a></article><article><a href=/p/py03/><div class=article-details><h2 class=article-title>Почему моя программа не работает? (FAQ)</h2></div></a></article><article><a href=/p/py02/><div class=article-details><h2 class=article-title>Основы Python</h2></div></a></article></div></div></aside><div class=disqus-container><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//kotaz.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
-2020 -
-2022 KotazIO</section><section class=powerby>Сделано с 💖<br>Создано при помощи <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Тема <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.12.0>Stack</a></b>, дизайн <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-<button class="pswp__button pswp__button--share" title=Share></button>
-<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">Содержание</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#установка-на-windows>Установка на Windows</a></li><li><a href=#установка-на-linux>Установка на Linux</a></li><li><a href=#проверка-и-интерактивный-режим>Проверка и интерактивный режим</a></li><li><a href=#запуск-файлов>Запуск файлов</a></li><li><a href=#завершение>Завершение</a></li></ol></nav></div></section></aside></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
-<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Установка и запуск Python'><title>Py01. Введение в Python</title>
+
+<link rel='canonical' href='https://kotazzz.github.io/p/py01/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='Py01. Введение в Python'>
+<meta property='og:description' content='Установка и запуск Python'>
+<meta property='og:url' content='https://kotazzz.github.io/p/py01/'>
+<meta property='og:site_name' content='KotazIO'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2022-07-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-07-22T00:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/py01/00_placeholder.jpg' />
+<meta name="twitter:title" content="Py01. Введение в Python">
+<meta name="twitter:description" content="Установка и запуск Python"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://kotazzz.github.io/p/py01/00_placeholder.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Показать/скрыть меню">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">KotazIO</a></h1>
+            <h2 class="site-description">Мини-блог, сайт для различного контента</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/kotazzz'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Главная</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Об авторе</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Архивы</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Поиск</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Ссылки</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Тёмный режим</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/py01/">
+                <img src="/p/py01/00_placeholder_hu2c7e018ed9f753eaee0b80b8a0ca4196_10087_800x0_resize_q75_box.jpg"
+                        srcset="/p/py01/00_placeholder_hu2c7e018ed9f753eaee0b80b8a0ca4196_10087_800x0_resize_q75_box.jpg 800w, /p/py01/00_placeholder_hu2c7e018ed9f753eaee0b80b8a0ca4196_10087_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="451" 
+                        loading="lazy"
+                        alt="Featured image of post Py01. Введение в Python" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/courses/" style="background-color: #2a9d8f; color: #fff;">
+                Курсы
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/py01/">Py01. Введение в Python</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Установка и запуск Python
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">22.07.2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    Время чтения: 3 мин.
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="установка-python">Установка Python</h1>
+<h2 id="установка-на-windows">Установка на Windows</h2>
+<p>Я не буду долго зацикливаться на этом этапе. Скачать установщик можно на <a class="link" href="https://www.python.org/downloads/windows/"  target="_blank" rel="noopener"
+    >python.org</a>. Если качать Python с других сайтов, можно подцепить вирус или троян. Скачивайте программы только с официальных сайтов. После загрузки отметьте <code>Add to path</code> и проследуйте инструкциям. В windows 10 может появиться предупреждение с кнопкой щита (<code>Disable Length Limit </code>), стоит нажать на нее.</p>
+<h2 id="установка-на-linux">Установка на Linux</h2>
+<p>Для каждого дистрибутива есть свой пакетный менеджер, попробуйте найти информацию в интернете</p>
+<ul>
+<li><code>apt install python</code> - <strong>ubuntu</strong> и другие системы, использующие apt</li>
+<li><code>pkg/apt install python</code> - <strong>Термукс</strong> (если вы собираетесь использовать телефон)</li>
+<li><code>pacman -S python</code> - <strong>arch</strong> linux и другие системы, использующие pacman</li>
+<li><code>yum install python</code> - <strong>centos</strong> и другие системы, использующие yum</li>
+<li><code>dnf install python</code> - <strong>fedora</strong> и другие системы, использующие dnf</li>
+<li><code>zypper install python</code> - <strong>opensuse</strong> и другие системы, использующие zypper</li>
+</ul>
+<p>В случае ошибок прав используйте sudo в начале команды, что бы запустить процесс установки от имени администратора. В большинстве случаев вас попросят подтвердить операцию - введите Y и нажмите Enter.</p>
+<h2 id="проверка-и-интерактивный-режим">Проверка и интерактивный режим</h2>
+<p>В постах, где используется &raquo;&gt; и &hellip; - используется интерактивный режим. Язык питон интерпретируемый (так же как и javascript, например) - то есть каждое действие в языке сначала читается, потом сразу выполняется. В других (компилируемых) языках (c++, java, etc&hellip;) сначала создается готовый файл, а потом его можно сразу запустить без дополнительных инструментов</p>
+<blockquote>
+<p>Компилятор (англ. compiler - составитель, собиратель) читает всю программу целиком, делает ее перевод и создает законченный вариант программы на машинном языке, который затем и выполняется. Результат работы компилятора — бинарный исполняемый файл.
+Интерпретатор (англ. interpreter - истолкователь, устный переводчик) переводит и выполняет программу строка за строкой.</p>
+</blockquote>
+<p>Когда установка закончится, нужно проверить, что всё было сделано правильно. Для этого в командной строке наберите py (латиницей) или python и нажмите клавишу ввода. Если всё хорошо, в ответ Python вам напишет номер своей версии и сборки и предложит несколько команд для знакомства с собой:
+<img src="/p/py01/01_interactive.png"
+	width="827"
+	height="299"
+	srcset="/p/py01/01_interactive_hueb22682bc7e1478fbe0fe04605ee7ff3_15401_480x0_resize_box_3.png 480w, /p/py01/01_interactive_hueb22682bc7e1478fbe0fe04605ee7ff3_15401_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Интерактивный режим"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="276"
+		data-flex-basis="663px"
+	
+></p>
+<p>Пожалуй, самый простой способ запускать программы на языке Python - это вводить инструкции непосредственно в командной строке интерпретатора, которая иногда называется интерактивной оболочкой. Например, выведем на экран &ldquo;hello world&rdquo; и рассмотрим парочку примеров:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, world!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Hello</span><span class="p">,</span> <span class="n">world</span><span class="err">!</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="c1"># Это комментарий, пайтон ничего не делает</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="c1"># Или Попробуем вывести на экран число пять:</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="c1"># Посчитаем 2+2*2:</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Заходя в пперед, есть более сложные операторы, которые требуют ввода на несколько строк, в таком случае, приглашение меняется с <code>&gt;&gt;&gt;</code> на <code>...</code>. Этот режим продолжается до тех пор, пока вы не нажмете Enter, оставив пустую строку:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Верно!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span> <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Неверно!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span><span class="line"><span class="cl"><span class="n">Верно</span><span class="err">!</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="запуск-файлов">Запуск файлов</h2>
+<p>Алгоритм действий прост:</p>
+<ul>
+<li>Создаем файл любым способом. Файл должен оканчиваться на <code>.py</code>. Например, <code>hello.py</code>.</li>
+<li>Запускаем терминал/консоль (или запускаем прямо в папке с файлом)
+<ul>
+<li>Windows: <code>Windows</code> + <code>R</code> - Вводим <code>cmd</code> - Enter</li>
+<li>Linux <code>Ctrl</code> + <code>Shift</code> + <code>T</code></li>
+</ul>
+</li>
+<li>Передвигаемся к файлу
+<ul>
+<li>Вариант 1: <code>cd ПОЛНЫЙ_ПУТЬ_К_ФАЙЛУ</code>
+<ul>
+<li><code>cd C:\Users\Вася\Desktop\hello.py</code> - Windows</li>
+<li><code>cd /home/user/hello.py</code> - Linux</li>
+</ul>
+</li>
+<li>Вариант 2: Постепенно предвижение
+<ul>
+<li><code>cd ВЛОЖЕННАЯ_ПАПКА</code> - перейти в папку</li>
+<li><code>cd ..</code> - для передвижения на уровень вверх</li>
+<li>Linux <code>ls</code> / Windows <code>dir</code> - для просмотра содержимого папки</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Вводим команду для запуска файла
+<ul>
+<li>Вариант 1: <code>python hello.py</code> - универсальный метод для запуска любого файла на Python</li>
+<li>Вариант 2: <code>python3 hello.py</code> - указываем, что используем имеено Python 3.x.x</li>
+<li>Вариант 3: <code>py -3 hello.py</code> - лучший метод для Windows</li>
+</ul>
+</li>
+</ul>
+<p>Мои примеры будут приближены к Linux, поэтому мои действия:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ touch hello.py <span class="c1"># Создаем файл</span>
+</span></span><span class="line"><span class="cl">~$ nano hello.py <span class="c1"># Открываем файл в редакторе nano, редактируем и сохраняем</span>
+</span></span><span class="line"><span class="cl">~$ cat hello.py <span class="c1"># Выводим содержимое файла</span>
+</span></span><span class="line"><span class="cl">print<span class="o">(</span><span class="s2">&#34;Hello, world!&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">~$ python hello.py <span class="c1"># Запускаем файл</span>
+</span></span><span class="line"><span class="cl">Hello, world!
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="завершение">Завершение</h2>
+<p>Статья может быть моментами неточной. Я буду рад почитать ваши комментари :)</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/python/">Python</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under MIT License</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Также рекомендуем</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/py06/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py06/00_placeholder.17ac4afd28b576556b8d95da3af62397_hu783df2b7b01877a9fdea2cc22a61e847_106265_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py06. Функции"
+                        data-key="py06" 
+                        data-hash="md5-F6xK/Si1dlVrjZXaOvYjlw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py06. Функции</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py05/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py05/00_placeholder.01a7682ed34e78e9cf9fd4dd217b09ea_hu7c6670ce376b478e0562503f0e66f11f_12047_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py05. Циклы Python"
+                        data-key="py05" 
+                        data-hash="md5-AadoLtNOeOnPn9TdIXsJ6g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py05. Циклы Python</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py04/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py04/00_placeholder.74e0eb6bd54e4731b593c272ea7591bc_hu26b6f633f6e7d2bd1cb701f508024f99_224752_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py04. Инструкция if"
+                        data-key="py04" 
+                        data-hash="md5-dODra9VORzG1k8Jy6nWRvA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py04. Инструкция if</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py03/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py03/00_placeholder.7d429026e392844895f1985a2a50f321_hud01c0bb4b476d9d6603890be4431c360_205752_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py03. Почему моя программа не работает? (FAQ)"
+                        data-key="py03" 
+                        data-hash="md5-fUKQJuOShEiV8ZhaKlDzIQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py03. Почему моя программа не работает? (FAQ)</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py02/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py02/00_placeholder.5870c6672aa786f0856125c7c7252597_hu277611839423b3830d80bc9be9a9459c_33437_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py02. Основы Python"
+                        data-key="py02" 
+                        data-hash="md5-WHDGZyqnhvCFYSXHxyUllw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py02. Основы Python</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kotaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 KotazIO
+    </section>
+    
+    <section class="powerby">
+        
+            Сделано с 💖 <br/>
+        Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Содержание</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#установка-на-windows">Установка на Windows</a></li>
+    <li><a href="#установка-на-linux">Установка на Linux</a></li>
+    <li><a href="#проверка-и-интерактивный-режим">Проверка и интерактивный режим</a></li>
+    <li><a href="#запуск-файлов">Запуск файлов</a></li>
+    <li><a href="#завершение">Завершение</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
