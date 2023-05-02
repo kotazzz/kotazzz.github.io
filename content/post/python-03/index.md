@@ -9,7 +9,6 @@ slug: py03
 image: 00_placeholder.jpg
 ---
 
-# Почему моя программа не работает? (FAQ)
 
 ## Не работает функция `input`. Пишет `SyntaxError`
 
