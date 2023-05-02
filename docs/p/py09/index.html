@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Введение в ООП, классы и объекты, наследование, полиморфизм и инкапсуляция'><title>Py09. Основы ООП в Python</title>
+
+<link rel='canonical' href='https://kotazzz.github.io/p/py09/'>
+
+<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='Py09. Основы ООП в Python'>
+<meta property='og:description' content='Введение в ООП, классы и объекты, наследование, полиморфизм и инкапсуляция'>
+<meta property='og:url' content='https://kotazzz.github.io/p/py09/'>
+<meta property='og:site_name' content='KotazIO'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2023-05-01T05:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-05-01T05:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/py09/00_placeholder.jpg' />
+<meta name="twitter:title" content="Py09. Основы ООП в Python">
+<meta name="twitter:description" content="Введение в ООП, классы и объекты, наследование, полиморфизм и инкапсуляция"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://kotazzz.github.io/p/py09/00_placeholder.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Показать/скрыть меню">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">KotazIO</a></h1>
+            <h2 class="site-description">Мини-блог, сайт для различного контента</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/kotazzz'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Главная</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Об авторе</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Архивы</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Поиск</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Ссылки</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Тёмный режим</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    
+    
+<article class="has-image main-article">
+    
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/py09/">
+                <img src="/p/py09/00_placeholder_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_800x0_resize_q75_box.jpg"
+                        srcset="/p/py09/00_placeholder_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_800x0_resize_q75_box.jpg 800w, /p/py09/00_placeholder_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="480" 
+                        loading="lazy"
+                        alt="Featured image of post Py09. Основы ООП в Python" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/courses/" style="background-color: #2a9d8f; color: #fff;">
+                Курсы
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/py09/">Py09. Основы ООП в Python</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Введение в ООП, классы и объекты, наследование, полиморфизм и инкапсуляция
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">01.05.2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    Время чтения: 13 мин.
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+    <section class="article-content">
+    
+    
+    <h2 id="введение-в-ооп">Введение в ООП</h2>
+<h3 id="что-такое-ооп">Что такое ООП</h3>
+<p>ООП, или объектно-ориентированное программирование, это подход к программированию, основанный на использовании объектов, которые взаимодействуют друг с другом для решения задач.</p>
+<ul>
+<li>ООП как язык - каждый язык имеет свой набор правил и способов выражения мыслей. Аналогично, ООП имеет свои правила и способы выражения кода.</li>
+<li>ООП как машина - каждый объект является отдельной частью, которая работает вместе с другими частями для выполнения задачи. Аналогично, каждый объект в ООП является отдельной частью, которая работает вместе с другими объектами для выполнения задачи.</li>
+<li>ООП как дом - каждый объект является отдельной комнатой в доме, которая имеет свою уникальную функцию. Аналогично, каждый объект в ООП является отдельной частью программы, которая имеет свою уникальную функцию.</li>
+</ul>
+<h3 id="принципы-ооп">Принципы ООП</h3>
+<ul>
+<li><strong>Инкапсуляция</strong>: объединение данных и методов, которые работают с этими данными, в одном классе и скрытие их от остального кода.</li>
+<li><strong>Наследование</strong>: возможность создавать новые классы на основе уже существующих и наследовать их свойства и методы.</li>
+<li><strong>Полиморфизм</strong>: возможность объектов с одинаковым интерфейсом иметь разные реализации методов.</li>
+</ul>
+<p>Еще два принципа ООП, которые не были упомянуты ранее: абстракция и композиция.</p>
+<ul>
+<li><strong>Абстракция</strong>: создание упрощенной модели объекта, которая позволяет сосредоточиться на основных характеристиках объекта, игнорируя мелкие детали. Абстракция позволяет разрабатывать более гибкие и масштабируемые программы.</li>
+<li><strong>Композиция</strong>: создание нового объекта путем объединения уже существующих объектов. Композиция позволяет создавать объекты, которые могут выполнять сложные задачи, используя функциональность других объектов.</li>
+</ul>
+<p>В Python поддерживаются все принципы ООП, включая инкапсуляцию, наследование, полиморфизм, абстракцию и композицию. Кроме того, в Python есть множество инструментов и библиотек, которые облегчают работу с объектами и позволяют создавать более эффективные и гибкие программы.</p>
+<h3 id="преимущества-и-недостатки-ооп">Преимущества и недостатки ООП</h3>
+<h4 id="-преимущества-ооп">✅ Преимущества ООП</h4>
+<ul>
+<li>Более структурированный и модульный код</li>
+<li>Повторное использование кода</li>
+<li>Улучшенная поддерживаемость</li>
+</ul>
+<h4 id="-недостатки-ооп">❎ Недостатки ООП</h4>
+<ul>
+<li>Высокий уровень абстракции может усложнить понимание кода</li>
+<li>Добавление новых функций может потребовать много времени и усилий</li>
+</ul>
+<h3 id="другие-подходы-к-программированию">Другие подходы к программированию</h3>
+<p>В дополнение к ООП, существуют и другие подходы к программированию:</p>
+<ul>
+<li>Процедурное программирование - это подход, который фокусируется на выполняемых процедурах и функциях.</li>
+<li>Функциональное программирование - это подход, который фокусируется на использовании функций.</li>
+<li>Логическое программирование - это подход, который фокусируется на использовании формальной логики для решения задач.</li>
+</ul>
+<p>Каждый из этих подходов имеет свои преимущества и недостатки, и выбор подхода зависит от конкретных потребностей проекта.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Парадигма программирования</th>
+<th>Общее использование</th>
+<th>Основные характеристики</th>
+<th>Преимущества</th>
+<th>Недостатки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Объектно-ориентированное программирование</td>
+<td>Широко используется в разработке программного обеспечения</td>
+<td>Использует объекты для представления данных и поведения</td>
+<td>Инкапсуляция, Наследование, Полиморфизм, Абстракция, Композиция</td>
+<td>Высокий уровень абстракции может усложнить понимание кода</td>
+</tr>
+<tr>
+<td>Процедурное программирование</td>
+<td>Используется для крупномасштабных проектов, где важна организация кода</td>
+<td>Использует процедуры и функции для представления поведения</td>
+<td>Модульность, Повторное использование, Легкость поддержки</td>
+<td>Может быть менее эффективным, чем другие парадигмы</td>
+</tr>
+<tr>
+<td>Функциональное программирование</td>
+<td>Используется для математических и научных вычислений</td>
+<td>Сфокусирован на вычислении функций и избегает изменения состояния и изменяемых данных</td>
+<td>Неизменяемость, Референциальная прозрачность, Функции высшего порядка</td>
+<td>Может быть сложным для изучения и понимания</td>
+</tr>
+<tr>
+<td>Логическое программирование</td>
+<td>Используется для искусственного интеллекта и систем на основе знаний</td>
+<td>Использует формальную логику для представления и решения задач</td>
+<td>Декларативность, Легкость отладки, Может обрабатывать сложные задачи</td>
+<td>Ограниченная поддержка для нелогических задач, Может быть менее эффективным, чем другие парадигмы</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="базовые-определения">Базовые определения</h3>
+<p>Класс - это шаблон для создания объектов, а объект - это экземпляр класса.</p>
+<p>Методы - это функции, принадлежащие определенному классу.</p>
+<p>Атрибуты - это переменные, принадлежащие определенному объекту. Переменные - это временные хранилища для значений.</p>
+<h2 id="ооп-в-python">ООП в python</h2>
+<h3 id="как-создать-класс-в-python">Как создать класс в Python</h3>
+<p>Для создания класса в Python используется ключевое слово <code>class</code>, за которым следует имя класса.</p>
+<p>Пример класса:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Hello, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">my_object</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="s2">&#34;World&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">my_object</span><span class="o">.</span><span class="n">say_hello</span><span class="p">()</span> <span class="c1"># Output: Hello, World!</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="другие-примеры">Другие примеры</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># начальная скорость</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># начальная позиция</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">go</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">speed</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="n">speed</span>  <span class="c1"># задать скорость</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">get_position</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">speed</span>  <span class="c1"># увеличить позицию на текущую скорость</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span>  <span class="c1"># вернуть позицию</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Robot</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">memory</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># пустой список для запоминания текста</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">remember</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>  <span class="c1"># добавить текст в список запомненного</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">retell</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="p">))</span>  <span class="c1"># соединить все тексты из списка в одну строку и вывести ее</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">grade</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">grade</span> <span class="o">=</span> <span class="n">grade</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">School</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">students</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># пустой список учеников</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">add_student</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">student</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>  <span class="c1"># добавить ученика в список</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, my name is&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Классы <code>Car</code>, <code>Robot</code>, <code>School</code> и <code>Person</code> являются примерами создания классов в Python. В блоке кода, представляющем каждый класс, описываются его атрибуты и методы.</p>
+<p><code>Car</code> - класс для создания объектов машин, у которых есть цвет, модель, скорость и позиция. Метод <code>go</code> задает скорость машины, а метод <code>get_position</code> возвращает текущую позицию машины.</p>
+<p><code>Robot</code> - класс для создания объектов роботов, у которых есть имя и список запомненных текстов. Метод <code>say</code> выводит заданный текст, метод <code>remember</code> добавляет текст в список запомненных, а метод <code>retell</code> выводит все запомненные тексты в одну строку.</p>
+<p><code>School</code> - класс для создания объектов школ, у которых есть название и список учеников. Метод <code>add_student</code> добавляет ученика в список.</p>
+<p><code>Person</code> - класс для создания объектов людей, у которых есть имя. Метод <code>say_hello</code> выводит приветствие с именем объекта.</p>
+<p>Пример использования этих классов:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Создаем объекты классов</span>
+</span></span><span class="line"><span class="cl"><span class="n">car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;Tesla&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">robot</span> <span class="o">=</span> <span class="n">Robot</span><span class="p">(</span><span class="s1">&#39;R2D2&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">school</span> <span class="o">=</span> <span class="n">School</span><span class="p">(</span><span class="s1">&#39;School #1&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">person</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Используем методы объектов</span>
+</span></span><span class="line"><span class="cl"><span class="n">car</span><span class="o">.</span><span class="n">go</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="o">.</span><span class="n">get_position</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">robot</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">robot</span><span class="o">.</span><span class="n">remember</span><span class="p">(</span><span class="s1">&#39;Buy milk&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">robot</span><span class="o">.</span><span class="n">remember</span><span class="p">(</span><span class="s1">&#39;Feed the cat&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">robot</span><span class="o">.</span><span class="n">retell</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">student1</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">student2</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">school</span><span class="o">.</span><span class="n">add_student</span><span class="p">(</span><span class="n">student1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">school</span><span class="o">.</span><span class="n">add_student</span><span class="p">(</span><span class="n">student2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">school</span><span class="o">.</span><span class="n">students</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">person</span><span class="o">.</span><span class="n">say_hello</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Результат выполнения кода:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="mi">60</span>
+</span></span><span class="line"><span class="cl"><span class="n">Hello</span><span class="p">,</span> <span class="n">World</span><span class="err">!</span>
+</span></span><span class="line"><span class="cl"><span class="n">Buy</span> <span class="n">milk</span> <span class="n">Feed</span> <span class="n">the</span> <span class="n">cat</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Student</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x7f8c3f12de10</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Student</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x7f8c3f12df98</span><span class="o">&gt;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">Hello</span><span class="p">,</span> <span class="n">my</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">John</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>В этом примере мы создали объекты классов <code>Car</code>, <code>Robot</code>, <code>School</code> и <code>Person</code>, и использовали их методы для задания скорости машины, запоминания текста роботом, добавления учеников в школу и приветствия человека.</p>
+<h3 id="таблица-всех-dunder-методов-и-их-описания">Таблица всех dunder методов и их описания</h3>
+<p>В ООП классы используются для создания объектов, которые могут быть использованы в программе. Однако, что делать, если мы хотим, чтобы объекты могли складываться, вычитаться или выполнять код при вызове? В Python для этого существуют специальные методы, называемые &ldquo;dunder methods&rdquo;, которые позволяют определить поведение объектов при выполнении различных операций. Например, метод <strong>add</strong> позволяет определить, как складывать два объекта, а метод <strong>call</strong> позволяет определить, как выполнять код при вызове объекта. Решение этих задач и многое другое будет рассмотрено в данном курсе.
+Dunder-методы это методы, которые начинаются и заканчиваются на два символа подчеркивания. Они используются для реализации различных магических методов.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__init__(self, ...)</code></td>
+<td>Инициализация объекта</td>
+</tr>
+<tr>
+<td><code>__str__(self)</code></td>
+<td>Возвращает строковое представление объекта</td>
+</tr>
+<tr>
+<td><code>__repr__(self)</code></td>
+<td>Возвращает строковое представление объекта для отладки</td>
+</tr>
+<tr>
+<td><code>__len__(self)</code></td>
+<td>Возвращает длину объекта</td>
+</tr>
+<tr>
+<td><code>__add__(self, other)</code></td>
+<td>Возвращает результат сложения двух объектов</td>
+</tr>
+<tr>
+<td><code>__sub__(self, other)</code></td>
+<td>Возвращает результат вычитания двух объектов</td>
+</tr>
+<tr>
+<td><code>__mul__(self, other)</code></td>
+<td>Возвращает результат умножения двух объектов</td>
+</tr>
+<tr>
+<td><code>__truediv__(self, other)</code></td>
+<td>Возвращает результат деления двух объектов</td>
+</tr>
+<tr>
+<td><code>__floordiv__(self, other)</code></td>
+<td>Возвращает результат целочисленного деления двух объектов</td>
+</tr>
+<tr>
+<td><code>__mod__(self, other)</code></td>
+<td>Возвращает результат операции модуля двух объектов</td>
+</tr>
+<tr>
+<td><code>__pow__(self, other)</code></td>
+<td>Возвращает результат возведения одного объекта в степень другого</td>
+</tr>
+<tr>
+<td><code>__lt__(self, other)</code></td>
+<td>Возвращает True, если текущий объект меньше, чем объект other</td>
+</tr>
+<tr>
+<td><code>__le__(self, other)</code></td>
+<td>Возвращает True, если текущий объект меньше или равен объекту other</td>
+</tr>
+<tr>
+<td><code>__eq__(self, other)</code></td>
+<td>Возвращает True, если текущий объект равен объекту other</td>
+</tr>
+<tr>
+<td><code>__ne__(self, other)</code></td>
+<td>Возвращает True, если текущий объект не равен объекту other</td>
+</tr>
+<tr>
+<td><code>__gt__(self, other)</code></td>
+<td>Возвращает True, если текущий объект больше, чем объект other</td>
+</tr>
+<tr>
+<td><code>__ge__(self, other)</code></td>
+<td>Возвращает True, если текущий объект больше или равен объекту other</td>
+</tr>
+<tr>
+<td><code>__hash__(self)</code></td>
+<td>Возвращает хеш-значение объекта</td>
+</tr>
+<tr>
+<td><code>__bool__(self)</code></td>
+<td>Возвращает False, если объект пустой, и True, если нет</td>
+</tr>
+<tr>
+<td><code>__getattr__(self, name)</code></td>
+<td>Вызывается при обращении к несуществующему атрибуту объекта</td>
+</tr>
+<tr>
+<td><code>__setattr__(self, name, value)</code></td>
+<td>Вызывается при установке значения атрибута объекта</td>
+</tr>
+<tr>
+<td><code>__delattr__(self, name)</code></td>
+<td>Вызывается при удалении атрибута объекта</td>
+</tr>
+<tr>
+<td><code>__call__(self, ...)</code></td>
+<td>Вызывается при вызове объекта как функции</td>
+</tr>
+<tr>
+<td><code>__enter__(self)</code></td>
+<td>Вызывается при входе в блок контекстного менеджера</td>
+</tr>
+<tr>
+<td><code>__exit__(self, exc_type, exc_val, exc_tb)</code></td>
+<td>Вызывается при выходе из блока контекстного менеджера</td>
+</tr>
+<tr>
+<td><code>__iter__(self)</code></td>
+<td>Возвращает итератор для объекта</td>
+</tr>
+<tr>
+<td><code>__next__(self)</code></td>
+<td>Возвращает следующий элемент итератора</td>
+</tr>
+<tr>
+<td><code>__getitem__(self, key)</code></td>
+<td>Возвращает элемент по индексу или ключу</td>
+</tr>
+<tr>
+<td><code>__setitem__(self, key, value)</code></td>
+<td>Устанавливает значение элемента по индексу или ключу</td>
+</tr>
+<tr>
+<td><code>__delitem__(self, key)</code></td>
+<td>Удаляет элемент по индексу или ключу</td>
+</tr>
+<tr>
+<td><code>__contains__(self, item)</code></td>
+<td>Возвращает True, если объект содержит элемент item</td>
+</tr>
+<tr>
+<td><code>__index__(self)</code></td>
+<td>Возвращает целочисленное представление объекта</td>
+</tr>
+<tr>
+<td><code>__reversed__(self)</code></td>
+<td>Возвращает обратный итератор для объекта</td>
+</tr>
+<tr>
+<td><code>__enter__(self)</code></td>
+<td>Вызывается при входе в блок контекстного менеджера</td>
+</tr>
+<tr>
+<td><code>__exit__(self, exc_type, exc_val, exc_tb)</code></td>
+<td>Вызывается при выходе из блока контекстного менеджера</td>
+</tr>
+<tr>
+<td><code>__dir__(self)</code></td>
+<td>Возвращает список атрибутов объекта</td>
+</tr>
+<tr>
+<td><code>__format__(self, format_spec)</code></td>
+<td>Форматирует объект с помощью указанной спецификации формата</td>
+</tr>
+<tr>
+<td><code>__bytes__(self)</code></td>
+<td>Возвращает байтовое представление объекта</td>
+</tr>
+<tr>
+<td><code>__class__(self)</code></td>
+<td>Возвращает ссылку на класс объекта</td>
+</tr>
+<tr>
+<td><code>__instancecheck__(self, instance)</code></td>
+<td>Возвращает True, если объект является экземпляром указанного класса</td>
+</tr>
+<tr>
+<td><code>__subclasscheck__(self, subclass)</code></td>
+<td>Возвращает True, если класс является наследником указанного класса</td>
+</tr>
+<tr>
+<td><code>__getattribute__(self, name)</code></td>
+<td>Вызывается при обращении к атрибуту объекта</td>
+</tr>
+<tr>
+<td><code>__setattr__(self, name, value)</code></td>
+<td>Вызывается при установке значения атрибута объекта</td>
+</tr>
+<tr>
+<td><code>__delattr__(self, name)</code></td>
+<td>Вызывается при удалении атрибута объекта</td>
+</tr>
+<tr>
+<td><code>__dir__(self)</code></td>
+<td>Возвращает список атрибутов объекта</td>
+</tr>
+<tr>
+<td><code>__enter__(self)</code></td>
+<td>Вызывается при входе в блок контекстного менеджера</td>
+</tr>
+<tr>
+<td><code>__exit__(self, exc_type, exc_val, exc_tb)</code></td>
+<td>Вызывается при выходе из блока контекстного менеджера</td>
+</tr>
+<tr>
+<td><code>__get__(self, instance, owner)</code></td>
+<td>Возвращает значение атрибута</td>
+</tr>
+<tr>
+<td><code>__set__(self, instance, value)</code></td>
+<td>Устанавливает значение атрибута</td>
+</tr>
+<tr>
+<td><code>__delete__(self, instance)</code></td>
+<td>Удаляет значение атрибута</td>
+</tr>
+</tbody>
+</table></div>
+<p>В чем разница между init и new?
+<code>__init__</code> - это магический метод, который вызывается при создании нового объекта класса. <code>__new__</code> - это метод, который создает новый объект класса.</p>
+<h3 id="self">Self</h3>
+<p><code>self</code> - это параметр метода, который ссылается на экземпляр класса, для которого вызывается метод. Он используется для доступа к атрибутам и методам объекта. Когда мы вызываем метод на объекте, Python автоматически передает этот объект в качестве первого параметра метода, используя параметр <code>self</code>. Это позволяет нам оперировать данными конкретного объекта и изменять их внутри методов. Без параметра <code>self</code> мы бы не имели доступа к атрибутам и методам объекта и не могли бы изменять их значения.</p>
+<p><code>self</code> - это ссылка на текущий объект. <code>self</code> используется для доступа к атрибутам и методам объекта.</p>
+<h3 id="декоратор-property">Декоратор @property</h3>
+<p><code>@property</code> - это декоратор, который позволяет использовать метод как атрибут.</p>
+<p>Для использования декоратора <code>@property</code> необходимо определить метод с этим декоратором.</p>
+<p>Пример класса с использованием декоратора <code>@property</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Rectangle</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@property</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@property</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Здесь класс <code>Rectangle</code> имеет два атрибута - <code>length</code> и <code>width</code>, которые задают длину и ширину прямоугольника соответственно. Декоратор <code>@property</code> используется для создания атрибутов <code>area</code> и <code>perimeter</code>, которые вычисляют площадь и периметр прямоугольника соответственно.</p>
+<p>Пример использования класса:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">length</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">width</span>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">area</span>
+</span></span><span class="line"><span class="cl"><span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">perimeter</span>
+</span></span><span class="line"><span class="cl"><span class="mi">18</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">area</span>
+</span></span><span class="line"><span class="cl"><span class="mi">42</span>
+</span></span><span class="line"><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">perimeter</span>
+</span></span><span class="line"><span class="cl"><span class="mi">26</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Здесь мы создаем экземпляр класса <code>Rectangle</code> с длиной 4 и шириной 5, и затем используем атрибуты <code>length</code>, <code>width</code>, <code>area</code> и <code>perimeter</code> для получения соответствующих значений. Затем мы меняем значения атрибутов <code>length</code> и <code>width</code>, и снова используем атрибуты <code>area</code> и <code>perimeter</code>, чтобы получить новые значения.</p>
+<h2 id="наследование">Наследование</h2>
+<p>Наследование - это механизм, позволяющий создавать новый класс на основе существующего.</p>
+<p>Для использования наследования необходимо указать базовый класс в определении нового класса.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">sound</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">sound</span> <span class="o">=</span> <span class="n">sound</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">make_sound</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> издает звук &#34;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sound</span><span class="si">}</span><span class="s1">&#34;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">&#34;Мяу&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">purr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> мурлычет&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">&#34;Гав&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">wag_tail</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1"> виляет хвостом&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cat</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s2">&#34;Барсик&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">cat</span><span class="o">.</span><span class="n">make_sound</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">cat</span><span class="o">.</span><span class="n">purr</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">&#34;Шарик&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dog</span><span class="o">.</span><span class="n">make_sound</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">dog</span><span class="o">.</span><span class="n">wag_tail</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>В этом примере мы определяем базовый класс <code>Animal</code>, который имеет два атрибута - <code>name</code> и <code>sound</code> - и метод <code>make_sound()</code>, который выводит сообщение со звуком, издаваемым животным.</p>
+<p>Затем мы определяем два класса, <code>Cat</code> и <code>Dog</code>, которые наследуются от <code>Animal</code>. Каждый из этих классов переопределяет метод <code>__init__()</code>, чтобы задать соответствующий звук, и добавляет свой собственный метод - <code>purr()</code> для <code>Cat</code> и <code>wag_tail()</code> для <code>Dog</code>.</p>
+<p>Затем мы создаем экземпляры классов <code>Cat</code> и <code>Dog</code>, и вызываем методы <code>make_sound()</code>, <code>purr()</code> и <code>wag_tail()</code> для каждого из них. Это демонстрирует, как наследование позволяет создавать новые классы на основе существующих и добавлять им собственные методы и атрибуты.</p>
+<h2 id="советы-и-частые-ошибки-при-создании-классов">Советы и частые ошибки при создании классов</h2>
+<h3 id="советы-при-создании-классов">Советы при создании классов</h3>
+<ul>
+<li>Создавайте классы, которые отвечают только за одну задачу, и следуйте принципу единственной ответственности.</li>
+<li>Используйте наследование, чтобы избежать дублирования кода и упростить его поддержку.</li>
+<li>Используйте полиморфизм, чтобы обеспечить гибкость кода и упростить его использование.</li>
+<li>Используйте инкапсуляцию, чтобы скрыть детали реализации и обеспечить безопасность кода.</li>
+<li>Помните, что классы должны моделировать реальные объекты и процессы, а не только выполнять задачи.</li>
+<li>Документируйте каждый класс и его методы, чтобы облегчить его использование другими разработчиками.</li>
+</ul>
+<h3 id="частые-ошибки-при-создании-классов">Частые ошибки при создании классов</h3>
+<p>Одной из частых ошибок при создании классов является создание слишком сложных и неструктурированных классов.</p>
+<p>Чтобы избежать создания слишком сложных и неструктурированных классов, можно использовать следующие советы:</p>
+<ul>
+<li>Разбейте класс на более мелкие подклассы, каждый из которых решает отдельную задачу.</li>
+<li>Используйте наследование, чтобы избежать дублирования кода.</li>
+<li>Избегайте сильной связности между классами, чтобы классы были более переносимыми и гибкими.</li>
+<li>Не добавляйте в классы функциональность, которая не относится к их основной задаче.</li>
+<li>Избегайте создания слишком многих методов и атрибутов в классе, чтобы класс был проще в использовании и понимании.</li>
+<li>Используйте исключения, чтобы сообщать об ошибках внутри класса, вместо того, чтобы просто возвращать ошибочное значение.</li>
+<li>Разделяйте классы на слои, чтобы каждый слой решал свою задачу, и классы внутри слоя имели схожую функциональность.</li>
+</ul>
+<h2 id="особенности-ооп-в-python">Особенности ООП в Python</h2>
+<p>Одной из особенностей ООП в Python является отсутствие инкапсуляции в чистом виде. В Python нет специальных модификаторов доступа к атрибутам и методам объекта, и все они по умолчанию являются открытыми. Однако, существует соглашение об именовании, которое указывает на то, что атрибуты и методы, которые начинаются с символа подчеркивания, не должны использоваться вне класса. Это соглашение не является обязательным и может быть нарушено, но его соблюдение делает код более понятным и удобочитаемым.</p>
+<p>Еще одной особенностью ООП в Python является наличие множественного наследования. В Python классы могут наследоваться от нескольких базовых классов, что позволяет создавать более гибкие и мощные иерархии классов. Однако, множественное наследование может привести к сложностям в понимании кода и конфликтам имен атрибутов и методов.</p>
+<p>Еще одной особенностью ООП в Python является наличие магических методов, которые позволяют определять поведение объектов в различных ситуациях. Например, метод <code>__str__</code> определяет строковое представление объекта, а метод <code>__len__</code> определяет длину объекта. Магические методы позволяют создавать более гибкие и мощные объекты, но их неправильное использование может привести к сложностям в понимании кода.</p>
+<p>В Python также есть возможность использовать декораторы, которые позволяют модифицировать поведение методов и классов. Например, декоратор <code>@property</code> позволяет использовать метод как атрибут, а декоратор <code>@staticmethod</code> позволяет определить статический метод, который не имеет доступа к атрибутам и методам объекта.</p>
+<p>Кроме того, Python поддерживает динамическое создание атрибутов и методов объектов, что позволяет создавать более гибкие и динамичные программы. Однако, динамическое создание атрибутов и методов может привести к сложностям в понимании кода и его отладке.</p>
+<p>Наконец, Python поддерживает возможность перегрузки операторов, что позволяет определять поведение объектов при использовании стандартных операторов, таких как <code>+</code>, <code>-</code>, <code>*</code> и т.д. Перегрузка операторов позволяет создавать более удобный и понятный код, но ее неправильное использование может привести к сложностям</p>
+<h2 id="примеры-использования-ооп">Примеры использования ООП</h2>
+<h3 id="примеры-использования-ооп-в-python">Примеры использования ООП в Python</h3>
+<p>ООП может быть использован для создания различных программ, таких как игры, приложения и веб-сайты.</p>
+<h2 id="итоги">Итоги</h2>
+<p>Мы рассмотрели основы ООП в Python, включая классы и объекты, наследование, полиморфизм и инкапсуляцию. Также мы рассмотрели некоторые советы и частые ошибки при создании классов, а также особенности ООП в Python, такие как отсутствие инкапсуляции в чистом виде, наличие множественного наследования, магических методов, декораторов и возможности перегр</p>
+<p>Надеемся, что эта статья была полезной для вас и помогла лучше понять основы ООП в Python. Желаем вам успехов в дальнейшем изучении языка Python и создании своих программ.</p>
+<p>Спасибо за внимание и удачи в вашем путешествии в мир программирования!</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/python/">Python</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>MIT License</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Также рекомендуем</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/py08/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py08/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py08. zip() и enumerate()"
+                        data-key="py08" 
+                        data-hash="md5-NXM&#43;oyXzhYEX/zkozdrHrQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py08. zip() и enumerate()</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py07/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py07/00_placeholder.5190d36cabbab6e587ca051ff3a143ee_hu15a98e546981c427ea81cd5703498a1d_32502_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py07. Списки. Исчерпывающее руководство"
+                        data-key="py07" 
+                        data-hash="md5-UZDTbKu6tuWHygUf86FD7g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py07. Списки. Исчерпывающее руководство</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py06/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py06/00_placeholder.17ac4afd28b576556b8d95da3af62397_hu783df2b7b01877a9fdea2cc22a61e847_106265_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py06. Функции"
+                        data-key="py06" 
+                        data-hash="md5-F6xK/Si1dlVrjZXaOvYjlw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py06. Функции</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py05/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py05/00_placeholder.01a7682ed34e78e9cf9fd4dd217b09ea_hu7c6670ce376b478e0562503f0e66f11f_12047_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py05. Циклы Python"
+                        data-key="py05" 
+                        data-hash="md5-AadoLtNOeOnPn9TdIXsJ6g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py05. Циклы Python</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py04/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py04/00_placeholder.74e0eb6bd54e4731b593c272ea7591bc_hu26b6f633f6e7d2bd1cb701f508024f99_224752_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py04. Инструкция if"
+                        data-key="py04" 
+                        data-hash="md5-dODra9VORzG1k8Jy6nWRvA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py04. Инструкция if</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kotaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 KotazIO
+    </section>
+    
+    <section class="powerby">
+        
+            Сделано с 💖 <br/>
+        Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Содержание</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#введение-в-ооп">Введение в ООП</a>
+      <ol>
+        <li><a href="#что-такое-ооп">Что такое ООП</a></li>
+        <li><a href="#принципы-ооп">Принципы ООП</a></li>
+        <li><a href="#преимущества-и-недостатки-ооп">Преимущества и недостатки ООП</a>
+          <ol>
+            <li><a href="#-преимущества-ооп">✅ Преимущества ООП</a></li>
+            <li><a href="#-недостатки-ооп">❎ Недостатки ООП</a></li>
+          </ol>
+        </li>
+        <li><a href="#другие-подходы-к-программированию">Другие подходы к программированию</a></li>
+        <li><a href="#базовые-определения">Базовые определения</a></li>
+      </ol>
+    </li>
+    <li><a href="#ооп-в-python">ООП в python</a>
+      <ol>
+        <li><a href="#как-создать-класс-в-python">Как создать класс в Python</a></li>
+        <li><a href="#другие-примеры">Другие примеры</a></li>
+        <li><a href="#таблица-всех-dunder-методов-и-их-описания">Таблица всех dunder методов и их описания</a></li>
+        <li><a href="#self">Self</a></li>
+        <li><a href="#декоратор-property">Декоратор @property</a></li>
+      </ol>
+    </li>
+    <li><a href="#наследование">Наследование</a></li>
+    <li><a href="#советы-и-частые-ошибки-при-создании-классов">Советы и частые ошибки при создании классов</a>
+      <ol>
+        <li><a href="#советы-при-создании-классов">Советы при создании классов</a></li>
+        <li><a href="#частые-ошибки-при-создании-классов">Частые ошибки при создании классов</a></li>
+      </ol>
+    </li>
+    <li><a href="#особенности-ооп-в-python">Особенности ООП в Python</a></li>
+    <li><a href="#примеры-использования-ооп">Примеры использования ООП</a>
+      <ol>
+        <li><a href="#примеры-использования-ооп-в-python">Примеры использования ООП в Python</a></li>
+      </ol>
+    </li>
+    <li><a href="#итоги">Итоги</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
