@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Циклы for и while, операторы break и continue, волшебное слово else'><title>Py05. Циклы Python</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Циклы for и while, операторы break и continue, волшебное слово else'>
+<title>Py05. Циклы Python</title>
 
 <link rel='canonical' href='https://kotazzz.github.io/p/py05/'>
 
-<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='Py05. Циклы Python'>
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Py05. Циклы Python'>
 <meta property='og:description' content='Циклы for и while, операторы break и continue, волшебное слово else'>
 <meta property='og:url' content='https://kotazzz.github.io/p/py05/'>
 <meta property='og:site_name' content='KotazIO'>
@@ -62,6 +63,7 @@
                         href='https://github.com/kotazzz'
                         target="_blank"
                         title="GitHub"
+                        rel="me"
                     >
                         
                         
@@ -80,7 +82,6 @@
         
         
         
-
         <li >
             <a href='/' >
                 
@@ -101,7 +102,6 @@
         </li>
         
         
-
         <li >
             <a href='/about/' >
                 
@@ -121,7 +121,6 @@
         </li>
         
         
-
         <li >
             <a href='/archives/' >
                 
@@ -142,7 +141,6 @@
         </li>
         
         
-
         <li >
             <a href='/search/' >
                 
@@ -162,7 +160,6 @@
         </li>
         
         
-
         <li >
             <a href='/links/' >
                 
@@ -208,11 +205,52 @@
         </div>
     </ol>
 </aside>
-<main class="main full-width">
-    
-    
-<article class="has-image main-article">
-    
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Содержание</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#цикл-while">Цикл while</a></li>
+    <li><a href="#цикл-for">Цикл for</a>
+      <ol>
+        <li><a href="#общее-понятие">Общее понятие</a></li>
+        <li><a href="#range"><code>range()</code></a></li>
+        <li><a href="#словари">Словари</a></li>
+      </ol>
+    </li>
+    <li><a href="#оператор-continue">Оператор continue</a></li>
+    <li><a href="#оператор-break">Оператор break</a></li>
+    <li><a href="#волшебное-слово-else">Волшебное слово else</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
             <a href="/p/py05/">
@@ -251,6 +289,9 @@
     </div>
 
     
+    
+    
+    
     <footer class="article-time">
         
             <div>
@@ -287,7 +328,9 @@
 
     
 </div>
+
 </header>
+
     <section class="article-content">
     
     
@@ -571,13 +614,12 @@
                 { left: "$", right: "$", display: false },
                 { left: "\\(", right: "\\)", display: false },
                 { left: "\\[", right: "\\]", display: true }
-            ]
+            ],
+            ignoredClasses: ["gist"]
         });})
 </script>
     
 </article>
-
-
 
     
 
@@ -772,7 +814,7 @@
         
             Сделано с 💖 <br/>
         Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -856,49 +898,6 @@
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Содержание</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#цикл-while">Цикл while</a></li>
-    <li><a href="#цикл-for">Цикл for</a>
-      <ol>
-        <li><a href="#общее-понятие">Общее понятие</a></li>
-        <li><a href="#range"><code>range()</code></a></li>
-        <li><a href="#словари">Словари</a></li>
-      </ol>
-    </li>
-    <li><a href="#оператор-continue">Оператор continue</a></li>
-    <li><a href="#оператор-break">Оператор break</a></li>
-    <li><a href="#волшебное-слово-else">Волшебное слово else</a></li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"

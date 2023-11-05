@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Познакомимся с переменными, вводом, выводом и типами'><title>Py02. Основы Python</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Познакомимся с переменными, вводом, выводом и типами'>
+<title>Py02. Основы Python</title>
 
 <link rel='canonical' href='https://kotazzz.github.io/p/py02/'>
 
-<link rel="stylesheet" href="/scss/style.min.ac77dcf8b111b51da39a92990f431923f210f3876d85798a2125667f96dc33a4.css"><meta property='og:title' content='Py02. Основы Python'>
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Py02. Основы Python'>
 <meta property='og:description' content='Познакомимся с переменными, вводом, выводом и типами'>
 <meta property='og:url' content='https://kotazzz.github.io/p/py02/'>
 <meta property='og:site_name' content='KotazIO'>
@@ -62,6 +63,7 @@
                         href='https://github.com/kotazzz'
                         target="_blank"
                         title="GitHub"
+                        rel="me"
                     >
                         
                         
@@ -80,7 +82,6 @@
         
         
         
-
         <li >
             <a href='/' >
                 
@@ -101,7 +102,6 @@
         </li>
         
         
-
         <li >
             <a href='/about/' >
                 
@@ -121,7 +121,6 @@
         </li>
         
         
-
         <li >
             <a href='/archives/' >
                 
@@ -142,7 +141,6 @@
         </li>
         
         
-
         <li >
             <a href='/search/' >
                 
@@ -162,7 +160,6 @@
         </li>
         
         
-
         <li >
             <a href='/links/' >
                 
@@ -208,11 +205,81 @@
         </div>
     </ol>
 </aside>
-<main class="main full-width">
-    
-    
-<article class="has-image main-article">
-    
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Содержание</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#начало-работы-с-языком">Начало работы с языком</a></li>
+    <li><a href="#вывод">Вывод</a>
+      <ol>
+        <li><a href="#вывод-на-экран">Вывод на экран</a></li>
+        <li><a href="#sep-"><code>sep =</code></a></li>
+        <li><a href="#end-"><code>end =</code></a></li>
+      </ol>
+    </li>
+    <li><a href="#переменные">Переменные</a>
+      <ol>
+        <li><a href="#где-используется">Где используется?</a></li>
+        <li><a href="#правила-использования">Правила использования</a></li>
+        <li><a href="#частые-ошибки">Частые ошибки</a></li>
+        <li><a href="#примеры-использования-переменных">Примеры использования переменных</a></li>
+      </ol>
+    </li>
+    <li><a href="#ввод">Ввод</a></li>
+    <li><a href="#типы-данных">Типы данных</a>
+      <ol>
+        <li><a href="#строки">Строки</a>
+          <ol>
+            <li><a href="#про-кавычки">Про кавычки</a></li>
+            <li><a href="#про-">Про <code>\</code></a></li>
+            <li><a href="#про-мультистроки">Про мультистроки</a></li>
+          </ol>
+        </li>
+        <li><a href="#целые-числа-int-комплексные-complex-и-вещественные-числа-float">Целые числа (int), комплексные (complex) и вещественные числа (float)</a>
+          <ol>
+            <li><a href="#целые-числа-int">Целые числа (int)</a></li>
+            <li><a href="#длинная-арфиметика">Длинная арфиметика</a></li>
+            <li><a href="#побитовые-операции">Побитовые операции</a></li>
+            <li><a href="#дополнительные-методы">Дополнительные методы</a></li>
+            <li><a href="#системы-счисления">Системы счисления</a></li>
+            <li><a href="#вещественные-числа-float">Вещественные числа (float)</a></li>
+            <li><a href="#комплексные-числа-complex">Комплексные числа (complex)</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#завершение">Завершение</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
             <a href="/p/py02/">
@@ -251,6 +318,9 @@
     </div>
 
     
+    
+    
+    
     <footer class="article-time">
         
             <div>
@@ -287,7 +357,9 @@
 
     
 </div>
+
 </header>
+
     <section class="article-content">
     
     
@@ -1123,13 +1195,12 @@ print - к слову, тоже функция, но на вход приним�
                 { left: "$", right: "$", display: false },
                 { left: "\\(", right: "\\)", display: false },
                 { left: "\\[", right: "\\]", display: true }
-            ]
+            ],
+            ignoredClasses: ["gist"]
         });})
 </script>
     
 </article>
-
-
 
     
 
@@ -1324,7 +1395,7 @@ print - к слову, тоже функция, но на вход приним�
         
             Сделано с 💖 <br/>
         Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.12.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -1408,78 +1479,6 @@ print - к слову, тоже функция, но на вход приним�
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Содержание</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#начало-работы-с-языком">Начало работы с языком</a></li>
-    <li><a href="#вывод">Вывод</a>
-      <ol>
-        <li><a href="#вывод-на-экран">Вывод на экран</a></li>
-        <li><a href="#sep-"><code>sep =</code></a></li>
-        <li><a href="#end-"><code>end =</code></a></li>
-      </ol>
-    </li>
-    <li><a href="#переменные">Переменные</a>
-      <ol>
-        <li><a href="#где-используется">Где используется?</a></li>
-        <li><a href="#правила-использования">Правила использования</a></li>
-        <li><a href="#частые-ошибки">Частые ошибки</a></li>
-        <li><a href="#примеры-использования-переменных">Примеры использования переменных</a></li>
-      </ol>
-    </li>
-    <li><a href="#ввод">Ввод</a></li>
-    <li><a href="#типы-данных">Типы данных</a>
-      <ol>
-        <li><a href="#строки">Строки</a>
-          <ol>
-            <li><a href="#про-кавычки">Про кавычки</a></li>
-            <li><a href="#про-">Про <code>\</code></a></li>
-            <li><a href="#про-мультистроки">Про мультистроки</a></li>
-          </ol>
-        </li>
-        <li><a href="#целые-числа-int-комплексные-complex-и-вещественные-числа-float">Целые числа (int), комплексные (complex) и вещественные числа (float)</a>
-          <ol>
-            <li><a href="#целые-числа-int">Целые числа (int)</a></li>
-            <li><a href="#длинная-арфиметика">Длинная арфиметика</a></li>
-            <li><a href="#побитовые-операции">Побитовые операции</a></li>
-            <li><a href="#дополнительные-методы">Дополнительные методы</a></li>
-            <li><a href="#системы-счисления">Системы счисления</a></li>
-            <li><a href="#вещественные-числа-float">Вещественные числа (float)</a></li>
-            <li><a href="#комплексные-числа-complex">Комплексные числа (complex)</a></li>
-          </ol>
-        </li>
-      </ol>
-    </li>
-    <li><a href="#завершение">Завершение</a></li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
