@@ -8,11 +8,11 @@
         <language>ru</language>
         <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>C&#43;&#43;: больше практических задач</title>
-        <link>https://kotazzz.github.io/p/cpp04/</link>
+        <link>https://kotazzz.github.io/p/cpp05/</link>
         <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://kotazzz.github.io/p/cpp04/</guid>
-        <description>&lt;img src="https://kotazzz.github.io/p/cpp04/00_placeholder.png" alt="Featured image of post C&#43;&#43;: больше практических задач" /&gt;&lt;p&gt;Мы закончили изучать базовые вещи в C++, такие как ввод, вывод, переменные, условия, арифметические и логические операторы, циклы и массивы. Теперь можно решить множество несложных задач имея эти знания. Этот пост содержит в себе набор задач для оттачивания навыка написания програм на С++&lt;/p&gt;
+        <guid>https://kotazzz.github.io/p/cpp05/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/cpp05/00_placeholder.png" alt="Featured image of post C&#43;&#43;: больше практических задач" /&gt;&lt;p&gt;Мы закончили изучать базовые вещи в C++, такие как ввод, вывод, переменные, условия, арифметические и логические операторы, циклы и массивы. Теперь можно решить множество несложных задач имея эти знания. Этот пост содержит в себе набор задач для оттачивания навыка написания програм на С++&lt;/p&gt;
 &lt;h2 id=&#34;задачи&#34;&gt;Задачи&lt;/h2&gt;
 &lt;h3 id=&#34;разрезание-торта-на-равные-части&#34;&gt;Разрезание торта на равные части&lt;/h3&gt;
 &lt;p&gt;Помогите Пете разработать алгоритм для быстрого разрезания круглого торта на N равных частей. Учтите, что разрезы могут быть выполнены как по радиусу, так и по диаметру.&lt;/p&gt;
@@ -43,12 +43,12 @@
 </description>
         </item>
         <item>
-        <title>C&#43;&#43;: циклы и массивы</title>
-        <link>https://kotazzz.github.io/p/cpp01/</link>
+        <title>C&#43;&#43;: cmath и rand</title>
+        <link>https://kotazzz.github.io/p/cpp04/</link>
         <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://kotazzz.github.io/p/cpp01/</guid>
-        <description>&lt;img src="https://kotazzz.github.io/p/cpp01/00_placeholder.png" alt="Featured image of post C&#43;&#43;: циклы и массивы" /&gt;&lt;h2 id=&#34;расширенные-функции-математики-библиотека-cmath&#34;&gt;Расширенные функции математики (библиотека cmath)&lt;/h2&gt;
+        <guid>https://kotazzz.github.io/p/cpp04/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/cpp04/00_placeholder.png" alt="Featured image of post C&#43;&#43;: cmath и rand" /&gt;&lt;h2 id=&#34;расширенные-функции-математики-библиотека-cmath&#34;&gt;Расширенные функции математики (библиотека cmath)&lt;/h2&gt;
 &lt;p&gt;C++ предоставляет богатую библиотеку для математических операций, которая включает в себя заголовочный файл cmath. В этой библиотеке содержатся различные математические функции, такие как sqrt (квадратный корень), sin (синус), cos (косинус), log (натуральный логарифм), и многие другие. Вот пример использования функции sqrt и формулы Герона для вычисления площади треугольника:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -265,11 +265,11 @@
         </item>
         <item>
         <title>C&#43;&#43;: циклы и массивы</title>
-        <link>https://kotazzz.github.io/p/cpp01/</link>
+        <link>https://kotazzz.github.io/p/cpp03/</link>
         <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://kotazzz.github.io/p/cpp01/</guid>
-        <description>&lt;img src="https://kotazzz.github.io/p/cpp01/00_placeholder.png" alt="Featured image of post C&#43;&#43;: циклы и массивы" /&gt;&lt;h2 id=&#34;for&#34;&gt;For&lt;/h2&gt;
+        <guid>https://kotazzz.github.io/p/cpp03/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/cpp03/00_placeholder.png" alt="Featured image of post C&#43;&#43;: циклы и массивы" /&gt;&lt;h2 id=&#34;for&#34;&gt;For&lt;/h2&gt;
 &lt;p&gt;Цикл &lt;code&gt;for&lt;/code&gt; - это один из наиболее распространенных и удобных способов итерации в C++. Он позволяет вам выполнять повторяющиеся действия определенное количество раз или итерировать через последовательность элементов. Вот обзор синтаксиса и примеры использования цикла &lt;code&gt;for&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;синтаксис-цикла-for&#34;&gt;Синтаксис цикла for&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Итерируйтесь через последовательности данных и выполняйте повторяющиеся задачи с помощью цикла for в C&#43;&#43;. Познакомьтесь с массивами и их использованием'>
+<title>C&#43;&#43;: циклы и массивы</title>
+
+<link rel='canonical' href='https://kotazzz.github.io/p/cpp03/'>
+
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='C&#43;&#43;: циклы и массивы'>
+<meta property='og:description' content='Итерируйтесь через последовательности данных и выполняйте повторяющиеся задачи с помощью цикла for в C&#43;&#43;. Познакомьтесь с массивами и их использованием'>
+<meta property='og:url' content='https://kotazzz.github.io/p/cpp03/'>
+<meta property='og:site_name' content='KotazIO'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2023-11-03T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-03T00:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/cpp03/00_placeholder.png' />
+<meta name="twitter:title" content="C&#43;&#43;: циклы и массивы">
+<meta name="twitter:description" content="Итерируйтесь через последовательности данных и выполняйте повторяющиеся задачи с помощью цикла for в C&#43;&#43;. Познакомьтесь с массивами и их использованием"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://kotazzz.github.io/p/cpp03/00_placeholder.png' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Показать/скрыть меню">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">KotazIO</a></h1>
+            <h2 class="site-description">Мини-блог, сайт для различного контента</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/kotazzz'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Главная</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Об авторе</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Архивы</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Поиск</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Ссылки</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Тёмный режим</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Содержание</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#for">For</a>
+      <ol>
+        <li><a href="#синтаксис-цикла-for">Синтаксис цикла for</a></li>
+        <li><a href="#примеры">Примеры</a>
+          <ol>
+            <li><a href="#пример-1-цикл-for-для-итерации-от-1-до-5">Пример 1: Цикл for для итерации от 1 до 5</a></li>
+            <li><a href="#пример-4-использование-цикла-for-для-суммирования-чисел-от-1-до-100">Пример 4: Использование цикла for для суммирования чисел от 1 до 100</a></li>
+          </ol>
+        </li>
+        <li><a href="#задачи">Задачи</a></li>
+        <li><a href="#важные-замечания">Важные замечания</a></li>
+      </ol>
+    </li>
+    <li><a href="#цикл-while-и-do-while">Цикл <code>while</code> и <code>do while</code></a>
+      <ol>
+        <li><a href="#цикл-while">Цикл <code>while</code></a>
+          <ol>
+            <li><a href="#пример-while">Пример <code>while</code></a></li>
+          </ol>
+        </li>
+        <li><a href="#цикл-do-while">Цикл <code>do-while</code></a>
+          <ol>
+            <li><a href="#пример-do-while">Пример <code>do-while</code></a></li>
+            <li><a href="#задачи-решаемые-и-циклом-while-и-циклом-do-while">Задачи, решаемые и циклом <code>while</code>, и циклом <code>do-while</code></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#массивы">Массивы</a>
+      <ol>
+        <li><a href="#введение">Введение</a></li>
+        <li><a href="#операции-над-массивами">Операции над массивами</a>
+          <ol>
+            <li><a href="#объявление-и-инициализация-массивов">Объявление и инициализация массивов</a></li>
+          </ol>
+        </li>
+        <li><a href="#доступ-к-элементам-массива">Доступ к элементам массива</a></li>
+        <li><a href="#итерация-по-массиву">Итерация по массиву</a></li>
+        <li><a href="#задачи-для-практики">Задачи для практики</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/cpp03/">
+                <img src="/p/cpp03/00_placeholder_hub3290732f6f44a5a308ffd7847bcd6a2_97467_800x0_resize_box_3.png"
+                        srcset="/p/cpp03/00_placeholder_hub3290732f6f44a5a308ffd7847bcd6a2_97467_800x0_resize_box_3.png 800w, /p/cpp03/00_placeholder_hub3290732f6f44a5a308ffd7847bcd6a2_97467_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="267" 
+                        loading="lazy"
+                        alt="Featured image of post C&#43;&#43;: циклы и массивы" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/courses/" style="background-color: #2a9d8f; color: #fff;">
+                Курсы
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/cpp03/">C&#43;&#43;: циклы и массивы</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Итерируйтесь через последовательности данных и выполняйте повторяющиеся задачи с помощью цикла for в C&#43;&#43;. Познакомьтесь с массивами и их использованием
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">03.11.2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    Время чтения: 6 мин.
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="for">For</h2>
+<p>Цикл <code>for</code> - это один из наиболее распространенных и удобных способов итерации в C++. Он позволяет вам выполнять повторяющиеся действия определенное количество раз или итерировать через последовательность элементов. Вот обзор синтаксиса и примеры использования цикла <code>for</code>.</p>
+<h3 id="синтаксис-цикла-for">Синтаксис цикла for</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="err">инициализация</span><span class="p">;</span> <span class="err">условие</span><span class="p">;</span> <span class="err">обновление</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Тело цикла
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>Инициализация</strong>: Этот блок выполняется один раз, в начале цикла. Он используется для инициализации переменных цикла.</li>
+<li><strong>Условие</strong>: Это логическое выражение, которое проверяется перед каждой итерацией. Если условие истинно, цикл продолжает выполнение; в противном случае, он завершается.</li>
+<li><strong>Обновление</strong>: Этот блок выполняется после каждой итерации и обычно используется для изменения переменных цикла.</li>
+<li><strong>Тело цикла</strong>: Это блок кода, который будет выполняться в каждой итерации.</li>
+</ul>
+<h3 id="примеры">Примеры</h3>
+<h4 id="пример-1-цикл-for-для-итерации-от-1-до-5">Пример 1: Цикл for для итерации от 1 до 5</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Итерация &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">Итерация 1
+</span></span><span class="line"><span class="cl">Итерация 2
+</span></span><span class="line"><span class="cl">Итерация 3
+</span></span><span class="line"><span class="cl">Итерация 4
+</span></span><span class="line"><span class="cl">Итерация 5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>В этом примере цикл <code>for</code> выполняет тело цикла 5 раз, начиная с <code>i = 1</code>, и увеличивая <code>i</code> на 1 в каждой итерации.</p>
+<h4 id="пример-4-использование-цикла-for-для-суммирования-чисел-от-1-до-100">Пример 4: Использование цикла for для суммирования чисел от 1 до 100</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sum</span> <span class="o">+=</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Сумма чисел от 1 до 100: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">sum</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">Сумма  чисел  от  1  до  100:  5050
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Этот пример демонстрирует использование цикла <code>for</code> для суммирования чисел от 1 до 100.</p>
+<h3 id="задачи">Задачи</h3>
+<ol>
+<li><strong>Сумма чисел</strong>: Напишите программу, которая находит сумму всех чисел от 1 до N, где N - введенное пользователем число.</li>
+<li><strong>Факториал</strong>: Разработайте программу для вычисления факториала числа N, используя цикл <code>for</code>.</li>
+<li><strong>Таблица умножения</strong>: Создайте таблицу умножения для определенного числа, например, для числа 7, выводя результаты от 7 <em>1 до 7</em> 10.</li>
+<li><strong>Подсчет четных чисел</strong>: Напишите программу, которая подсчитывает количество четных чисел в диапазоне от M до N, где M и N - введенные пользователем значения.</li>
+<li><strong>Рисование геометрических фигур</strong>: Используйте цикл <code>for</code> для рисования геометрических фигур, таких как треугольники или квадраты, с заданными размерами.</li>
+<li><strong>Работа с массивами</strong>: Итерируйтесь по элементам массива и выполните определенные операции, такие как поиск среднего значения, нахождение максимального/минимального элемента и другие.</li>
+<li><strong>Генерация последовательности чисел</strong>: Создайте программу, которая генерирует последовательность чисел, например, все простые числа в определенном диапазоне.</li>
+<li><strong>Таблица степеней двойки</strong>: Выведите таблицу степеней двойки от 2^0 до 2^N.</li>
+<li><strong>Подсчет гласных букв</strong>: Подсчитайте количество гласных букв в строке, используя цикл <code>for</code>.</li>
+</ol>
+<h3 id="важные-замечания">Важные замечания</h3>
+<ol>
+<li>Инициализация, условие и обновление в цикле <code>for</code> могут быть любыми выражениями.</li>
+<li>Переменные, объявленные в блоке инициализации, видны только в пределах цикла.</li>
+<li>Если условие цикла всегда истинно, это приведет к бесконечному циклу.</li>
+</ol>
+<p>Цикл <code>for</code> - мощный инструмент для итерации и выполнения повторяющихся действий в C++. Он может использоваться для различных задач, и вы можете настраивать его в соответствии с вашими потребностями.</p>
+<h2 id="цикл-while-и-do-while">Цикл <code>while</code> и <code>do while</code></h2>
+<h3 id="цикл-while">Цикл <code>while</code></h3>
+<p>Цикл <code>while</code> выполняет блок кода, пока заданное условие остается истинным. Условие проверяется до выполнения блока кода, и если оно ложное с самого начала, блок кода ни разу не выполнится.</p>
+<h4 id="пример-while">Пример <code>while</code></h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Число &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">Число 1
+</span></span><span class="line"><span class="cl">Число 2
+</span></span><span class="line"><span class="cl">Число 3
+</span></span><span class="line"><span class="cl">Число 4
+</span></span><span class="line"><span class="cl">Число 5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="цикл-do-while">Цикл <code>do-while</code></h3>
+<p>Цикл <code>do-while</code> очень похож на <code>while</code>, но он гарантирует, что блок кода выполнится хотя бы один раз, даже если условие с самого начала ложное. Условие проверяется после выполнения блока кода.</p>
+<h4 id="пример-do-while">Пример <code>do-while</code></h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">do</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Число &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">Число 1
+</span></span><span class="line"><span class="cl">Число 2
+</span></span><span class="line"><span class="cl">Число 3
+</span></span><span class="line"><span class="cl">Число 4
+</span></span><span class="line"><span class="cl">Число 5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="задачи-решаемые-и-циклом-while-и-циклом-do-while">Задачи, решаемые и циклом <code>while</code>, и циклом <code>do-while</code></h4>
+<ol>
+<li><strong>Сумма чисел</strong>: Напишите программу для вычисления суммы чисел от 1 до N с использованием как цикла <code>while</code>, так и цикла <code>do-while</code>.</li>
+<li><strong>Четные числа</strong>: Выведите все четные числа от M до N с использованием как цикла <code>while</code>, так и цикла <code>do-while</code>.</li>
+<li><strong>Проверка на простое число</strong>: Напишите программу для определения, является ли число N простым, используя как цикл <code>while</code>, так и цикл <code>do-while</code>.</li>
+</ol>
+<h2 id="массивы">Массивы</h2>
+<h3 id="введение">Введение</h3>
+<p><strong>Массивы</strong> - это одна из наиболее важных структур данных в программировании. Они представляют собой упорядоченный набор элементов одного типа, размещенных в памяти последовательно. Массивы позволяют хранить и обрабатывать множество данных одного типа, и они используются повсеместно в программировании, предоставляя доступ к данным в удобной форме.</p>
+<p>Давайте рассмотрим аналогию из реальной жизни, чтобы лучше понять, как работают массивы. Представьте себе библиотеку, где книги хранятся на полках. Каждая книга имеет свой собственный номер, который указывает на ее местоположение. В этой аналогии:</p>
+<ul>
+<li><strong>Библиотека</strong> - это массив, который содержит книги (элементы).</li>
+<li><strong>Полки</strong> - это местоположение каждого элемента массива, которое определяется его индексом.</li>
+<li><strong>Номер книги</strong> - это индекс элемента массива, с помощью которого мы можем найти и получить доступ к элементу.</li>
+</ul>
+<p>В программировании массивы работают по аналогии с этой аналогией. Они позволяют нам хранить и управлять большими объемами данных. Массивы обладают следующими ключевыми характеристиками:</p>
+<ol>
+<li><strong>Тип данных</strong>: Все элементы массива должны быть одного и того же типа данных (например, целые числа, числа с плавающей запятой, символы и т. д.).</li>
+<li><strong>Индексы</strong>: Элементы массива упорядочены и доступ к ним осуществляется по индексам. Индексы начинаются с 0 (первый элемент) и увеличиваются на 1.</li>
+<li><strong>Размер</strong>: Массив имеет фиксированный размер, который определяется при его создании. Размер массива не может изменяться во время выполнения программы.</li>
+<li><strong>Память</strong>: Элементы массива располагаются последовательно в памяти, что обеспечивает быстрый доступ к данным.</li>
+</ol>
+<h3 id="операции-над-массивами">Операции над массивами</h3>
+<h4 id="объявление-и-инициализация-массивов">Объявление и инициализация массивов</h4>
+<p>Для создания массива в C++ вы должны указать его тип, имя и размер. Вот как это выглядит:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="err">тип</span><span class="n">_данных</span> <span class="err">имя</span><span class="n">_массива</span><span class="p">[</span><span class="err">размер</span><span class="p">];</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">num</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>       <span class="c1">// Объявление массива целых чисел размером 5
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">double</span> <span class="n">values</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>  <span class="c1">// Объявление массива чисел с плавающей запятой размером 10
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">char</span> <span class="n">my_chars</span><span class="p">[</span><span class="mi">26</span><span class="p">];</span>     <span class="c1">// Объявление массива символов размером 26
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Вы можете инициализировать массив сразу при объявлении:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">nums</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>  <span class="c1">// Инициализация массива целых чисел
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="доступ-к-элементам-массива">Доступ к элементам массива</h3>
+<p>Доступ к элементам массива осуществляется с использованием индекса, который указывает на конкретный элемент массива. Индексы начинаются с 0.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>  <span class="c1">// Получение значения третьего элемента массива (индекс 2)
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="итерация-по-массиву">Итерация по массиву</h3>
+<p>Чтобы пройти по всем элементам массива, вы можете использовать цикл, такой как <code>for</code> или <code>while</code>. Вот пример использования цикла <code>for</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="err">числа</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="задачи-для-практики">Задачи для практики</h3>
+<ol>
+<li><strong>Сумма элементов</strong>: Напишите программу, которая вычисляет сумму всех элементов в массиве.</li>
+<li><strong>Поиск максимума и минимума</strong>: Найдите максимальный и минимальный элементы в массиве.</li>
+</ol>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/c&#43;&#43;/">c&#43;&#43;</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>MIT License</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Также рекомендуем</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/cpp05/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cpp05/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post C&#43;&#43;: больше практических задач"
+                        data-key="cpp05" 
+                        data-hash="md5-aCw/3cqz5sn103xettnoDw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43;: больше практических задач</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/cpp04/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cpp04/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post C&#43;&#43;: cmath и rand"
+                        data-key="cpp04" 
+                        data-hash="md5-aCw/3cqz5sn103xettnoDw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43;: cmath и rand</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/cpp02/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cpp02/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post C&#43;&#43;: условия"
+                        data-key="cpp02" 
+                        data-hash="md5-aCw/3cqz5sn103xettnoDw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">C&#43;&#43;: условия</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/cpp01/">
+        
+        
+            <div class="article-image">
+                <img src="/p/cpp01/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Введение в C&#43;&#43;"
+                        data-key="cpp01" 
+                        data-hash="md5-aCw/3cqz5sn103xettnoDw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Введение в C&#43;&#43;</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/py09/">
+        
+        
+            <div class="article-image">
+                <img src="/p/py09/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Py09. Основы ООП в Python"
+                        data-key="py09" 
+                        data-hash="md5-NXM&#43;oyXzhYEX/zkozdrHrQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Py09. Основы ООП в Python</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kotaz" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 KotazIO
+    </section>
+    
+    <section class="powerby">
+        
+            Сделано с 💖 <br/>
+        Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

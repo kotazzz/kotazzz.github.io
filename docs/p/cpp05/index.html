@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Изучите богатую библиотеку математических функций в C&#43;&#43; и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены'>
-<title>C&#43;&#43;: cmath и rand</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Закончили освоение основ в C&#43;&#43;? Перейдите к решению практических задач, чтобы применить полученные знания. Учебные задачи для оттачивания навыков программирования'>
+<title>C&#43;&#43;: больше практических задач</title>
 
-<link rel='canonical' href='https://kotazzz.github.io/p/cpp04/'>
+<link rel='canonical' href='https://kotazzz.github.io/p/cpp05/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='C&#43;&#43;: cmath и rand'>
-<meta property='og:description' content='Изучите богатую библиотеку математических функций в C&#43;&#43; и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены'>
-<meta property='og:url' content='https://kotazzz.github.io/p/cpp04/'>
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='C&#43;&#43;: больше практических задач'>
+<meta property='og:description' content='Закончили освоение основ в C&#43;&#43;? Перейдите к решению практических задач, чтобы применить полученные знания. Учебные задачи для оттачивания навыков программирования'>
+<meta property='og:url' content='https://kotazzz.github.io/p/cpp05/'>
 <meta property='og:site_name' content='KotazIO'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2023-11-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/cpp04/00_placeholder.png' />
-<meta name="twitter:title" content="C&#43;&#43;: cmath и rand">
-<meta name="twitter:description" content="Изучите богатую библиотеку математических функций в C&#43;&#43; и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://kotazzz.github.io/p/cpp04/00_placeholder.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2023-11-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-05T00:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/cpp05/00_placeholder.png' />
+<meta name="twitter:title" content="C&#43;&#43;: больше практических задач">
+<meta name="twitter:description" content="Закончили освоение основ в C&#43;&#43;? Перейдите к решению практических задач, чтобы применить полученные знания. Учебные задачи для оттачивания навыков программирования"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://kotazzz.github.io/p/cpp05/00_placeholder.png' />
     </head>
     <body class="
     article-page
@@ -228,8 +228,20 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#расширенные-функции-математики-библиотека-cmath">Расширенные функции математики (библиотека cmath)</a></li>
-    <li><a href="#генерация-случайных-чисел-рандом">Генерация случайных чисел (рандом)</a></li>
+    <li><a href="#задачи">Задачи</a>
+      <ol>
+        <li><a href="#разрезание-торта-на-равные-части">Разрезание торта на равные части</a></li>
+        <li><a href="#проверка-сторон-треугольника">Проверка сторон треугольника</a></li>
+        <li><a href="#гадание-с-суммой-делителей">Гадание с суммой делителей</a></li>
+        <li><a href="#цветы">Цветы</a></li>
+        <li><a href="#проверка-на-простое-число">Проверка на простое число</a></li>
+        <li><a href="#калькулятор-банковских-процентов">Калькулятор банковских процентов</a></li>
+        <li><a href="#генератор-случайных-чисел">Генератор случайных чисел</a></li>
+        <li><a href="#подсчет-гласных-и-согласных-букв">Подсчет гласных и согласных букв</a></li>
+        <li><a href="#игра-камень-ножницы-бумага-с-компьютером">Игра &ldquo;Камень, ножницы, бумага&rdquo; с компьютером</a></li>
+      </ol>
+    </li>
+    <li><a href="#заключение">Заключение</a></li>
   </ol>
 </nav>
         </div>
@@ -244,13 +256,13 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/cpp04/">
-                <img src="/p/cpp04/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_800x0_resize_box_3.png"
-                        srcset="/p/cpp04/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_800x0_resize_box_3.png 800w, /p/cpp04/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_1600x0_resize_box_3.png 1600w"
+            <a href="/p/cpp05/">
+                <img src="/p/cpp05/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_800x0_resize_box_3.png"
+                        srcset="/p/cpp05/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_800x0_resize_box_3.png 800w, /p/cpp05/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_1600x0_resize_box_3.png 1600w"
                         width="800" 
                         height="899" 
                         loading="lazy"
-                        alt="Featured image of post C&#43;&#43;: cmath и rand" />
+                        alt="Featured image of post C&#43;&#43;: больше практических задач" />
                 
             </a>
         </div>
@@ -269,12 +281,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/cpp04/">C&#43;&#43;: cmath и rand</a>
+            <a href="/p/cpp05/">C&#43;&#43;: больше практических задач</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            Изучите богатую библиотеку математических функций в C&#43;&#43; и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены
+            Закончили освоение основ в C&#43;&#43;? Перейдите к решению практических задач, чтобы применить полученные знания. Учебные задачи для оттачивания навыков программирования
         </h3>
         
     </div>
@@ -295,7 +307,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">04.11.2023</time>
+                <time class="article-time--published">05.11.2023</time>
             </div>
         
 
@@ -325,219 +337,34 @@
     <section class="article-content">
     
     
-    <h2 id="расширенные-функции-математики-библиотека-cmath">Расширенные функции математики (библиотека cmath)</h2>
-<p>C++ предоставляет богатую библиотеку для математических операций, которая включает в себя заголовочный файл cmath. В этой библиотеке содержатся различные математические функции, такие как sqrt (квадратный корень), sin (синус), cos (косинус), log (натуральный логарифм), и многие другие. Вот пример использования функции sqrt и формулы Герона для вычисления площади треугольника:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Введите длины сторон треугольника: &#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span> <span class="o">&gt;&gt;</span> <span class="n">c</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// Полупериметр
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">s</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">c</span><span class="p">));</span> <span class="c1">// Формула Герона для площади
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Площадь треугольника: &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>Функция</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>sqrt(x)</td>
-<td>Квадратный корень числа x.</td>
-</tr>
-<tr>
-<td>cbrt(x)</td>
-<td>Кубический корень числа x.</td>
-</tr>
-<tr>
-<td>pow(x, y)</td>
-<td>Возводит число x в степень y.</td>
-</tr>
-<tr>
-<td>exp(x)</td>
-<td>Вычисляет экспоненту (e^x).</td>
-</tr>
-<tr>
-<td>log(x)</td>
-<td>Натуральный логарифм числа x.</td>
-</tr>
-<tr>
-<td>log10(x)</td>
-<td>Десятичный логарифм числа x.</td>
-</tr>
-<tr>
-<td>fabs(x)</td>
-<td>Абсолютное значение числа x.</td>
-</tr>
-<tr>
-<td>ceil(x)</td>
-<td>Округляет число x до ближайшего большего целого.</td>
-</tr>
-<tr>
-<td>floor(x)</td>
-<td>Округляет число x до ближайшего меньшего целого.</td>
-</tr>
-<tr>
-<td>sin(x)</td>
-<td>Синус угла x (x в радианах).</td>
-</tr>
-<tr>
-<td>cos(x)</td>
-<td>Косинус угла x (x в радианах).</td>
-</tr>
-<tr>
-<td>tan(x)</td>
-<td>Тангенс угла x (x в радианах).</td>
-</tr>
-<tr>
-<td>asin(x)</td>
-<td>Арксинус числа x (возвращает угол в радианах).</td>
-</tr>
-<tr>
-<td>acos(x)</td>
-<td>Арккосинус числа x (возвращает угол в радианах).</td>
-</tr>
-<tr>
-<td>atan(x)</td>
-<td>Арктангенс числа x (возвращает угол в радианах).</td>
-</tr>
-<tr>
-<td>sinh(x)</td>
-<td>Гиперболический синус числа x.</td>
-</tr>
-<tr>
-<td>cosh(x)</td>
-<td>Гиперболический косинус числа x.</td>
-</tr>
-<tr>
-<td>tanh(x)</td>
-<td>Гиперболический тангенс числа x.</td>
-</tr>
-<tr>
-<td>fmod(x, y)</td>
-<td>Остаток от деления x на y.</td>
-</tr>
-<tr>
-<td>modf(x, &amp;intPart)</td>
-<td>Разделяет число x на целую и дробную части.</td>
-</tr>
-<tr>
-<td>hypot(x, y)</td>
-<td>Гипотенуза прямоугольного треугольника.</td>
-</tr>
-<tr>
-<td>ldexp(x, exp)</td>
-<td>Умножает x на 2^exp.</td>
-</tr>
-<tr>
-<td>frexp(x, &amp;exp)</td>
-<td>Разделяет число x на мантиссу и экспоненту.</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="генерация-случайных-чисел-рандом">Генерация случайных чисел (рандом)</h2>
-<p>C++ предоставляет библиотеку random, которая позволяет генерировать случайные числа. Она включает в себя классы и функции для работы с случайными числами. Вот пример игры &ldquo;угадай число от 1 до 100&rdquo; с использованием случайных чисел:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;cstdlib&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">srand</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span> <span class="c1">// Инициализация генератора случайных чисел
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">secretNumber</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Генерация случайного числа от 1 до 100
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">guess</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">attempts</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Попробуйте угадать число от 1 до 100.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">do</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Ваш вариант: &#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">guess</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">attempts</span><span class="o">++</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">guess</span> <span class="o">&lt;</span> <span class="n">secretNumber</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Загаданное число больше.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">guess</span> <span class="o">&gt;</span> <span class="n">secretNumber</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Загаданное число меньше.&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;Поздравляем! Вы угадали число &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">secretNumber</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; с &#34;</span> <span class="o">&lt;&lt;</span> <span class="n">attempts</span> <span class="o">&lt;&lt;</span> <span class="s">&#34; попыток!&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">guess</span> <span class="o">!=</span> <span class="n">secretNumber</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>В этом примере мы используем функцию rand() для генерации случайных чисел и инициализируем генератор случайных чисел с использованием текущего времени. Затем программа предлагает пользователю угадать число и дает подсказки, пока число не будет угадано.</p>
+    <p>Мы закончили изучать базовые вещи в C++, такие как ввод, вывод, переменные, условия, арифметические и логические операторы, циклы и массивы. Теперь можно решить множество несложных задач имея эти знания. Этот пост содержит в себе набор задач для оттачивания навыка написания програм на С++</p>
+<h2 id="задачи">Задачи</h2>
+<h3 id="разрезание-торта-на-равные-части">Разрезание торта на равные части</h3>
+<p>Помогите Пете разработать алгоритм для быстрого разрезания круглого торта на N равных частей. Учтите, что разрезы могут быть выполнены как по радиусу, так и по диаметру.</p>
+<h3 id="проверка-сторон-треугольника">Проверка сторон треугольника</h3>
+<p>Даны длины трех отрезков. Проверьте, могут ли они служить сторонами невырожденного треугольника, с учетом правила: каждая сторона должна быть меньше суммы двух других сторон.</p>
+<h3 id="гадание-с-суммой-делителей">Гадание с суммой делителей</h3>
+<p>Напишите программу, которая позволит Маше гадать на числах. По введенному натуральному числу N программа должна вычислить сумму всех чисел, на которые N делится без остатка.</p>
+<h3 id="цветы">Цветы</h3>
+<p>На окошке стояло три цветочка, слева направо: герань (G), крокус (C) и фиалка (V). Каждое утро Маша меняла местами цветок, стоящий справа, с центральным цветком. А каждый вечер Таня меняла местами левый и центральный цветок. Требуется определить порядок цветов ночью после прошествия K дней.</p>
+<p>Изначальное состояние цветов: GCV (герань - крокус - фиалка).</p>
+<h3 id="проверка-на-простое-число">Проверка на простое число</h3>
+<p>Напишите программу, которая позволяет пользователю ввести целое число и определить, является ли оно простым. Для определения простоты числа, проверьте, делится ли оно нацело только на 1 и само себя.</p>
+<p><em>Подсказка</em>: Используйте циклы и операторы условия для реализации этой задачи.</p>
+<h3 id="калькулятор-банковских-процентов">Калькулятор банковских процентов</h3>
+<p>Создайте программу, которая помогает пользователям расчитать будущее значение вклада с учетом начальной суммы, процентной ставки и срока вложения. Учтите, что программа должна обрабатывать некорректные входные данные, такие как отрицательные значения.</p>
+<p><em>Подсказка</em>: Используйте операторы условия для обработки некорректных входных данных и формулу для расчета будущей стоимости вклада.</p>
+<h3 id="генератор-случайных-чисел">Генератор случайных чисел</h3>
+<p>Напишите программу, которая генерирует случайное целое число в заданном диапазоне. Пользователь должен ввести минимальное и максимальное значения. Учтите обработку ошибочного ввода.</p>
+<p><em>Подсказка</em>: Используйте функцию rand() для генерации случайных чисел и операторы условия для проверки корректности введенных данных.</p>
+<h3 id="подсчет-гласных-и-согласных-букв">Подсчет гласных и согласных букв</h3>
+<p>Создайте программу, которая позволяет пользователю ввести строку текста, а затем подсчитывает количество гласных и согласных букв в этой строке. Программа должна учитывать разные регистры (верхний и нижний).</p>
+<p><em>Подсказка</em>: Используйте операторы условия и циклы для перебора символов строки и подсчета гласных и согласных букв.</p>
+<h3 id="игра-камень-ножницы-бумага-с-компьютером">Игра &ldquo;Камень, ножницы, бумага&rdquo; с компьютером</h3>
+<p>Напишите программу, которая позволяет пользователю играть в &ldquo;Камень, ножницы, бумага&rdquo; с компьютером. Программа должна генерировать случайный выбор для компьютера и определять победителя в каждом раунде игры.</p>
+<p><em>Подсказка</em>: Используйте генерацию случайных чисел и операторы условия для определения победителя.</p>
+<h2 id="заключение">Заключение</h2>
+<p>Эти задачи позволят читателям статьи практиковать операторы условия и циклы в C++ и учитывать обработку ошибочных входных данных.</p>
 
 </section>
 
@@ -604,23 +431,23 @@
             
                 
 <article class="has-image">
-    <a href="/p/cpp05/">
+    <a href="/p/cpp04/">
         
         
             <div class="article-image">
-                <img src="/p/cpp05/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp04/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post C&#43;&#43;: больше практических задач"
-                        data-key="cpp05" 
+                        alt="Featured image of post C&#43;&#43;: cmath и rand"
+                        data-key="cpp04" 
                         data-hash="md5-aCw/3cqz5sn103xettnoDw==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">C&#43;&#43;: больше практических задач</h2>
+            <h2 class="article-title">C&#43;&#43;: cmath и rand</h2>
         </div>
     </a>
 </article>
