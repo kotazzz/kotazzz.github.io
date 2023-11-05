@@ -2,10 +2,10 @@
 author: Kotaz
 title: "C++: циклы и массивы"
 date: 2023-11-03 00:00:00
-description: "C++: циклы и массивы"
+description: "Итерируйтесь через последовательности данных и выполняйте повторяющиеся задачи с помощью цикла for в C++. Познакомьтесь с массивами и их использованием"
 categories: ["courses"]
 tags: ["C++"]
-slug: cpp01
+slug: cpp03
 image: 00_placeholder.png
 ---
 

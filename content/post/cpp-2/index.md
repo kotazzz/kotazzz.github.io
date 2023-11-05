@@ -2,7 +2,7 @@
 author: Kotaz
 title: "C++: условия"
 date: 2023-11-02 00:00:00
-description: "C++: if-else"
+description: "Погрузитесь в мир ветвления в программировании. Узнайте, как операторы if, else и else if позволяют программе принимать решения на основе разных условий"
 categories: ["courses"]
 tags: ["C++"]
 slug: cpp02

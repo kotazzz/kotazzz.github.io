@@ -1,11 +1,11 @@
 ---
 author: Kotaz
-title: "C++: циклы и массивы"
+title: "C++: cmath и rand"
 date: 2023-11-04 00:00:00
-description: "C++: циклы и массивы"
+description: "Изучите богатую библиотеку математических функций в C++ и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены"
 categories: ["courses"]
 tags: ["C++"]
-slug: cpp01
+slug: cpp04
 image: 00_placeholder.png
 ---
 
