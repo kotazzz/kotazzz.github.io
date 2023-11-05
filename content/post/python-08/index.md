@@ -95,7 +95,7 @@ c 3
 
 Обратите внимание, что `print(user_details)` работает не так, как ожидалось:
 
-```
+```plaintext
 >>> print(user_details)
 <zip object at 0x0000016938E311C0>
 >>>
