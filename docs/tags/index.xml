@@ -6,20 +6,60 @@
         <description>Recent content in Tags on KotazIO</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ru</language>
-        <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>c&#43;&#43;</title>
-        <link>https://kotazzz.github.io/tags/c&#43;&#43;/</link>
-        <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
+        <lastBuildDate>Sat, 25 Nov 2023 02:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git</title>
+        <link>https://kotazzz.github.io/tags/git/</link>
+        <pubDate>Sat, 25 Nov 2023 02:00:00 +0000</pubDate>
         
-        <guid>https://kotazzz.github.io/tags/c&#43;&#43;/</guid>
+        <guid>https://kotazzz.github.io/tags/git/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Software Development</title>
+        <link>https://kotazzz.github.io/tags/software-development/</link>
+        <pubDate>Sat, 25 Nov 2023 02:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/tags/software-development/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Version Control</title>
+        <link>https://kotazzz.github.io/tags/version-control/</link>
+        <pubDate>Sat, 25 Nov 2023 02:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/tags/version-control/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>KRPG</title>
+        <link>https://kotazzz.github.io/tags/krpg/</link>
+        <pubDate>Sat, 25 Nov 2023 01:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/tags/krpg/</guid>
         <description></description>
         </item>
         <item>
         <title>Python</title>
         <link>https://kotazzz.github.io/tags/python/</link>
-        <pubDate>Mon, 01 May 2023 05:00:00 +0000</pubDate>
+        <pubDate>Sat, 25 Nov 2023 01:00:00 +0000</pubDate>
         
         <guid>https://kotazzz.github.io/tags/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>RPG Game</title>
+        <link>https://kotazzz.github.io/tags/rpg-game/</link>
+        <pubDate>Sat, 25 Nov 2023 01:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/tags/rpg-game/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>c&#43;&#43;</title>
+        <link>https://kotazzz.github.io/tags/c&#43;&#43;/</link>
+        <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://kotazzz.github.io/tags/c&#43;&#43;/</guid>
         <description></description>
         </item>
         <item>
