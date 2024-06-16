@@ -7,15 +7,16 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>ru</language>
         <lastBuildDate>Sat, 25 Nov 2023 02:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/tags/software-development/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Введение в работу с Git</title>
+        <title>Git: Путеводитель для Новичков в Мир Программирования</title>
         <link>https://kotazzz.github.io/p/git-01/</link>
         <pubDate>Sat, 25 Nov 2023 02:00:00 +0000</pubDate>
         
         <guid>https://kotazzz.github.io/p/git-01/</guid>
-        <description>&lt;img src="https://kotazzz.github.io/p/git-01/00_placeholder.jpg" alt="Featured image of post Введение в работу с Git" /&gt;&lt;h2 id=&#34;введение-в-работу-с-git&#34;&gt;Введение в работу с Git&lt;/h2&gt;
-&lt;p&gt;Начало работы с Git может показаться сложным для новичков, но не волнуйтесь - в этой статье мы рассмотрим основные шаги, необходимые для начала работы с Git. Мы охватим установку Git, создание репозитория, добавление файлов, фиксацию изменений и совместную работу с другими разработчиками.&lt;/p&gt;
+        <description>&lt;img src="https://kotazzz.github.io/p/git-01/00_placeholder.jpg" alt="Featured image of post Git: Путеводитель для Новичков в Мир Программирования" /&gt;&lt;h2 id=&#34;введение-в-работу-с-git&#34;&gt;Введение в работу с Git&lt;/h2&gt;
+&lt;p&gt;Начало пути в программирование схоже с первым шагом в неизведанный лес: пугающе, но полное обещаний приключений. В этой статье мы исследуем ключевой инструмент в арсенале каждого программиста — Git. Погрузимся в увлекательный мир версионного контроля и научимся управлять своим кодом, как настоящие мастера разработки.&lt;/p&gt;
 &lt;h3 id=&#34;что-такое-гит&#34;&gt;Что такое гит?&lt;/h3&gt;
-&lt;p&gt;Git - это распределенная система управления версиями, которая позволяет отслеживать изменения в коде и сотрудничать с другими разработчиками. Давай представим, что ты работаешь над проектом вместе с командой. Каждый раз, когда ты вносишь изменения в код, Git записывает эти изменения и сохраняет их в специальном хранилище. Это похоже на создание резервной копии файла перед тем, как внести изменения. Если что-то идет не так или ты хочешь вернуться к предыдущей версии кода.
+&lt;p&gt;Git - это распределенная система управления версиями, которая позволяет отслеживать изменения в коде и сотрудничать с другими разработчиками
+Давай представим, что ты работаешь над проектом вместе с командой. Каждый раз, когда ты вносишь изменения в код, Git записывает эти изменения и сохраняет их в специальном хранилище. Это похоже на создание резервной копии файла перед тем, как внести изменения. Если что-то идет не так или ты хочешь вернуться к предыдущей версии кода - ты можешь это сделать
 Git позволяет тебе легко откатиться назад и восстановить предыдущую версию. Кроме того, Git позволяет сотрудникам команды работать над одним проектом одновременно, сливая свои изменения и решая возможные конфликты. Это как коллективное редактирование документа, где каждый может вносить свои правки и видеть изменения других. Git помогает упростить и ускорить процесс разработки программного обеспечения, делая его более надежным и эффективным.&lt;/p&gt;
 &lt;h2 id=&#34;от-теории-к-практике&#34;&gt;От теории к практике&lt;/h2&gt;
 &lt;h3 id=&#34;шаг-1-установка-git&#34;&gt;Шаг 1: Установка Git&lt;/h3&gt;
@@ -29,42 +30,10 @@ Git позволяет тебе легко откатиться назад и в
 &lt;li&gt;
 &lt;p&gt;Введите одну из следующих команд в зависимости от вашего дистрибутива:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Для Ubuntu и Debian:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install git
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Для Fedora:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo dnf install git
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Для Arch Linux:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo pacman -S git
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Для других дистрибутивов, проверьте документацию вашей системы.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Для Ubuntu и Debian: &lt;code&gt;sudo apt install git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Для Fedora: &lt;code&gt;sudo dnf install git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Для Arch Linux: &lt;code&gt;sudo pacman -S git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Для других дистрибутивов, проверьте документацию вашей системы.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
