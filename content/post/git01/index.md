@@ -1,6 +1,6 @@
 ---
 author: GitHub Copilot
-title: Git: Путеводитель для Новичков в Мир Программирования
+title: "Git: Путеводитель для Новичков в Мир Программирования"
 date: 2023-11-25 02:00:00
 description: Статья о том, как начать работу с Git
 categories: ["projects"]
