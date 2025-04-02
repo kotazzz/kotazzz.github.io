@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Списки. Исчерпывающее руководство. Это одна из наиболее часто используемых структур данных в Python и используется во многих различных приложениях программирования.'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Списки. Исчерпывающее руководство. Это одна из наиболее часто используемых структур данных в Python и используется во многих различных приложениях программирования.">
 <title>Py07. Списки. Исчерпывающее руководство</title>
 
-<link rel='canonical' href='https://kotazzz.github.io/p/py07/'>
+<link rel='canonical' href='http://localhost:1313/p/py07/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Py07. Списки. Исчерпывающее руководство'>
-<meta property='og:description' content='Списки. Исчерпывающее руководство. Это одна из наиболее часто используемых структур данных в Python и используется во многих различных приложениях программирования.'>
-<meta property='og:url' content='https://kotazzz.github.io/p/py07/'>
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Py07. Списки. Исчерпывающее руководство">
+<meta property='og:description' content="Списки. Исчерпывающее руководство. Это одна из наиболее часто используемых структур данных в Python и используется во многих различных приложениях программирования.">
+<meta property='og:url' content='http://localhost:1313/p/py07/'>
 <meta property='og:site_name' content='KotazIO'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2023-02-28T04:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-02-28T04:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/py07/00_placeholder.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Python' /><meta property='article:published_time' content='2023-02-28T04:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-02-28T04:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/py07/00_placeholder.jpg' />
 <meta name="twitter:title" content="Py07. Списки. Исчерпывающее руководство">
 <meta name="twitter:description" content="Списки. Исчерпывающее руководство. Это одна из наиболее часто используемых структур данных в Python и используется во многих различных приложениях программирования."><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://kotazzz.github.io/p/py07/00_placeholder.jpg' />
+    <meta name="twitter:image" content='http://localhost:1313/p/py07/00_placeholder.jpg' />
     </head>
     <body class="
     article-page
@@ -56,7 +56,7 @@
             <h1 class="site-name"><a href="/">KotazIO</a></h1>
             <h2 class="site-description">Мини-блог, сайт для различного контента</h2>
         </div>
-    </header><ol class="social-menu">
+    </header><ol class="menu-social">
             
                 <li>
                     <a 
@@ -178,12 +178,12 @@
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -191,7 +191,7 @@
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -199,10 +199,11 @@
 
 
 
-                    <span>Тёмный режим</span>
-                </li>
-            
-        </div>
+                        <span>Тёмный режим</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -254,8 +255,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/py07/">
-                <img src="/p/py07/00_placeholder_hu15a98e546981c427ea81cd5703498a1d_32502_800x0_resize_q75_box.jpg"
-                        srcset="/p/py07/00_placeholder_hu15a98e546981c427ea81cd5703498a1d_32502_800x0_resize_q75_box.jpg 800w, /p/py07/00_placeholder_hu15a98e546981c427ea81cd5703498a1d_32502_1600x0_resize_q75_box.jpg 1600w"
+                <img src="/p/py07/00_placeholder_hu_d19f9761e3abc1b2.jpg"
+                        srcset="/p/py07/00_placeholder_hu_d19f9761e3abc1b2.jpg 800w, /p/py07/00_placeholder_hu_d8e87b34b238cc5d.jpg 1600w"
                         width="800" 
                         height="208" 
                         loading="lazy"
@@ -334,10 +335,10 @@
     <section class="article-content">
     
     
-    <h2 id="введение">Введение</h2>
-<p>В Python список - это структура данных, которая используется для хранения набора значений. Это одна из наиболее часто используемых структур данных в Python и используется во многих различных приложениях программирования.</p>
-<h3 id="создание-списка">Создание списка</h3>
-<p>Чтобы создать список, вы можете использовать квадратные скобки <code>[]</code> и разделять значения запятыми. Например:</p>
+    <h2 id="введение">Введение
+</h2><p>В Python список - это структура данных, которая используется для хранения набора значений. Это одна из наиболее часто используемых структур данных в Python и используется во многих различных приложениях программирования.</p>
+<h3 id="создание-списка">Создание списка
+</h3><p>Чтобы создать список, вы можете использовать квадратные скобки <code>[]</code> и разделять значения запятыми. Например:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -347,8 +348,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Это создает список с именем <code>my_list</code> со значениями 1, 2, 3, 4 и 5.</p>
-<h3 id="доступ-к-элементам-в-списке">Доступ к элементам в списке</h3>
-<p>Вы можете получить доступ к отдельным элементам списка, используя их индекс. В Python первый элемент в списке имеет индекс 0. Например:</p>
+<h3 id="доступ-к-элементам-в-списке">Доступ к элементам в списке
+</h3><p>Вы можете получить доступ к отдельным элементам списка, используя их индекс. В Python первый элемент в списке имеет индекс 0. Например:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -372,8 +373,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Это привело бы к выводу значения 5.</p>
-<h3 id="изменение-элементов-в-списке">Изменение элементов в списке</h3>
-<p>Вы можете изменять элементы в списке, присваивая новое значение определенному индексу. Например:</p>
+<h3 id="изменение-элементов-в-списке">Изменение элементов в списке
+</h3><p>Вы можете изменять элементы в списке, присваивая новое значение определенному индексу. Например:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -446,93 +447,93 @@
 </div>
 </div><p>Это привело бы к удалению элемента с индексом 2 (третий элемент) из my_list.</p>
 <div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>Operation</th>
-<th>Syntax</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Создание</td>
-<td><code>my_list = []</code> or <code>my_list = list()</code></td>
-<td>Создает пустой список</td>
-</tr>
-<tr>
-<td></td>
-<td><code>my_list = [value1, value2, ...]</code></td>
-<td>Создает список с начальными значениями</td>
-</tr>
-<tr>
-<td>Доступ</td>
-<td><code>my_list[index]</code></td>
-<td>Обращается к значению по указанному индексу</td>
-</tr>
-<tr>
-<td></td>
-<td><code>my_list[start:end]</code></td>
-<td>Получает доступ к фрагменту значений от начального индекса до конечного индекса, но не включая его</td>
-</tr>
-<tr>
-<td>Модификация</td>
-<td><code>my_list[index] = new_value</code></td>
-<td>Заменяет значение по указанному индексу новым значением</td>
-</tr>
-<tr>
-<td></td>
-<td><code>my_list.append(value)</code></td>
-<td>Добавляет новое значение в конец списка</td>
-</tr>
-<tr>
-<td></td>
-<td><code>my_list.extend(iterable)</code></td>
-<td>Добавляет значения из iterable в конец списка</td>
-</tr>
-<tr>
-<td></td>
-<td><code>my_list.insert(index, value)</code></td>
-<td>Вставляет новое значение по указанному индексу</td>
-</tr>
-<tr>
-<td>Удаление</td>
-<td><code>del my_list[index]</code></td>
-<td>Удаляет значение по указанному индексу</td>
-</tr>
-<tr>
-<td></td>
-<td><code>my_list.remove(value)</code></td>
-<td>Удаляет первое вхождение указанного значения</td>
-</tr>
-<tr>
-<td></td>
-<td><code>my_list.pop(index)</code></td>
-<td>Удаляет и возвращает значение по указанному индексу или последнее значение, если индекс не указан</td>
-</tr>
-<tr>
-<td></td>
-<td><code>my_list.clear()</code></td>
-<td>Удаляет все значения из списка</td>
-</tr>
-<tr>
-<td>Другой</td>
-<td><code>len(my_list)</code></td>
-<td>Возвращает количество значений в списке</td>
-</tr>
-<tr>
-<td></td>
-<td><code>sorted(my_list)</code></td>
-<td>Возвращает новый список со значениями, отсортированными в порядке возрастания</td>
-</tr>
-<tr>
-<td></td>
-<td><code>reversed(my_list)</code></td>
-<td>Возвращает новый список со значениями в обратном порядке</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Operation</th>
+          <th>Syntax</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Создание</td>
+          <td><code>my_list = []</code> or <code>my_list = list()</code></td>
+          <td>Создает пустой список</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>my_list = [value1, value2, ...]</code></td>
+          <td>Создает список с начальными значениями</td>
+      </tr>
+      <tr>
+          <td>Доступ</td>
+          <td><code>my_list[index]</code></td>
+          <td>Обращается к значению по указанному индексу</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>my_list[start:end]</code></td>
+          <td>Получает доступ к фрагменту значений от начального индекса до конечного индекса, но не включая его</td>
+      </tr>
+      <tr>
+          <td>Модификация</td>
+          <td><code>my_list[index] = new_value</code></td>
+          <td>Заменяет значение по указанному индексу новым значением</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>my_list.append(value)</code></td>
+          <td>Добавляет новое значение в конец списка</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>my_list.extend(iterable)</code></td>
+          <td>Добавляет значения из iterable в конец списка</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>my_list.insert(index, value)</code></td>
+          <td>Вставляет новое значение по указанному индексу</td>
+      </tr>
+      <tr>
+          <td>Удаление</td>
+          <td><code>del my_list[index]</code></td>
+          <td>Удаляет значение по указанному индексу</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>my_list.remove(value)</code></td>
+          <td>Удаляет первое вхождение указанного значения</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>my_list.pop(index)</code></td>
+          <td>Удаляет и возвращает значение по указанному индексу или последнее значение, если индекс не указан</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>my_list.clear()</code></td>
+          <td>Удаляет все значения из списка</td>
+      </tr>
+      <tr>
+          <td>Другой</td>
+          <td><code>len(my_list)</code></td>
+          <td>Возвращает количество значений в списке</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>sorted(my_list)</code></td>
+          <td>Возвращает новый список со значениями, отсортированными в порядке возрастания</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>reversed(my_list)</code></td>
+          <td>Возвращает новый список со значениями в обратном порядке</td>
+      </tr>
+  </tbody>
 </table></div>
-<h2 id="более-продвинутое-использование">Более продвинутое использование</h2>
-<p>Вот еще несколько полезных методов для работы со списками в Python</p>
+<h2 id="более-продвинутое-использование">Более продвинутое использование
+</h2><p>Вот еще несколько полезных методов для работы со списками в Python</p>
 <ul>
 <li><strong><code>append()</code></strong>: добавляет элемент в конец списка</li>
 </ul>
@@ -640,8 +641,8 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span> <span class="c1"># [&#39;cherry&#39;, &#39;banana&#39;, &#39;apple&#39;]</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="генераторы-списков">Генераторы списков</h2>
-<p>Понимание списков и срезы - это две мощные функции структуры данных списков Python. Понимание списка - это краткий способ создания нового списка путем перебора существующего списка и применения некоторой операции к каждому элементу. С другой стороны, срезы позволяют вам извлечь часть списка, указав начальный и конечный индексы.</p>
+</div><h2 id="генераторы-списков">Генераторы списков
+</h2><p>Понимание списков и срезы - это две мощные функции структуры данных списков Python. Понимание списка - это краткий способ создания нового списка путем перебора существующего списка и применения некоторой операции к каждому элементу. С другой стороны, срезы позволяют вам извлечь часть списка, указав начальный и конечный индексы.</p>
 <p><strong>Синтаксис</strong>: <code>[expression for item in iterable]</code></p>
 <ul>
 <li>Let&rsquo;s say we have a list of numbers and we want to create a new list with each number multiplied by 2:</li>
@@ -672,8 +673,8 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">even_numbers</span><span class="p">)</span> <span class="c1"># [2, 4]</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="срезы">Срезы</h2>
-<p><strong>Синтаксис</strong>: <code>list[start_index:end_index:step]</code></p>
+</div><h2 id="срезы">Срезы
+</h2><p><strong>Синтаксис</strong>: <code>list[start_index:end_index:step]</code></p>
 <ul>
 <li>Let&rsquo;s say we have a list of numbers and we want to extract the second through fourth elements:</li>
 </ul>
@@ -719,8 +720,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Как list comprehensions, так и slices - это мощные инструменты для работы со списками на Python, позволяющие вам с легкостью выполнять сложные операции со списками.</p>
-<h2 id="еще-приемы">Еще приемы</h2>
-<ul>
+<h2 id="еще-приемы">Еще приемы
+</h2><ul>
 <li>Объединение списков: Вы можете объединить два или более списков, используя оператор +. Вот пример:</li>
 </ul>
 <div class="highlight"><div class="chroma">
@@ -826,18 +827,19 @@
     
         <link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
             ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
                 defer
                 >
             </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
                 defer
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.querySelector(`.article-content`), {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -847,6 +849,7 @@
             ignoredClasses: ["gist"]
         });})
 </script>
+
     
 </article>
 
@@ -865,7 +868,7 @@
         
         
             <div class="article-image">
-                <img src="/p/py09/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/py09/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu_dc6110c463ecb602.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -889,7 +892,7 @@
         
         
             <div class="article-image">
-                <img src="/p/py08/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/py08/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu_dc6110c463ecb602.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -913,7 +916,7 @@
         
         
             <div class="article-image">
-                <img src="/p/py06/00_placeholder.17ac4afd28b576556b8d95da3af62397_hu783df2b7b01877a9fdea2cc22a61e847_106265_250x150_fill_box_smart1_3.png" 
+                <img src="/p/py06/00_placeholder.17ac4afd28b576556b8d95da3af62397_hu_bc120647c74842cf.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -937,7 +940,7 @@
         
         
             <div class="article-image">
-                <img src="/p/py05/00_placeholder.01a7682ed34e78e9cf9fd4dd217b09ea_hu7c6670ce376b478e0562503f0e66f11f_12047_250x150_fill_box_smart1_3.png" 
+                <img src="/p/py05/00_placeholder.01a7682ed34e78e9cf9fd4dd217b09ea_hu_a9edcd076b1f1a72.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -961,7 +964,7 @@
         
         
             <div class="article-image">
-                <img src="/p/py04/00_placeholder.74e0eb6bd54e4731b593c272ea7591bc_hu26b6f633f6e7d2bd1cb701f508024f99_224752_250x150_fill_box_smart1_3.png" 
+                <img src="/p/py04/00_placeholder.74e0eb6bd54e4731b593c272ea7591bc_hu_537e8a4e865c77fe.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -988,7 +991,7 @@
         
     <div class="disqus-container">
     <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     window.disqus_config = function () {
     
     
@@ -1036,14 +1039,14 @@
         
             2020 - 
         
-        2024 KotazIO
+        2025 KotazIO
     </section>
     
     <section class="powerby">
         
             Сделано с 💖 <br/>
         Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -1132,7 +1135,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1d73824c4ab6351433d27fcec837b859c0389d4e664dc33f10b9401ecf4d9197.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

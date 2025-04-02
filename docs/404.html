@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Мини-блог, сайт для различного контента'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Мини-блог, сайт для различного контента">
 <title>404 Page not found</title>
 
-<link rel='canonical' href='https://kotazzz.github.io/404.html'>
+<link rel='canonical' href='http://localhost:1313/404.html'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='404 Page not found'>
-<meta property='og:description' content='Мини-блог, сайт для различного контента'>
-<meta property='og:url' content='https://kotazzz.github.io/404.html'>
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="404 Page not found">
+<meta property='og:description' content="Мини-блог, сайт для различного контента">
+<meta property='og:url' content='http://localhost:1313/404.html'>
 <meta property='og:site_name' content='KotazIO'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-06-16T00:00:00&#43;00:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-04-02T00:00:00&#43;00:00 '/>
 <meta name="twitter:title" content="404 Page not found">
 <meta name="twitter:description" content="Мини-блог, сайт для различного контента">
     </head>
@@ -53,7 +53,7 @@
             <h1 class="site-name"><a href="/">KotazIO</a></h1>
             <h2 class="site-description">Мини-блог, сайт для различного контента</h2>
         </div>
-    </header><ol class="social-menu">
+    </header><ol class="menu-social">
             
                 <li>
                     <a 
@@ -175,12 +175,12 @@
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -188,7 +188,7 @@
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -196,10 +196,11 @@
 
 
 
-                    <span>Тёмный режим</span>
-                </li>
-            
-        </div>
+                        <span>Тёмный режим</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -207,21 +208,54 @@
     <div class="not-found-card">
         <h1 class="article-title">Не найдено</h1>
         <h2 class="article-subtitle">Запрашиваемая страница не существует</h2>
-    </div>
-    <footer class="site-footer">
+    </div><form action="/search/" class="search-form widget" data-json="http://localhost:1313/search/index.json">
+            <p>
+                <label>Поиск</label>
+                <input id="searchInput" name="keyword" required placeholder="Введите что-нибудь..." />
+            
+                <button title="Поиск">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                </button>
+            </p>
+        </form>
+
+        <div class="search-result">
+            <h3 class="search-result--title section-title"></h3>
+            <div class="search-result--list article-list--compact"></div>
+        </div>
+        
+        <script>
+            window.searchResultTitleTemplate = "Найдено #PAGES_COUNT страниц (за #TIME_SECONDS с.)"
+        </script><script type="text/javascript" src="/ts/search.js" defer></script>
+
+        <script>
+            const wrongUrl = new URL(window.location.href);
+
+            
+            const searchKeyword = wrongUrl.pathname.split(/[/|-]/).join(' ').trim();
+
+            document.getElementById('searchInput').setAttribute('value', searchKeyword);
+        </script><footer class="site-footer">
     <section class="copyright">
         &copy; 
         
             2020 - 
         
-        2024 KotazIO
+        2025 KotazIO
     </section>
     
     <section class="powerby">
         
             Сделано с 💖 <br/>
         Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -232,7 +266,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1d73824c4ab6351433d27fcec837b859c0389d4e664dc33f10b9401ecf4d9197.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

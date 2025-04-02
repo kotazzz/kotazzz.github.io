@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Погрузитесь в мир ветвления в программировании. Узнайте, как операторы if, else и else if позволяют программе принимать решения на основе разных условий'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Погрузитесь в мир ветвления в программировании. Узнайте, как операторы if, else и else if позволяют программе принимать решения на основе разных условий">
 <title>C&#43;&#43;: условия</title>
 
-<link rel='canonical' href='https://kotazzz.github.io/p/cpp02/'>
+<link rel='canonical' href='http://localhost:1313/p/cpp02/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='C&#43;&#43;: условия'>
-<meta property='og:description' content='Погрузитесь в мир ветвления в программировании. Узнайте, как операторы if, else и else if позволяют программе принимать решения на основе разных условий'>
-<meta property='og:url' content='https://kotazzz.github.io/p/cpp02/'>
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="C++: условия">
+<meta property='og:description' content="Погрузитесь в мир ветвления в программировании. Узнайте, как операторы if, else и else if позволяют программе принимать решения на основе разных условий">
+<meta property='og:url' content='http://localhost:1313/p/cpp02/'>
 <meta property='og:site_name' content='KotazIO'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2023-11-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-02T00:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/cpp02/00_placeholder.png' />
-<meta name="twitter:title" content="C&#43;&#43;: условия">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2023-11-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-02T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/cpp02/00_placeholder.png' />
+<meta name="twitter:title" content="C++: условия">
 <meta name="twitter:description" content="Погрузитесь в мир ветвления в программировании. Узнайте, как операторы if, else и else if позволяют программе принимать решения на основе разных условий"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://kotazzz.github.io/p/cpp02/00_placeholder.png' />
+    <meta name="twitter:image" content='http://localhost:1313/p/cpp02/00_placeholder.png' />
     </head>
     <body class="
     article-page
@@ -56,7 +56,7 @@
             <h1 class="site-name"><a href="/">KotazIO</a></h1>
             <h2 class="site-description">Мини-блог, сайт для различного контента</h2>
         </div>
-    </header><ol class="social-menu">
+    </header><ol class="menu-social">
             
                 <li>
                     <a 
@@ -178,12 +178,12 @@
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -191,7 +191,7 @@
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -199,10 +199,11 @@
 
 
 
-                    <span>Тёмный режим</span>
-                </li>
-            
-        </div>
+                        <span>Тёмный режим</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -258,8 +259,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/cpp02/">
-                <img src="/p/cpp02/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_800x0_resize_box_3.png"
-                        srcset="/p/cpp02/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_800x0_resize_box_3.png 800w, /p/cpp02/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_1600x0_resize_box_3.png 1600w"
+                <img src="/p/cpp02/00_placeholder_hu_6b5b6d91b66fdb2e.png"
+                        srcset="/p/cpp02/00_placeholder_hu_6b5b6d91b66fdb2e.png 800w, /p/cpp02/00_placeholder_hu_4f2b9e0adf87806b.png 1600w"
                         width="800" 
                         height="899" 
                         loading="lazy"
@@ -339,12 +340,12 @@
     
     
     <p>В программировании, ветвление - это важная концепция, которая позволяет программе принимать решения и выполнять разные действия в зависимости от различных условий. В C++, для этой цели используются операторы ветвления, такие как if, else, и else if.</p>
-<h2 id="когда-нам-нужно-ветвление">Когда нам нужно ветвление?</h2>
-<p>Ветвление становится необходимым, когда в программе возникают ситуации, в которых необходимо выполнять разные действия в зависимости от текущей ситуации или входных данных. Рассмотрим пример из реальной жизни:</p>
-<h3 id="пример-план-действий-при-плохой-погоде">Пример: План действий при плохой погоде</h3>
-<p>Когда человек выходит из дома, он может столкнуться с разной погодой. Если на улице дождь, человек возможно захочет взять зонтик, чтобы не промокнуть. Если на улице снег, то, возможно, потребуется одеться потеплее. Если погода хорошая, человек может просто выйти на улицу. Таким образом, мы имеем разные действия в зависимости от условий погоды.</p>
-<h2 id="операторы-ветвления-в-c">Операторы ветвления в C++</h2>
-<p>Для реализации ветвления в C++, используются следующие ключевые слова:</p>
+<h2 id="когда-нам-нужно-ветвление">Когда нам нужно ветвление?
+</h2><p>Ветвление становится необходимым, когда в программе возникают ситуации, в которых необходимо выполнять разные действия в зависимости от текущей ситуации или входных данных. Рассмотрим пример из реальной жизни:</p>
+<h3 id="пример-план-действий-при-плохой-погоде">Пример: План действий при плохой погоде
+</h3><p>Когда человек выходит из дома, он может столкнуться с разной погодой. Если на улице дождь, человек возможно захочет взять зонтик, чтобы не промокнуть. Если на улице снег, то, возможно, потребуется одеться потеплее. Если погода хорошая, человек может просто выйти на улицу. Таким образом, мы имеем разные действия в зависимости от условий погоды.</p>
+<h2 id="операторы-ветвления-в-c">Операторы ветвления в C++
+</h2><p>Для реализации ветвления в C++, используются следующие ключевые слова:</p>
 <ul>
 <li><code>if</code>: Позволяет выполнить блок кода, если заданное условие истинно.</li>
 <li><code>else</code>: Позволяет выполнить блок кода, если условие в операторе if ложно.</li>
@@ -430,55 +431,55 @@
 <li>Использование фигурных скобок {} рекомендуется для ясности и предотвращения ошибок в коде, особенно если блоки кода в операторах условия if, else, и else if состоят из нескольких операторов.</li>
 <li>Если внутри оператора условия должен быть выполнен только один оператор (или выражение), то фигурные скобки не обязательны, но они улучшают читаемость кода.</li>
 </ul>
-<h2 id="как-строится-условие-и-операторы-сравнения">Как строится условие и операторы сравнения</h2>
-<p>Условие в операторе if или других операторах условия строится с использованием операторов сравнения. Операторы сравнения позволяют сравнивать значения и переменные в различных способах и определять, истинно ли условие. Вот основные операторы сравнения в C++:</p>
+<h2 id="как-строится-условие-и-операторы-сравнения">Как строится условие и операторы сравнения
+</h2><p>Условие в операторе if или других операторах условия строится с использованием операторов сравнения. Операторы сравнения позволяют сравнивать значения и переменные в различных способах и определять, истинно ли условие. Вот основные операторы сравнения в C++:</p>
 <div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>Оператор</th>
-<th>Описание</th>
-<th>Пример</th>
-<th>Результат</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>==</td>
-<td>Равно (сравнивает два значения на равенство)</td>
-<td>5 == 5</td>
-<td>true</td>
-</tr>
-<tr>
-<td>!=</td>
-<td>Не равно (сравнивает два значения на неравенство)</td>
-<td>3 != 7</td>
-<td>true</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>Меньше (проверяет, если левое значение меньше правого)</td>
-<td>4 &lt; 9</td>
-<td>true</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>Больше (проверяет, если левое значение больше правого)</td>
-<td>8 &gt; 2</td>
-<td>true</td>
-</tr>
-<tr>
-<td>&lt;=</td>
-<td>Меньше или равно (проверяет, если левое значение меньше или равно правому)</td>
-<td>5 &lt;= 5</td>
-<td>true</td>
-</tr>
-<tr>
-<td>&gt;=</td>
-<td>Больше или равно (проверяет, если левое значение больше или равно правому)</td>
-<td>7 &gt;= 6</td>
-<td>true</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Оператор</th>
+          <th>Описание</th>
+          <th>Пример</th>
+          <th>Результат</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>==</td>
+          <td>Равно (сравнивает два значения на равенство)</td>
+          <td>5 == 5</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td>!=</td>
+          <td>Не равно (сравнивает два значения на неравенство)</td>
+          <td>3 != 7</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td>&lt;</td>
+          <td>Меньше (проверяет, если левое значение меньше правого)</td>
+          <td>4 &lt; 9</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td>&gt;</td>
+          <td>Больше (проверяет, если левое значение больше правого)</td>
+          <td>8 &gt; 2</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td>&lt;=</td>
+          <td>Меньше или равно (проверяет, если левое значение меньше или равно правому)</td>
+          <td>5 &lt;= 5</td>
+          <td>true</td>
+      </tr>
+      <tr>
+          <td>&gt;=</td>
+          <td>Больше или равно (проверяет, если левое значение больше или равно правому)</td>
+          <td>7 &gt;= 6</td>
+          <td>true</td>
+      </tr>
+  </tbody>
 </table></div>
 <p>Примеры условий с использованием операторов сравнения:</p>
 <div class="highlight"><div class="chroma">
@@ -514,9 +515,9 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Условия, построенные с использованием этих операторов сравнения, могут принимать значения true или false, в зависимости от того, удовлетворяются ли они.</p>
-<h2 id="примеры">Примеры</h2>
-<h3 id="пример-1-погода">Пример 1: погода</h3>
-<div class="highlight"><div class="chroma">
+<h2 id="примеры">Примеры
+</h2><h3 id="пример-1-погода">Пример 1: погода
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -561,8 +562,8 @@
 <li>В зависимости от значения weather, программа выводит соответствующее сообщение.</li>
 </ul>
 <p>Это простой пример ветвления в C++, который позволяет программе принимать решения на основе входных данных или условий</p>
-<h3 id="пример-2-проверка-четности-числа">Пример 2: Проверка четности числа</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="пример-2-проверка-четности-числа">Пример 2: Проверка четности числа
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -606,8 +607,8 @@
 <li>Затем мы используем оператор if, чтобы проверить, делится ли введенное число нацело на 2. Если да, это означает, что число четное, и соответствующее сообщение выводится.</li>
 <li>Если число не делится нацело на 2 (остаток от деления не равен 0), это означает, что число нечетное, и выводится соответствующее сообщение.</li>
 </ul>
-<h3 id="пример-3-определение-наименьшего-из-трех-чисел">Пример 3: Определение наименьшего из трех чисел</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="пример-3-определение-наименьшего-из-трех-чисел">Пример 3: Определение наименьшего из трех чисел
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -655,8 +656,8 @@
 <li>Затем мы используем операторы if, else if и else, чтобы сравнить значения переменных и определить наименьшее из них.</li>
 <li>В зависимости от результата сравнения выводится сообщение с наименьшим числом.</li>
 </ul>
-<h2 id="задачи-для-практики">Задачи для практики</h2>
-<ul>
+<h2 id="задачи-для-практики">Задачи для практики
+</h2><ul>
 <li>
 <p><strong>Проверка на четность/нечетность:</strong> Напишите программу, которая запрашивает у пользователя целое число и выводит сообщение о том, является ли это число четным или нечетным.</p>
 </li>
@@ -691,7 +692,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/c&#43;&#43;/">c&#43;&#43;</a>
+            <a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
         
     </section>
 
@@ -714,18 +715,19 @@
     
         <link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
             ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
                 defer
                 >
             </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
                 defer
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.querySelector(`.article-content`), {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -735,6 +737,7 @@
             ignoredClasses: ["gist"]
         });})
 </script>
+
     
 </article>
 
@@ -753,7 +756,7 @@
         
         
             <div class="article-image">
-                <img src="/p/cpp05/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp05/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu_79f031dd2581af2b.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -777,7 +780,7 @@
         
         
             <div class="article-image">
-                <img src="/p/cpp04/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp04/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu_79f031dd2581af2b.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -801,7 +804,7 @@
         
         
             <div class="article-image">
-                <img src="/p/cpp03/00_placeholder.56aaf2a891d7f39c722db38129d07d2e_hub3290732f6f44a5a308ffd7847bcd6a2_97467_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp03/00_placeholder.56aaf2a891d7f39c722db38129d07d2e_hu_424ddc0db48f9473.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -825,7 +828,7 @@
         
         
             <div class="article-image">
-                <img src="/p/cpp01/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp01/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu_79f031dd2581af2b.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -849,7 +852,7 @@
         
         
             <div class="article-image">
-                <img src="/p/py09/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/py09/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu_dc6110c463ecb602.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -876,7 +879,7 @@
         
     <div class="disqus-container">
     <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     window.disqus_config = function () {
     
     
@@ -924,14 +927,14 @@
         
             2020 - 
         
-        2024 KotazIO
+        2025 KotazIO
     </section>
     
     <section class="powerby">
         
             Сделано с 💖 <br/>
         Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -1020,7 +1023,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1d73824c4ab6351433d27fcec837b859c0389d4e664dc33f10b9401ecf4d9197.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

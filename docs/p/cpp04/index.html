@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Изучите богатую библиотеку математических функций в C&#43;&#43; и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Изучите богатую библиотеку математических функций в C++ и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены">
 <title>C&#43;&#43;: cmath и rand</title>
 
-<link rel='canonical' href='https://kotazzz.github.io/p/cpp04/'>
+<link rel='canonical' href='http://localhost:1313/p/cpp04/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='C&#43;&#43;: cmath и rand'>
-<meta property='og:description' content='Изучите богатую библиотеку математических функций в C&#43;&#43; и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены'>
-<meta property='og:url' content='https://kotazzz.github.io/p/cpp04/'>
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="C++: cmath и rand">
+<meta property='og:description' content="Изучите богатую библиотеку математических функций в C++ и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены">
+<meta property='og:url' content='http://localhost:1313/p/cpp04/'>
 <meta property='og:site_name' content='KotazIO'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2023-11-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-04T00:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/cpp04/00_placeholder.png' />
-<meta name="twitter:title" content="C&#43;&#43;: cmath и rand">
-<meta name="twitter:description" content="Изучите богатую библиотеку математических функций в C&#43;&#43; и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://kotazzz.github.io/p/cpp04/00_placeholder.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2023-11-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-04T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/p/cpp04/00_placeholder.png' />
+<meta name="twitter:title" content="C++: cmath и rand">
+<meta name="twitter:description" content="Изучите богатую библиотеку математических функций в C++ и научитесь генерировать случайные числа для вашей программы. Примеры и объяснения включены"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/p/cpp04/00_placeholder.png' />
     </head>
     <body class="
     article-page
@@ -56,7 +56,7 @@
             <h1 class="site-name"><a href="/">KotazIO</a></h1>
             <h2 class="site-description">Мини-блог, сайт для различного контента</h2>
         </div>
-    </header><ol class="social-menu">
+    </header><ol class="menu-social">
             
                 <li>
                     <a 
@@ -178,12 +178,12 @@
             </a>
         </li>
         
+        <li class="menu-bottom-section">
+            <ol class="menu">
 
-        <div class="menu-bottom-section">
-            
-            
-                <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="8" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -191,7 +191,7 @@
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="16" cy="12" r="2" />
   <rect x="2" y="6" width="20" height="12" rx="6" />
@@ -199,10 +199,11 @@
 
 
 
-                    <span>Тёмный режим</span>
-                </li>
-            
-        </div>
+                        <span>Тёмный режим</span>
+                    </li>
+                
+            </ol>
+        </li>
     </ol>
 </aside>
 
@@ -245,8 +246,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/cpp04/">
-                <img src="/p/cpp04/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_800x0_resize_box_3.png"
-                        srcset="/p/cpp04/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_800x0_resize_box_3.png 800w, /p/cpp04/00_placeholder_hu0bf8c09bd551b4c281835953d780ba29_43907_1600x0_resize_box_3.png 1600w"
+                <img src="/p/cpp04/00_placeholder_hu_6b5b6d91b66fdb2e.png"
+                        srcset="/p/cpp04/00_placeholder_hu_6b5b6d91b66fdb2e.png 800w, /p/cpp04/00_placeholder_hu_4f2b9e0adf87806b.png 1600w"
                         width="800" 
                         height="899" 
                         loading="lazy"
@@ -325,8 +326,8 @@
     <section class="article-content">
     
     
-    <h2 id="расширенные-функции-математики-библиотека-cmath">Расширенные функции математики (библиотека cmath)</h2>
-<p>C++ предоставляет богатую библиотеку для математических операций, которая включает в себя заголовочный файл cmath. В этой библиотеке содержатся различные математические функции, такие как sqrt (квадратный корень), sin (синус), cos (косинус), log (натуральный логарифм), и многие другие. Вот пример использования функции sqrt и формулы Герона для вычисления площади треугольника:</p>
+    <h2 id="расширенные-функции-математики-библиотека-cmath">Расширенные функции математики (библиотека cmath)
+</h2><p>C++ предоставляет богатую библиотеку для математических операций, которая включает в себя заголовочный файл cmath. В этой библиотеке содержатся различные математические функции, такие как sqrt (квадратный корень), sin (синус), cos (косинус), log (натуральный логарифм), и многие другие. Вот пример использования функции sqrt и формулы Герона для вычисления площади треугольника:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -368,109 +369,109 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>Функция</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>sqrt(x)</td>
-<td>Квадратный корень числа x.</td>
-</tr>
-<tr>
-<td>cbrt(x)</td>
-<td>Кубический корень числа x.</td>
-</tr>
-<tr>
-<td>pow(x, y)</td>
-<td>Возводит число x в степень y.</td>
-</tr>
-<tr>
-<td>exp(x)</td>
-<td>Вычисляет экспоненту (e^x).</td>
-</tr>
-<tr>
-<td>log(x)</td>
-<td>Натуральный логарифм числа x.</td>
-</tr>
-<tr>
-<td>log10(x)</td>
-<td>Десятичный логарифм числа x.</td>
-</tr>
-<tr>
-<td>fabs(x)</td>
-<td>Абсолютное значение числа x.</td>
-</tr>
-<tr>
-<td>ceil(x)</td>
-<td>Округляет число x до ближайшего большего целого.</td>
-</tr>
-<tr>
-<td>floor(x)</td>
-<td>Округляет число x до ближайшего меньшего целого.</td>
-</tr>
-<tr>
-<td>sin(x)</td>
-<td>Синус угла x (x в радианах).</td>
-</tr>
-<tr>
-<td>cos(x)</td>
-<td>Косинус угла x (x в радианах).</td>
-</tr>
-<tr>
-<td>tan(x)</td>
-<td>Тангенс угла x (x в радианах).</td>
-</tr>
-<tr>
-<td>asin(x)</td>
-<td>Арксинус числа x (возвращает угол в радианах).</td>
-</tr>
-<tr>
-<td>acos(x)</td>
-<td>Арккосинус числа x (возвращает угол в радианах).</td>
-</tr>
-<tr>
-<td>atan(x)</td>
-<td>Арктангенс числа x (возвращает угол в радианах).</td>
-</tr>
-<tr>
-<td>sinh(x)</td>
-<td>Гиперболический синус числа x.</td>
-</tr>
-<tr>
-<td>cosh(x)</td>
-<td>Гиперболический косинус числа x.</td>
-</tr>
-<tr>
-<td>tanh(x)</td>
-<td>Гиперболический тангенс числа x.</td>
-</tr>
-<tr>
-<td>fmod(x, y)</td>
-<td>Остаток от деления x на y.</td>
-</tr>
-<tr>
-<td>modf(x, &amp;intPart)</td>
-<td>Разделяет число x на целую и дробную части.</td>
-</tr>
-<tr>
-<td>hypot(x, y)</td>
-<td>Гипотенуза прямоугольного треугольника.</td>
-</tr>
-<tr>
-<td>ldexp(x, exp)</td>
-<td>Умножает x на 2^exp.</td>
-</tr>
-<tr>
-<td>frexp(x, &amp;exp)</td>
-<td>Разделяет число x на мантиссу и экспоненту.</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Функция</th>
+          <th>Описание</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>sqrt(x)</td>
+          <td>Квадратный корень числа x.</td>
+      </tr>
+      <tr>
+          <td>cbrt(x)</td>
+          <td>Кубический корень числа x.</td>
+      </tr>
+      <tr>
+          <td>pow(x, y)</td>
+          <td>Возводит число x в степень y.</td>
+      </tr>
+      <tr>
+          <td>exp(x)</td>
+          <td>Вычисляет экспоненту (e^x).</td>
+      </tr>
+      <tr>
+          <td>log(x)</td>
+          <td>Натуральный логарифм числа x.</td>
+      </tr>
+      <tr>
+          <td>log10(x)</td>
+          <td>Десятичный логарифм числа x.</td>
+      </tr>
+      <tr>
+          <td>fabs(x)</td>
+          <td>Абсолютное значение числа x.</td>
+      </tr>
+      <tr>
+          <td>ceil(x)</td>
+          <td>Округляет число x до ближайшего большего целого.</td>
+      </tr>
+      <tr>
+          <td>floor(x)</td>
+          <td>Округляет число x до ближайшего меньшего целого.</td>
+      </tr>
+      <tr>
+          <td>sin(x)</td>
+          <td>Синус угла x (x в радианах).</td>
+      </tr>
+      <tr>
+          <td>cos(x)</td>
+          <td>Косинус угла x (x в радианах).</td>
+      </tr>
+      <tr>
+          <td>tan(x)</td>
+          <td>Тангенс угла x (x в радианах).</td>
+      </tr>
+      <tr>
+          <td>asin(x)</td>
+          <td>Арксинус числа x (возвращает угол в радианах).</td>
+      </tr>
+      <tr>
+          <td>acos(x)</td>
+          <td>Арккосинус числа x (возвращает угол в радианах).</td>
+      </tr>
+      <tr>
+          <td>atan(x)</td>
+          <td>Арктангенс числа x (возвращает угол в радианах).</td>
+      </tr>
+      <tr>
+          <td>sinh(x)</td>
+          <td>Гиперболический синус числа x.</td>
+      </tr>
+      <tr>
+          <td>cosh(x)</td>
+          <td>Гиперболический косинус числа x.</td>
+      </tr>
+      <tr>
+          <td>tanh(x)</td>
+          <td>Гиперболический тангенс числа x.</td>
+      </tr>
+      <tr>
+          <td>fmod(x, y)</td>
+          <td>Остаток от деления x на y.</td>
+      </tr>
+      <tr>
+          <td>modf(x, &amp;intPart)</td>
+          <td>Разделяет число x на целую и дробную части.</td>
+      </tr>
+      <tr>
+          <td>hypot(x, y)</td>
+          <td>Гипотенуза прямоугольного треугольника.</td>
+      </tr>
+      <tr>
+          <td>ldexp(x, exp)</td>
+          <td>Умножает x на 2^exp.</td>
+      </tr>
+      <tr>
+          <td>frexp(x, &amp;exp)</td>
+          <td>Разделяет число x на мантиссу и экспоненту.</td>
+      </tr>
+  </tbody>
 </table></div>
-<h2 id="генерация-случайных-чисел-рандом">Генерация случайных чисел (рандом)</h2>
-<p>C++ предоставляет библиотеку random, которая позволяет генерировать случайные числа. Она включает в себя классы и функции для работы с случайными числами. Вот пример игры &ldquo;угадай число от 1 до 100&rdquo; с использованием случайных чисел:</p>
+<h2 id="генерация-случайных-чисел-рандом">Генерация случайных чисел (рандом)
+</h2><p>C++ предоставляет библиотеку random, которая позволяет генерировать случайные числа. Она включает в себя классы и функции для работы с случайными числами. Вот пример игры &ldquo;угадай число от 1 до 100&rdquo; с использованием случайных чисел:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -546,7 +547,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/c&#43;&#43;/">c&#43;&#43;</a>
+            <a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
         
     </section>
 
@@ -569,18 +570,19 @@
     
         <link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
             ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
                 defer
                 >
             </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
                 defer
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.querySelector(`.article-content`), {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
                 { left: "$", right: "$", display: false },
@@ -590,6 +592,7 @@
             ignoredClasses: ["gist"]
         });})
 </script>
+
     
 </article>
 
@@ -608,7 +611,7 @@
         
         
             <div class="article-image">
-                <img src="/p/cpp05/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp05/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu_79f031dd2581af2b.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -632,7 +635,7 @@
         
         
             <div class="article-image">
-                <img src="/p/cpp03/00_placeholder.56aaf2a891d7f39c722db38129d07d2e_hub3290732f6f44a5a308ffd7847bcd6a2_97467_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp03/00_placeholder.56aaf2a891d7f39c722db38129d07d2e_hu_424ddc0db48f9473.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -656,7 +659,7 @@
         
         
             <div class="article-image">
-                <img src="/p/cpp02/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp02/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu_79f031dd2581af2b.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -680,7 +683,7 @@
         
         
             <div class="article-image">
-                <img src="/p/cpp01/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu0bf8c09bd551b4c281835953d780ba29_43907_250x150_fill_box_smart1_3.png" 
+                <img src="/p/cpp01/00_placeholder.682c3fddcab3e6c9f5d37c5eb6d9e80f_hu_79f031dd2581af2b.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -704,7 +707,7 @@
         
         
             <div class="article-image">
-                <img src="/p/py09/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu30ec3510ebfecb42f218b7336ef2f2e7_30114_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/py09/00_placeholder.35733ea325f3858117ff3928cddac7ad_hu_dc6110c463ecb602.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -731,7 +734,7 @@
         
     <div class="disqus-container">
     <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     window.disqus_config = function () {
     
     
@@ -779,14 +782,14 @@
         
             2020 - 
         
-        2024 KotazIO
+        2025 KotazIO
     </section>
     
     <section class="powerby">
         
             Сделано с 💖 <br/>
         Создано при помощи <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Тема <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b>, дизайн <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -875,7 +878,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1d73824c4ab6351433d27fcec837b859c0389d4e664dc33f10b9401ecf4d9197.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
