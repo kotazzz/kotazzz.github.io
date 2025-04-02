@@ -2,7 +2,7 @@ publishDir: docs/
 baseurl: https://kotazzz.github.io
 languageCode: ru-ru
 theme: hugo-theme-stack
-paginate: 10
+pagination.pagerSize: 10
 title: KotazIO
 
 languages:
