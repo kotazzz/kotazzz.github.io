@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on KotazIO</title>
-        <link>http://localhost:1313/categories/</link>
+        <link>https://kotazzz.github.io/categories/</link>
         <description>Recent content in Categories on KotazIO</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ru</language>
-        <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Webdev</title>
-        <link>http://localhost:1313/categories/webdev/</link>
+        <link>https://kotazzz.github.io/categories/webdev/</link>
         <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/webdev/</guid>
+        <guid>https://kotazzz.github.io/categories/webdev/</guid>
         <description></description>
         </item>
         <item>
         <title>Другое</title>
-        <link>http://localhost:1313/categories/other/</link>
+        <link>https://kotazzz.github.io/categories/other/</link>
         <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/other/</guid>
-        <description>&lt;img src="http://localhost:1313/categories/other/other.jpg" alt="Featured image of post Другое" /&gt;</description>
+        <guid>https://kotazzz.github.io/categories/other/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/categories/other/other.jpg" alt="Featured image of post Другое" /&gt;</description>
         </item>
         <item>
         <title>Проекты</title>
-        <link>http://localhost:1313/categories/projects/</link>
+        <link>https://kotazzz.github.io/categories/projects/</link>
         <pubDate>Sat, 25 Nov 2023 02:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/projects/</guid>
-        <description>&lt;img src="http://localhost:1313/categories/projects/projects.jpg" alt="Featured image of post Проекты" /&gt;</description>
+        <guid>https://kotazzz.github.io/categories/projects/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/categories/projects/projects.jpg" alt="Featured image of post Проекты" /&gt;</description>
         </item>
         <item>
         <title>Курсы</title>
-        <link>http://localhost:1313/categories/courses/</link>
+        <link>https://kotazzz.github.io/categories/courses/</link>
         <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/courses/</guid>
-        <description>&lt;img src="http://localhost:1313/categories/courses/course.jpg" alt="Featured image of post Курсы" /&gt;</description>
+        <guid>https://kotazzz.github.io/categories/courses/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/categories/courses/course.jpg" alt="Featured image of post Курсы" /&gt;</description>
         </item>
         
     </channel>

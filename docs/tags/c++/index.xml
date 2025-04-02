@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>C&#43;&#43; on KotazIO</title>
-        <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+        <link>https://kotazzz.github.io/tags/c&#43;&#43;/</link>
         <description>Recent content in C&#43;&#43; on KotazIO</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ru</language>
-        <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/c++/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>C&#43;&#43;: больше практических задач</title>
-        <link>http://localhost:1313/p/cpp05/</link>
+        <link>https://kotazzz.github.io/p/cpp05/</link>
         <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/cpp05/</guid>
-        <description>&lt;img src="http://localhost:1313/p/cpp05/00_placeholder.png" alt="Featured image of post C&#43;&#43;: больше практических задач" /&gt;&lt;p&gt;Мы закончили изучать базовые вещи в C++, такие как ввод, вывод, переменные, условия, арифметические и логические операторы, циклы и массивы. Теперь можно решить множество несложных задач имея эти знания. Этот пост содержит в себе набор задач для оттачивания навыка написания програм на С++&lt;/p&gt;
+        <guid>https://kotazzz.github.io/p/cpp05/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/cpp05/00_placeholder.png" alt="Featured image of post C&#43;&#43;: больше практических задач" /&gt;&lt;p&gt;Мы закончили изучать базовые вещи в C++, такие как ввод, вывод, переменные, условия, арифметические и логические операторы, циклы и массивы. Теперь можно решить множество несложных задач имея эти знания. Этот пост содержит в себе набор задач для оттачивания навыка написания програм на С++&lt;/p&gt;
 &lt;h2 id=&#34;задачи&#34;&gt;Задачи
 &lt;/h2&gt;&lt;h3 id=&#34;разрезание-торта-на-равные-части&#34;&gt;Разрезание торта на равные части
 &lt;/h3&gt;&lt;p&gt;Помогите Пете разработать алгоритм для быстрого разрезания круглого торта на N равных частей. Учтите, что разрезы могут быть выполнены как по радиусу, так и по диаметру.&lt;/p&gt;
@@ -44,11 +44,11 @@
         </item>
         <item>
         <title>C&#43;&#43;: cmath и rand</title>
-        <link>http://localhost:1313/p/cpp04/</link>
+        <link>https://kotazzz.github.io/p/cpp04/</link>
         <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/cpp04/</guid>
-        <description>&lt;img src="http://localhost:1313/p/cpp04/00_placeholder.png" alt="Featured image of post C&#43;&#43;: cmath и rand" /&gt;&lt;h2 id=&#34;расширенные-функции-математики-библиотека-cmath&#34;&gt;Расширенные функции математики (библиотека cmath)
+        <guid>https://kotazzz.github.io/p/cpp04/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/cpp04/00_placeholder.png" alt="Featured image of post C&#43;&#43;: cmath и rand" /&gt;&lt;h2 id=&#34;расширенные-функции-математики-библиотека-cmath&#34;&gt;Расширенные функции математики (библиотека cmath)
 &lt;/h2&gt;&lt;p&gt;C++ предоставляет богатую библиотеку для математических операций, которая включает в себя заголовочный файл cmath. В этой библиотеке содержатся различные математические функции, такие как sqrt (квадратный корень), sin (синус), cos (косинус), log (натуральный логарифм), и многие другие. Вот пример использования функции sqrt и формулы Герона для вычисления площади треугольника:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -265,11 +265,11 @@
         </item>
         <item>
         <title>C&#43;&#43;: циклы и массивы</title>
-        <link>http://localhost:1313/p/cpp03/</link>
+        <link>https://kotazzz.github.io/p/cpp03/</link>
         <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/cpp03/</guid>
-        <description>&lt;img src="http://localhost:1313/p/cpp03/00_placeholder.png" alt="Featured image of post C&#43;&#43;: циклы и массивы" /&gt;&lt;h2 id=&#34;for&#34;&gt;For
+        <guid>https://kotazzz.github.io/p/cpp03/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/cpp03/00_placeholder.png" alt="Featured image of post C&#43;&#43;: циклы и массивы" /&gt;&lt;h2 id=&#34;for&#34;&gt;For
 &lt;/h2&gt;&lt;p&gt;Цикл &lt;code&gt;for&lt;/code&gt; - это один из наиболее распространенных и удобных способов итерации в C++. Он позволяет вам выполнять повторяющиеся действия определенное количество раз или итерировать через последовательность элементов. Вот обзор синтаксиса и примеры использования цикла &lt;code&gt;for&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;синтаксис-цикла-for&#34;&gt;Синтаксис цикла for
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -570,11 +570,11 @@
         </item>
         <item>
         <title>C&#43;&#43;: условия</title>
-        <link>http://localhost:1313/p/cpp02/</link>
+        <link>https://kotazzz.github.io/p/cpp02/</link>
         <pubDate>Thu, 02 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/cpp02/</guid>
-        <description>&lt;img src="http://localhost:1313/p/cpp02/00_placeholder.png" alt="Featured image of post C&#43;&#43;: условия" /&gt;&lt;p&gt;В программировании, ветвление - это важная концепция, которая позволяет программе принимать решения и выполнять разные действия в зависимости от различных условий. В C++, для этой цели используются операторы ветвления, такие как if, else, и else if.&lt;/p&gt;
+        <guid>https://kotazzz.github.io/p/cpp02/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/cpp02/00_placeholder.png" alt="Featured image of post C&#43;&#43;: условия" /&gt;&lt;p&gt;В программировании, ветвление - это важная концепция, которая позволяет программе принимать решения и выполнять разные действия в зависимости от различных условий. В C++, для этой цели используются операторы ветвления, такие как if, else, и else if.&lt;/p&gt;
 &lt;h2 id=&#34;когда-нам-нужно-ветвление&#34;&gt;Когда нам нужно ветвление?
 &lt;/h2&gt;&lt;p&gt;Ветвление становится необходимым, когда в программе возникают ситуации, в которых необходимо выполнять разные действия в зависимости от текущей ситуации или входных данных. Рассмотрим пример из реальной жизни:&lt;/p&gt;
 &lt;h3 id=&#34;пример-план-действий-при-плохой-погоде&#34;&gt;Пример: План действий при плохой погоде
@@ -923,11 +923,11 @@
         </item>
         <item>
         <title>Введение в C&#43;&#43;</title>
-        <link>http://localhost:1313/p/cpp01/</link>
+        <link>https://kotazzz.github.io/p/cpp01/</link>
         <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/cpp01/</guid>
-        <description>&lt;img src="http://localhost:1313/p/cpp01/00_placeholder.png" alt="Featured image of post Введение в C&#43;&#43;" /&gt;&lt;p&gt;C++ - это универсальный и мощный язык программирования, который используется для разработки различных видов приложений, начиная от игр и системного программирования, и заканчивая веб-разработкой. В этой статье мы начнем с основ и постепенно погрузимся в мир программирования на C++.&lt;/p&gt;
+        <guid>https://kotazzz.github.io/p/cpp01/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/cpp01/00_placeholder.png" alt="Featured image of post Введение в C&#43;&#43;" /&gt;&lt;p&gt;C++ - это универсальный и мощный язык программирования, который используется для разработки различных видов приложений, начиная от игр и системного программирования, и заканчивая веб-разработкой. В этой статье мы начнем с основ и постепенно погрузимся в мир программирования на C++.&lt;/p&gt;
 &lt;h2 id=&#34;структура-программы&#34;&gt;Структура программы
 &lt;/h2&gt;&lt;p&gt;Программа на C++ обычно состоит из следующих основных элементов:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

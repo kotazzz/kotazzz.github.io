@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Другое on KotazIO</title>
-        <link>http://localhost:1313/categories/other/</link>
+        <link>https://kotazzz.github.io/categories/other/</link>
         <description>Recent content in Другое on KotazIO</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ru</language>
-        <lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/other/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/categories/other/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Команды ириса</title>
-        <link>http://localhost:1313/p/iris/</link>
+        <link>https://kotazzz.github.io/p/iris/</link>
         <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/iris/</guid>
-        <description>&lt;img src="http://localhost:1313/p/iris/img/754e7bce-010c-472a-b31a-8bec5d4dc816.png" alt="Featured image of post Команды ириса" /&gt;&lt;h2 id=&#34;начало&#34;&gt;Начало
+        <guid>https://kotazzz.github.io/p/iris/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/iris/img/754e7bce-010c-472a-b31a-8bec5d4dc816.png" alt="Featured image of post Команды ириса" /&gt;&lt;h2 id=&#34;начало&#34;&gt;Начало
 &lt;/h2&gt;&lt;p&gt;Эта статья основана на материале, опубликованном на &lt;a class=&#34;link&#34; href=&#34;https://teletype.in/@iris_cm/commands&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Teletype&lt;/a&gt;. Я переписал и немного изменил содержание для удобства чтения, однако оригинальный материал, команды и их описание принадлежат автору оригинальной статьи и создателям бота. Я не являюсь автором бота, статьи или команд.&lt;/p&gt;
 &lt;h3 id=&#34;обозначения-параметров-команд&#34;&gt;Обозначения параметров команд
@@ -59,10 +59,10 @@
 ・!!!!модер {ссылка} и потом «повысить {ссылка}» – 5 ранг (Создатель)&lt;/p&gt;
 &lt;p&gt;・&lt;strong&gt;Повысить {ссылка}&lt;/strong&gt; — повышает на 1 ранг модератора.
 ・&lt;strong&gt;Понизить {ссылка}&lt;/strong&gt; — понижает на 1 ранг модератора.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/4578d94d-bbff-4e5f-af92-23ec9c3e15aa.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/4578d94d-bbff-4e5f-af92-23ec9c3e15aa.png&#34;
 	width=&#34;1698&#34;
 	height=&#34;1048&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/4578d94d-bbff-4e5f-af92-23ec9c3e15aa_hu_9a682b8ad082a4a3.png 480w, http://localhost:1313/p/iris/img/4578d94d-bbff-4e5f-af92-23ec9c3e15aa_hu_c64bd8fa149bb595.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/4578d94d-bbff-4e5f-af92-23ec9c3e15aa_hu_9a682b8ad082a4a3.png 480w, https://kotazzz.github.io/p/iris/img/4578d94d-bbff-4e5f-af92-23ec9c3e15aa_hu_c64bd8fa149bb595.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -76,10 +76,10 @@
 &lt;h3 id=&#34;снятие-ранга-модератора&#34;&gt;Снятие ранга модератора
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Снять / Разжаловать {ссылка}&lt;/strong&gt; — снять статус с модератора.&lt;/p&gt;
 &lt;p&gt;・&lt;strong&gt;Снять вышедших&lt;/strong&gt; — снять статус со всех вышедших модераторов (они помечены значком «➖» в списке модераторов).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/8b6d44be-8b95-4967-a60d-bce8e2d3736a.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/8b6d44be-8b95-4967-a60d-bce8e2d3736a.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1279&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/8b6d44be-8b95-4967-a60d-bce8e2d3736a_hu_ccb9cae43482e60c.png 480w, http://localhost:1313/p/iris/img/8b6d44be-8b95-4967-a60d-bce8e2d3736a_hu_566c5efa57d2a283.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/8b6d44be-8b95-4967-a60d-bce8e2d3736a_hu_ccb9cae43482e60c.png 480w, https://kotazzz.github.io/p/iris/img/8b6d44be-8b95-4967-a60d-bce8e2d3736a_hu_566c5efa57d2a283.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -91,10 +91,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;・&lt;strong&gt;!Снять всех&lt;/strong&gt; / &lt;strong&gt;!Разжаловать всех&lt;/strong&gt; — снять статус со всех модераторов чата, даже с создателя (&lt;a class=&#34;link&#34; href=&#34;#%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d1%80%d0%b0%d0%b2-%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d1%82%d0%b5%d0%bb%d1%8f-5-%d1%80%d0%b0%d0%bd%d0%b3&#34; &gt;восстановить права создателя&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/6bbef49b-28ee-49f7-b9b5-309049b7ba72.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/6bbef49b-28ee-49f7-b9b5-309049b7ba72.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1161&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/6bbef49b-28ee-49f7-b9b5-309049b7ba72_hu_355fa38e5bc54f6b.png 480w, http://localhost:1313/p/iris/img/6bbef49b-28ee-49f7-b9b5-309049b7ba72_hu_cadd9e67fb5ba758.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/6bbef49b-28ee-49f7-b9b5-309049b7ba72_hu_355fa38e5bc54f6b.png 480w, https://kotazzz.github.io/p/iris/img/6bbef49b-28ee-49f7-b9b5-309049b7ba72_hu_cadd9e67fb5ba758.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -118,10 +118,10 @@
 ・&lt;strong&gt;Сетка восстановить создателя&lt;/strong&gt; — восстановить права создателя во всей сетке чатов (5 ранг). Может использовать только создатель чата.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Если вы не являетесь создателем чата, то вы не сможете самостоятельно восстановить свой ранг. Для этого попросите повысить вас других модераторов.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/b5c7e029-865e-4220-8b40-851bcb08e571.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/b5c7e029-865e-4220-8b40-851bcb08e571.png&#34;
 	width=&#34;1698&#34;
 	height=&#34;345&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/b5c7e029-865e-4220-8b40-851bcb08e571_hu_8c09d32051701e9b.png 480w, http://localhost:1313/p/iris/img/b5c7e029-865e-4220-8b40-851bcb08e571_hu_5d0690f922b01aaf.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/b5c7e029-865e-4220-8b40-851bcb08e571_hu_8c09d32051701e9b.png 480w, https://kotazzz.github.io/p/iris/img/b5c7e029-865e-4220-8b40-851bcb08e571_hu_5d0690f922b01aaf.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -143,10 +143,10 @@
 &lt;p&gt;После вступления в наследство вы можете восстановить права создателя командой «&lt;a class=&#34;link&#34; href=&#34;#%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d1%80%d0%b0%d0%b2-%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d1%82%d0%b5%d0%bb%d1%8f-5-%d1%80%d0%b0%d0%bd%d0%b3&#34; &gt;Восстановить создателя&lt;/a&gt;».&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Для подтверждения прав наследства, необходимо обратиться к агентам поддержки, где вам окажут помощь и предоставят дополнительную информацию о процессе восстановления данных.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/d8500bc6-f237-4242-8a24-f6b925dcf9db.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/d8500bc6-f237-4242-8a24-f6b925dcf9db.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1279&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/d8500bc6-f237-4242-8a24-f6b925dcf9db_hu_80d691f1d83db2ab.png 480w, http://localhost:1313/p/iris/img/d8500bc6-f237-4242-8a24-f6b925dcf9db_hu_c5404a556926aa4d.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/d8500bc6-f237-4242-8a24-f6b925dcf9db_hu_80d691f1d83db2ab.png 480w, https://kotazzz.github.io/p/iris/img/d8500bc6-f237-4242-8a24-f6b925dcf9db_hu_c5404a556926aa4d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -162,10 +162,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;Отнеситесь к передаче прав истинного создателя серьёзно. Учтите, что &lt;strong&gt;самостоятельно&lt;/strong&gt; вернуть себе права вы &lt;strong&gt;не сможете&lt;/strong&gt;.&lt;br&gt;
 Также необходимо &lt;strong&gt;передать права создателя&lt;/strong&gt; пользователю &lt;strong&gt;в самом Telegram&lt;/strong&gt;. Для передачи прав необходимо установить двухфакторную аунтификацию. Если вы еще этого не сделали, придется подождать &lt;strong&gt;неделю&lt;/strong&gt;.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/24d54dc1-334a-4d9d-8559-94241812cdc9.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/24d54dc1-334a-4d9d-8559-94241812cdc9.png&#34;
 	width=&#34;1698&#34;
 	height=&#34;731&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/24d54dc1-334a-4d9d-8559-94241812cdc9_hu_7b637b97cf71bf3.png 480w, http://localhost:1313/p/iris/img/24d54dc1-334a-4d9d-8559-94241812cdc9_hu_259bcb761775343a.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/24d54dc1-334a-4d9d-8559-94241812cdc9_hu_7b637b97cf71bf3.png 480w, https://kotazzz.github.io/p/iris/img/24d54dc1-334a-4d9d-8559-94241812cdc9_hu_259bcb761775343a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -185,10 +185,10 @@
 ➖ — модератор не в чате&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;・+Мой онлайн&lt;/strong&gt; — включить отображение своего статуса в сети.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/14ccdbef-9b36-4733-b443-9c6fa86130bb.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/14ccdbef-9b36-4733-b443-9c6fa86130bb.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1028&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/14ccdbef-9b36-4733-b443-9c6fa86130bb_hu_575751073a8dea6d.png 480w, http://localhost:1313/p/iris/img/14ccdbef-9b36-4733-b443-9c6fa86130bb_hu_91a9459088e303e5.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/14ccdbef-9b36-4733-b443-9c6fa86130bb_hu_575751073a8dea6d.png 480w, https://kotazzz.github.io/p/iris/img/14ccdbef-9b36-4733-b443-9c6fa86130bb_hu_91a9459088e303e5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -204,10 +204,10 @@
 &lt;em&gt;— Синонимы: позвать админов, позвать модеров, созвать админов&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Воспользуйтесь кнопкой «&lt;strong&gt;➖ Удалить упоминания&lt;/strong&gt;», чтобы разом удалить все уведомления от Ириса о созыве модерации.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ac0e149a-fdd5-4c2e-9e2a-dfe31ba41f2b.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ac0e149a-fdd5-4c2e-9e2a-dfe31ba41f2b.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;631&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ac0e149a-fdd5-4c2e-9e2a-dfe31ba41f2b_hu_54d82f3697d83777.png 480w, http://localhost:1313/p/iris/img/ac0e149a-fdd5-4c2e-9e2a-dfe31ba41f2b_hu_d59c2c7cfb443f28.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ac0e149a-fdd5-4c2e-9e2a-dfe31ba41f2b_hu_54d82f3697d83777.png 480w, https://kotazzz.github.io/p/iris/img/ac0e149a-fdd5-4c2e-9e2a-dfe31ba41f2b_hu_d59c2c7cfb443f28.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -236,10 +236,10 @@
 Флуд&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;em&gt;・&lt;/em&gt;&lt;strong&gt;Варны {ссылка}&lt;/strong&gt; — список текущих предупреждений пользователя.
 &lt;em&gt;・&lt;/em&gt;&lt;strong&gt;Варнлист&lt;/strong&gt; — список последних предупреждений чата (аналог банлиста).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/b8af16ca-40d0-4e2b-a7a7-4bb429f1515d.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/b8af16ca-40d0-4e2b-a7a7-4bb429f1515d.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;875&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/b8af16ca-40d0-4e2b-a7a7-4bb429f1515d_hu_8ee757094f0fcc6e.png 480w, http://localhost:1313/p/iris/img/b8af16ca-40d0-4e2b-a7a7-4bb429f1515d_hu_68ee5bae3c509939.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/b8af16ca-40d0-4e2b-a7a7-4bb429f1515d_hu_8ee757094f0fcc6e.png 480w, https://kotazzz.github.io/p/iris/img/b8af16ca-40d0-4e2b-a7a7-4bb429f1515d_hu_68ee5bae3c509939.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -255,10 +255,10 @@
 ・&lt;strong&gt;Снять варны {число} {ссылка}&lt;/strong&gt; — снимет определенное число предупреждений пользователя.
 ・&lt;strong&gt;Снять варн номер {число} {ссылка}&lt;/strong&gt; — снимет определённое предупреждение с пользователя.
 ・&lt;strong&gt;Снять все варны {ссылка}&lt;/strong&gt; — снимет все предупреждения с пользователя.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/397e9c32-aa21-46e5-849c-adfc4eb7fe80.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/397e9c32-aa21-46e5-849c-adfc4eb7fe80.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;818&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/397e9c32-aa21-46e5-849c-adfc4eb7fe80_hu_b5f07d60c140ed9e.png 480w, http://localhost:1313/p/iris/img/397e9c32-aa21-46e5-849c-adfc4eb7fe80_hu_a033d906a2fb621b.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/397e9c32-aa21-46e5-849c-adfc4eb7fe80_hu_b5f07d60c140ed9e.png 480w, https://kotazzz.github.io/p/iris/img/397e9c32-aa21-46e5-849c-adfc4eb7fe80_hu_a033d906a2fb621b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -273,10 +273,10 @@
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Варны лимит {число}&lt;/strong&gt; — устанавливает число предупреждений, по достижению которых пользователь исключается из чата (по умолчанию 3).
 ・&lt;strong&gt;Варны чс {период}&lt;/strong&gt; — устанавливает срок бана по достижению лимита предупреждений.
 ・&lt;strong&gt;Варны период {период}&lt;/strong&gt; — устанавливает срок хранения предупреждения.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ded32718-8f88-4a4b-b05a-65bc2dd6d177.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ded32718-8f88-4a4b-b05a-65bc2dd6d177.png&#34;
 	width=&#34;891&#34;
 	height=&#34;490&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ded32718-8f88-4a4b-b05a-65bc2dd6d177_hu_1293510ba29f292f.png 480w, http://localhost:1313/p/iris/img/ded32718-8f88-4a4b-b05a-65bc2dd6d177_hu_2e199effd9c50d4c.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ded32718-8f88-4a4b-b05a-65bc2dd6d177_hu_1293510ba29f292f.png 480w, https://kotazzz.github.io/p/iris/img/ded32718-8f88-4a4b-b05a-65bc2dd6d177_hu_2e199effd9c50d4c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -306,10 +306,10 @@
 &lt;em&gt;Минимальный период:&lt;/em&gt; 1 минута&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Настроить исход мута можно с помощью триггеров&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/d788a297-e643-48f0-8d3d-1557c7dac92c.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/d788a297-e643-48f0-8d3d-1557c7dac92c.png&#34;
 	width=&#34;864&#34;
 	height=&#34;539&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/d788a297-e643-48f0-8d3d-1557c7dac92c_hu_1a68f28aff0e19.png 480w, http://localhost:1313/p/iris/img/d788a297-e643-48f0-8d3d-1557c7dac92c_hu_27c7e51f4d9cd1ea.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/d788a297-e643-48f0-8d3d-1557c7dac92c_hu_1a68f28aff0e19.png 480w, https://kotazzz.github.io/p/iris/img/d788a297-e643-48f0-8d3d-1557c7dac92c_hu_27c7e51f4d9cd1ea.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -332,10 +332,10 @@
 &lt;p&gt;&lt;strong&gt;Например:&lt;/strong&gt;
 Бан 1 месяц @username
 Спам&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/15bbd282-e838-4985-998c-4d183694dc1b.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/15bbd282-e838-4985-998c-4d183694dc1b.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;478&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/15bbd282-e838-4985-998c-4d183694dc1b_hu_aeaf1eed144b287b.png 480w, http://localhost:1313/p/iris/img/15bbd282-e838-4985-998c-4d183694dc1b_hu_93dcc5deae57e68a.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/15bbd282-e838-4985-998c-4d183694dc1b_hu_aeaf1eed144b287b.png 480w, https://kotazzz.github.io/p/iris/img/15bbd282-e838-4985-998c-4d183694dc1b_hu_93dcc5deae57e68a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -354,10 +354,10 @@
 &lt;em&gt;— Синоним: !kick&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;・!Амнистия&lt;/strong&gt; — снимает баны со всех участников чата.
 &lt;strong&gt;・Банлист&lt;/strong&gt; — покажет список забаненных в данном чате.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ff14fd22-db1e-4d04-8f75-e794556f1517.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ff14fd22-db1e-4d04-8f75-e794556f1517.png&#34;
 	width=&#34;874&#34;
 	height=&#34;230&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ff14fd22-db1e-4d04-8f75-e794556f1517_hu_4d8ff887e459caa6.png 480w, http://localhost:1313/p/iris/img/ff14fd22-db1e-4d04-8f75-e794556f1517_hu_3e27d1af869c405d.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ff14fd22-db1e-4d04-8f75-e794556f1517_hu_4d8ff887e459caa6.png 480w, https://kotazzz.github.io/p/iris/img/ff14fd22-db1e-4d04-8f75-e794556f1517_hu_3e27d1af869c405d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -381,10 +381,10 @@
 &lt;p&gt;Благодаря триггерам, можно настраивать автоматические наказания в чате, расширять возможности других команд, менять исход команды, давать наказания модераторам и многое другое!&lt;/p&gt;
 &lt;h3 id=&#34;подробнее-в-этой-статье-&#34;&gt;Подробнее в этой статье — &lt;a class=&#34;link&#34; href=&#34;https://teletype.in/@iris_cm/triggers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://teletype.in/@iris_cm/triggers&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/9b4d64da-8628-411a-accc-3e097d702d4c.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/9b4d64da-8628-411a-accc-3e097d702d4c.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;444&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/9b4d64da-8628-411a-accc-3e097d702d4c_hu_3f14d043809f98b3.png 480w, http://localhost:1313/p/iris/img/9b4d64da-8628-411a-accc-3e097d702d4c_hu_54bebe4005736cd0.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/9b4d64da-8628-411a-accc-3e097d702d4c_hu_3f14d043809f98b3.png 480w, https://kotazzz.github.io/p/iris/img/9b4d64da-8628-411a-accc-3e097d702d4c_hu_54bebe4005736cd0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -399,10 +399,10 @@
 &lt;h2 id=&#34;4-настройка-доступа-команд&#34;&gt;4. Настройка доступа команд
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Доступ ко всем командам Ириса можно настроить по рангам, дать доступ всем или вовсе отключить.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/3b1b1461-2c3d-4043-bdeb-75e349a09212.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/3b1b1461-2c3d-4043-bdeb-75e349a09212.png&#34;
 	width=&#34;1088&#34;
 	height=&#34;845&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/3b1b1461-2c3d-4043-bdeb-75e349a09212_hu_ca6a89d97b337f64.png 480w, http://localhost:1313/p/iris/img/3b1b1461-2c3d-4043-bdeb-75e349a09212_hu_780bc1ead37d70c0.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/3b1b1461-2c3d-4043-bdeb-75e349a09212_hu_ca6a89d97b337f64.png 480w, https://kotazzz.github.io/p/iris/img/3b1b1461-2c3d-4043-bdeb-75e349a09212_hu_780bc1ead37d70c0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -422,10 +422,10 @@
 &lt;p&gt;▶️ — означает, что данный номер относится к категории «&lt;strong&gt;Раздел&lt;/strong&gt;»;
 ✅ — означает, что раздел / команда включён(а);
 ❌ — означает, что раздел / команда выключен(а).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/e965fed8-e8b0-4575-97cf-33d17fe555e1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/e965fed8-e8b0-4575-97cf-33d17fe555e1.png&#34;
 	width=&#34;872&#34;
 	height=&#34;440&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/e965fed8-e8b0-4575-97cf-33d17fe555e1_hu_1b2c7f0e98345e96.png 480w, http://localhost:1313/p/iris/img/e965fed8-e8b0-4575-97cf-33d17fe555e1_hu_14bba76c7797018a.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/e965fed8-e8b0-4575-97cf-33d17fe555e1_hu_1b2c7f0e98345e96.png 480w, https://kotazzz.github.io/p/iris/img/e965fed8-e8b0-4575-97cf-33d17fe555e1_hu_14bba76c7797018a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -443,10 +443,10 @@
 &lt;p&gt;&lt;strong&gt;Пример 1:&lt;/strong&gt; +дк пинг / +дк 181
 &lt;strong&gt;Пример 2:&lt;/strong&gt; !дк пинг 0 / !дк 181 0&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Где «&lt;strong&gt;пинг&lt;/strong&gt;» — код команды; «&lt;strong&gt;181&lt;/strong&gt;» — номер команды (оба этих значения ограничивают одну команду — «&lt;strong&gt;Пинг&lt;/strong&gt;»), «&lt;strong&gt;0&lt;/strong&gt;» — 0 ранг, т.е. доступна всем.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/e8699487-c353-4045-a229-3e281b15ef21.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/e8699487-c353-4045-a229-3e281b15ef21.png&#34;
 	width=&#34;867&#34;
 	height=&#34;490&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/e8699487-c353-4045-a229-3e281b15ef21_hu_543339d8265812a4.png 480w, http://localhost:1313/p/iris/img/e8699487-c353-4045-a229-3e281b15ef21_hu_fcd693ce85ef04a0.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/e8699487-c353-4045-a229-3e281b15ef21_hu_543339d8265812a4.png 480w, https://kotazzz.github.io/p/iris/img/e8699487-c353-4045-a229-3e281b15ef21_hu_fcd693ce85ef04a0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -462,10 +462,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Например:&lt;/strong&gt; !дк бан 2&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Где «&lt;strong&gt;бан&lt;/strong&gt;» — код команды, «&lt;strong&gt;2&lt;/strong&gt;» — ранг, с которого команда будет доступна.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/4dc7f8a0-f83c-4821-afca-0a941343e37d.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/4dc7f8a0-f83c-4821-afca-0a941343e37d.png&#34;
 	width=&#34;867&#34;
 	height=&#34;409&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/4dc7f8a0-f83c-4821-afca-0a941343e37d_hu_653b12739a4224af.png 480w, http://localhost:1313/p/iris/img/4dc7f8a0-f83c-4821-afca-0a941343e37d_hu_7501cb730374079b.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/4dc7f8a0-f83c-4821-afca-0a941343e37d_hu_653b12739a4224af.png 480w, https://kotazzz.github.io/p/iris/img/4dc7f8a0-f83c-4821-afca-0a941343e37d_hu_7501cb730374079b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -483,10 +483,10 @@
 &lt;p&gt;&lt;strong&gt;Пример 1:&lt;/strong&gt; -дк пинг / -дк 181
 &lt;strong&gt;Пример 2:&lt;/strong&gt; !дк пинг 6 / !дк 181 6&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Где «&lt;strong&gt;пинг&lt;/strong&gt;» — код команды; «&lt;strong&gt;181&lt;/strong&gt;» — номер команды (оба этих значения ограничивают одну команду — «&lt;strong&gt;Пинг&lt;/strong&gt;»), «&lt;strong&gt;6&lt;/strong&gt;» — 6 ранг, т.е. отключение.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ab0df4a1-24d2-4187-87cc-05454e72d1cb.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ab0df4a1-24d2-4187-87cc-05454e72d1cb.png&#34;
 	width=&#34;860&#34;
 	height=&#34;359&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ab0df4a1-24d2-4187-87cc-05454e72d1cb_hu_ee5fc2cc8b4c0598.png 480w, http://localhost:1313/p/iris/img/ab0df4a1-24d2-4187-87cc-05454e72d1cb_hu_ff0b20ca8ba3445b.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ab0df4a1-24d2-4187-87cc-05454e72d1cb_hu_ee5fc2cc8b4c0598.png 480w, https://kotazzz.github.io/p/iris/img/ab0df4a1-24d2-4187-87cc-05454e72d1cb_hu_ff0b20ca8ba3445b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -499,10 +499,10 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;импорт-доступа-команд&#34;&gt;Импорт доступа команд
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・Импорт команд из {код чата}&lt;/strong&gt; — копирует «доступ команд» из чата, чей код взяли — в вашу. При этом, вы должны являться 5 рангом в своем чате и иметь доступ к &lt;em&gt;«доступ команд»&lt;/em&gt; в чате, откуда переносите.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd.png&#34;
 	width=&#34;869&#34;
 	height=&#34;204&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd_hu_f128e775c047f63a.png 480w, http://localhost:1313/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd_hu_622cf8174e7ecf67.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd_hu_f128e775c047f63a.png 480w, https://kotazzz.github.io/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd_hu_622cf8174e7ecf67.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -515,10 +515,10 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;сброс-настроек&#34;&gt;Сброс настроек
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・!Сброс команд&lt;/strong&gt; — сбрасывает абсолютно все настройки доступа команд.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/59cf825d-b4b7-4214-b044-f32707db967f.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/59cf825d-b4b7-4214-b044-f32707db967f.png&#34;
 	width=&#34;857&#34;
 	height=&#34;204&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/59cf825d-b4b7-4214-b044-f32707db967f_hu_3d1a8720ac1ea7e8.png 480w, http://localhost:1313/p/iris/img/59cf825d-b4b7-4214-b044-f32707db967f_hu_4c8baf19102fa697.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/59cf825d-b4b7-4214-b044-f32707db967f_hu_3d1a8720ac1ea7e8.png 480w, https://kotazzz.github.io/p/iris/img/59cf825d-b4b7-4214-b044-f32707db967f_hu_4c8baf19102fa697.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -532,10 +532,10 @@
 &lt;h3 id=&#34;отключение-оповещения-о-доступности-команды&#34;&gt;Отключение оповещения о доступности команды
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・-Команды&lt;/strong&gt; — выключает оповещения о доступности команд.
 &lt;strong&gt;・+Команды&lt;/strong&gt; — включает оповещения о доступности команд.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/8a78f78d-f5d2-4081-bf4a-ad0087d7e5d9.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/8a78f78d-f5d2-4081-bf4a-ad0087d7e5d9.png&#34;
 	width=&#34;873&#34;
 	height=&#34;438&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/8a78f78d-f5d2-4081-bf4a-ad0087d7e5d9_hu_f291183bc04d4d.png 480w, http://localhost:1313/p/iris/img/8a78f78d-f5d2-4081-bf4a-ad0087d7e5d9_hu_5c9ea1b7146dd4a7.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/8a78f78d-f5d2-4081-bf4a-ad0087d7e5d9_hu_f291183bc04d4d.png 480w, https://kotazzz.github.io/p/iris/img/8a78f78d-f5d2-4081-bf4a-ad0087d7e5d9_hu_5c9ea1b7146dd4a7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -549,10 +549,10 @@
 &lt;h3 id=&#34;дополнительные-команды&#34;&gt;Дополнительные команды
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・-Рп / +Рп&lt;/strong&gt; — выключение / включение рп-команд.
 &lt;strong&gt;・-Браки / +Браки&lt;/strong&gt; — выключение / включение раздела «&lt;a class=&#34;link&#34; href=&#34;#21-%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8c-%d0%b1%d1%80%d0%b0%d0%ba%d0%b8&#34; &gt;&lt;strong&gt;Браки&lt;/strong&gt;&lt;/a&gt;».&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/08255348-67a2-4a2c-bab2-8b37807dbd5e.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/08255348-67a2-4a2c-bab2-8b37807dbd5e.png&#34;
 	width=&#34;875&#34;
 	height=&#34;445&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/08255348-67a2-4a2c-bab2-8b37807dbd5e_hu_53ecbcbe439ded87.png 480w, http://localhost:1313/p/iris/img/08255348-67a2-4a2c-bab2-8b37807dbd5e_hu_94fbf6e0320db076.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/08255348-67a2-4a2c-bab2-8b37807dbd5e_hu_53ecbcbe439ded87.png 480w, https://kotazzz.github.io/p/iris/img/08255348-67a2-4a2c-bab2-8b37807dbd5e_hu_94fbf6e0320db076.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -574,10 +574,10 @@
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・-смс&lt;/strong&gt; — удаляет указанное сообщение (вместе с вашим).&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Имейте в виду: нельзя удалить сообщения старше 48 часов.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/e9984b7b-cca1-47c7-ae7b-cff22dc4bb1d.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/e9984b7b-cca1-47c7-ae7b-cff22dc4bb1d.png&#34;
 	width=&#34;920&#34;
 	height=&#34;301&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/e9984b7b-cca1-47c7-ae7b-cff22dc4bb1d_hu_955b66f5fe1dfde0.png 480w, http://localhost:1313/p/iris/img/e9984b7b-cca1-47c7-ae7b-cff22dc4bb1d_hu_35e76cb19bb8be83.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/e9984b7b-cca1-47c7-ae7b-cff22dc4bb1d_hu_955b66f5fe1dfde0.png 480w, https://kotazzz.github.io/p/iris/img/e9984b7b-cca1-47c7-ae7b-cff22dc4bb1d_hu_35e76cb19bb8be83.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -600,10 +600,10 @@
 &lt;p&gt;&lt;strong&gt;Пример 1:&lt;/strong&gt; Кик неактив 2 месяца
 &lt;strong&gt;Пример 2:&lt;/strong&gt; Кик неактив 10&lt;br&gt;
 Если количество участников в вашем чате превышает &lt;strong&gt;50&lt;/strong&gt;, то системное сообщение об исключении отображаться не будет. Используйте команду «+выходы».&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/450b5962-b8d2-4e91-86c1-17beb484aa85.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/450b5962-b8d2-4e91-86c1-17beb484aa85.png&#34;
 	width=&#34;876&#34;
 	height=&#34;385&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/450b5962-b8d2-4e91-86c1-17beb484aa85_hu_f9da220a58006a03.png 480w, http://localhost:1313/p/iris/img/450b5962-b8d2-4e91-86c1-17beb484aa85_hu_b6ca7eff748e2e8c.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/450b5962-b8d2-4e91-86c1-17beb484aa85_hu_f9da220a58006a03.png 480w, https://kotazzz.github.io/p/iris/img/450b5962-b8d2-4e91-86c1-17beb484aa85_hu_b6ca7eff748e2e8c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -627,10 +627,10 @@
 &lt;strong&gt;・Кик по смс {число сообщений} {период}&lt;/strong&gt; — участники с количеством &lt;em&gt;{число сообщений}&lt;/em&gt; сообщений меньше указанного &lt;em&gt;{период}&lt;/em&gt; будут исключены из чата.
 По умолчанию параметр &lt;em&gt;{период}&lt;/em&gt; имеет значение &lt;strong&gt;неделя&lt;/strong&gt;.
 &lt;em&gt;— Синоним: кик по сообщениям&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/89a4f7fb-7a99-4948-86d9-bd8e99a2fc22.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/89a4f7fb-7a99-4948-86d9-bd8e99a2fc22.png&#34;
 	width=&#34;867&#34;
 	height=&#34;256&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/89a4f7fb-7a99-4948-86d9-bd8e99a2fc22_hu_93e267f5f30f6de9.png 480w, http://localhost:1313/p/iris/img/89a4f7fb-7a99-4948-86d9-bd8e99a2fc22_hu_2803c91d8c4f09e.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/89a4f7fb-7a99-4948-86d9-bd8e99a2fc22_hu_93e267f5f30f6de9.png 480w, https://kotazzz.github.io/p/iris/img/89a4f7fb-7a99-4948-86d9-bd8e99a2fc22_hu_2803c91d8c4f09e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -661,10 +661,10 @@
 &lt;em&gt;— Синонимы: !пин, !pin&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;・ &lt;strong&gt;!Открепить&lt;/strong&gt; — открепит закреплённое сообщение в чате.
 &lt;em&gt;— Синонимы: !анпин, !unpin&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/3a01692b-27a0-439d-b5da-e5b42ce7d2f4.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/3a01692b-27a0-439d-b5da-e5b42ce7d2f4.png&#34;
 	width=&#34;866&#34;
 	height=&#34;553&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/3a01692b-27a0-439d-b5da-e5b42ce7d2f4_hu_d0b4a8bae83f8646.png 480w, http://localhost:1313/p/iris/img/3a01692b-27a0-439d-b5da-e5b42ce7d2f4_hu_ec55a0dedfdf3886.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/3a01692b-27a0-439d-b5da-e5b42ce7d2f4_hu_d0b4a8bae83f8646.png 480w, https://kotazzz.github.io/p/iris/img/3a01692b-27a0-439d-b5da-e5b42ce7d2f4_hu_ec55a0dedfdf3886.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -679,10 +679,10 @@
 &lt;p&gt;&lt;strong&gt;Ограничить команду для смены закрепа:&lt;/strong&gt; дк закреп {ранг}&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;смена-названия-чата&#34;&gt;Смена названия чата
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;!Название [название чата]&lt;/strong&gt; — изменит название чата на текст, который вы указали в [ ].&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/e3f6617c-76ca-4b4d-a453-477ecf35b92c.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/e3f6617c-76ca-4b4d-a453-477ecf35b92c.png&#34;
 	width=&#34;865&#34;
 	height=&#34;238&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/e3f6617c-76ca-4b4d-a453-477ecf35b92c_hu_d297d8dcbf6c2851.png 480w, http://localhost:1313/p/iris/img/e3f6617c-76ca-4b4d-a453-477ecf35b92c_hu_9eaf4734045b1a2d.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/e3f6617c-76ca-4b4d-a453-477ecf35b92c_hu_d297d8dcbf6c2851.png 480w, https://kotazzz.github.io/p/iris/img/e3f6617c-76ca-4b4d-a453-477ecf35b92c_hu_9eaf4734045b1a2d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -696,10 +696,10 @@
 &lt;h3 id=&#34;чат-ссылка&#34;&gt;Чат-ссылка
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・Чат-ссылка {ссылка}&lt;/strong&gt; — устанавливает ссылку на чат.
 &lt;em&gt;— Синоним: /link, чатссылка&lt;/em&gt; &lt;strong&gt;・ Чат-ссылка&lt;/strong&gt; — выводит ссылку на чат.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/0bc026c5-ed68-458e-b0cd-a0cc2e5be8c7.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/0bc026c5-ed68-458e-b0cd-a0cc2e5be8c7.png&#34;
 	width=&#34;870&#34;
 	height=&#34;330&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/0bc026c5-ed68-458e-b0cd-a0cc2e5be8c7_hu_d7cc8d2aeb7f80ab.png 480w, http://localhost:1313/p/iris/img/0bc026c5-ed68-458e-b0cd-a0cc2e5be8c7_hu_5b3e8ca6f850c0d1.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/0bc026c5-ed68-458e-b0cd-a0cc2e5be8c7_hu_d7cc8d2aeb7f80ab.png 480w, https://kotazzz.github.io/p/iris/img/0bc026c5-ed68-458e-b0cd-a0cc2e5be8c7_hu_5b3e8ca6f850c0d1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -714,10 +714,10 @@
 &lt;/h3&gt;&lt;p&gt;Установка правил:&lt;/p&gt;
 &lt;p&gt;+Правила&lt;br&gt;
 Текст на новой строчке&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/738f8b8e-a25f-43a6-8031-ebfbf9371636.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/738f8b8e-a25f-43a6-8031-ebfbf9371636.png&#34;
 	width=&#34;980&#34;
 	height=&#34;385&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/738f8b8e-a25f-43a6-8031-ebfbf9371636_hu_58b0bb31e0203aa1.png 480w, http://localhost:1313/p/iris/img/738f8b8e-a25f-43a6-8031-ebfbf9371636_hu_66aa8e3392587153.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/738f8b8e-a25f-43a6-8031-ebfbf9371636_hu_58b0bb31e0203aa1.png 480w, https://kotazzz.github.io/p/iris/img/738f8b8e-a25f-43a6-8031-ebfbf9371636_hu_66aa8e3392587153.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -736,10 +736,10 @@
 • &lt;strong&gt;{ж|м|мн}&lt;/strong&gt; — выводит текст для: женского пола, мужского пола и нескольких людей.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;подробнее-об-установке-правил-и-приветствия-&#34;&gt;Подробнее об установке правил и приветствия — &lt;a class=&#34;link&#34; href=&#34;https://teletype.in/@iris_cm/greeting&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://teletype.in/@iris_cm/greeting&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/b9f47d56-d909-4222-a1b8-fc1590dc98ad.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/b9f47d56-d909-4222-a1b8-fc1590dc98ad.png&#34;
 	width=&#34;975&#34;
 	height=&#34;595&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/b9f47d56-d909-4222-a1b8-fc1590dc98ad_hu_97fcde7c51810b39.png 480w, http://localhost:1313/p/iris/img/b9f47d56-d909-4222-a1b8-fc1590dc98ad_hu_47f8963a78d49fff.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/b9f47d56-d909-4222-a1b8-fc1590dc98ad_hu_97fcde7c51810b39.png 480w, https://kotazzz.github.io/p/iris/img/b9f47d56-d909-4222-a1b8-fc1590dc98ad_hu_47f8963a78d49fff.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -760,10 +760,10 @@
 &lt;p&gt;&lt;strong&gt;・+Автокик молчунов {срок}&lt;/strong&gt; — устанавливает автокик копилок, если они в &lt;strong&gt;{срок}&lt;/strong&gt; не напишут ни одного сообщения.
 &lt;strong&gt;・-Автокик&lt;/strong&gt; — убирает «автокик на выход».
 &lt;strong&gt;・-Автокик молчунов&lt;/strong&gt; — убирает автокик молчунов.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/e533d01d-43d3-4dc5-9439-bb57d23e4c42.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/e533d01d-43d3-4dc5-9439-bb57d23e4c42.png&#34;
 	width=&#34;1088&#34;
 	height=&#34;636&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/e533d01d-43d3-4dc5-9439-bb57d23e4c42_hu_9303fc9e1c742fca.png 480w, http://localhost:1313/p/iris/img/e533d01d-43d3-4dc5-9439-bb57d23e4c42_hu_da47f592d87ec6a3.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/e533d01d-43d3-4dc5-9439-bb57d23e4c42_hu_9303fc9e1c742fca.png 480w, https://kotazzz.github.io/p/iris/img/e533d01d-43d3-4dc5-9439-bb57d23e4c42_hu_da47f592d87ec6a3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -779,10 +779,10 @@
 &lt;p&gt;&lt;strong&gt;・+Чат&lt;/strong&gt; / &lt;strong&gt;-Чат&lt;/strong&gt; — разрешить / запретить писать сообщения обычным участникам.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ирис запоминает и восстанавливает настройки разрешений, которые были до момента закрытия чата. Команда также доступна через личные сообщения бота.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/4efeefd2-3644-4658-aca0-0df4a15facdf.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/4efeefd2-3644-4658-aca0-0df4a15facdf.png&#34;
 	width=&#34;1698&#34;
 	height=&#34;807&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/4efeefd2-3644-4658-aca0-0df4a15facdf_hu_2d0cca3156257fc3.png 480w, http://localhost:1313/p/iris/img/4efeefd2-3644-4658-aca0-0df4a15facdf_hu_db013492331cda63.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/4efeefd2-3644-4658-aca0-0df4a15facdf_hu_2d0cca3156257fc3.png 480w, https://kotazzz.github.io/p/iris/img/4efeefd2-3644-4658-aca0-0df4a15facdf_hu_db013492331cda63.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -813,10 +813,10 @@
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;В чате может быть не больше 50 администраторов.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/e4684dd5-5b8f-4455-b835-c9f34c76c1cb.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/e4684dd5-5b8f-4455-b835-c9f34c76c1cb.png&#34;
 	width=&#34;1698&#34;
 	height=&#34;755&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/e4684dd5-5b8f-4455-b835-c9f34c76c1cb_hu_2c131473806ddc4c.png 480w, http://localhost:1313/p/iris/img/e4684dd5-5b8f-4455-b835-c9f34c76c1cb_hu_27c5e5402ae8a30a.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/e4684dd5-5b8f-4455-b835-c9f34c76c1cb_hu_2c131473806ddc4c.png 480w, https://kotazzz.github.io/p/iris/img/e4684dd5-5b8f-4455-b835-c9f34c76c1cb_hu_27c5e5402ae8a30a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -831,10 +831,10 @@
 &lt;p&gt;&lt;strong&gt;・Сетка +тг админ [должность] {ссылка}&lt;/strong&gt; — назначает участника чата администратором чата во всех привязанных чатах с должностью &lt;em&gt;[должность]&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Для корректного отображения должности рекомендуем использовать команду &lt;strong&gt;в ответ на сообщение&lt;/strong&gt;!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;・Сетка -тг админ {ссылка}&lt;/strong&gt; — снимает статус администратора чата со всех привязанных чатов.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/f455b7af-c204-427d-a286-5110de23e216.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/f455b7af-c204-427d-a286-5110de23e216.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;439&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/f455b7af-c204-427d-a286-5110de23e216_hu_fbe2201aecc52f21.png 480w, http://localhost:1313/p/iris/img/f455b7af-c204-427d-a286-5110de23e216_hu_393d8ec07d360c64.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/f455b7af-c204-427d-a286-5110de23e216_hu_fbe2201aecc52f21.png 480w, https://kotazzz.github.io/p/iris/img/f455b7af-c204-427d-a286-5110de23e216_hu_393d8ec07d360c64.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -850,10 +850,10 @@
 &lt;p&gt;&lt;strong&gt;・+Каналы / -Каналы&lt;/strong&gt; — разрешает / запрещает писать от имени каналов.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;При запрете, Ирис будет удалять сообщение от имени канала и блокировать его. Владелец больше не сможет писать от имени своих каналов в конкретном чате.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/152a3686-1851-4084-9f41-cb3a379b3442.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/152a3686-1851-4084-9f41-cb3a379b3442.png&#34;
 	width=&#34;879&#34;
 	height=&#34;279&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/152a3686-1851-4084-9f41-cb3a379b3442_hu_879a258eb9af7f87.png 480w, http://localhost:1313/p/iris/img/152a3686-1851-4084-9f41-cb3a379b3442_hu_e54c85862294f52e.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/152a3686-1851-4084-9f41-cb3a379b3442_hu_879a258eb9af7f87.png 480w, https://kotazzz.github.io/p/iris/img/152a3686-1851-4084-9f41-cb3a379b3442_hu_e54c85862294f52e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -870,10 +870,10 @@
 &lt;strong&gt;・+Выходы&lt;/strong&gt; / &lt;strong&gt;-Выходы&lt;/strong&gt; — включить / отключить уведомления о выходах из чата.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Или всё вместе: +входы-выходы / -входы-выходы&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/5f411c54-f935-488e-8e12-d96fe79c5685.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/5f411c54-f935-488e-8e12-d96fe79c5685.png&#34;
 	width=&#34;879&#34;
 	height=&#34;486&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/5f411c54-f935-488e-8e12-d96fe79c5685_hu_5609ddb7e5a3fff8.png 480w, http://localhost:1313/p/iris/img/5f411c54-f935-488e-8e12-d96fe79c5685_hu_a3f2f73e1141d774.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/5f411c54-f935-488e-8e12-d96fe79c5685_hu_5609ddb7e5a3fff8.png 480w, https://kotazzz.github.io/p/iris/img/5f411c54-f935-488e-8e12-d96fe79c5685_hu_a3f2f73e1141d774.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -896,10 +896,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://t.me/irissup/161&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Инструкция как это включить в своём чате&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/029f28fa-92c2-483c-b263-8bd5c0194ec1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/029f28fa-92c2-483c-b263-8bd5c0194ec1.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;583&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/029f28fa-92c2-483c-b263-8bd5c0194ec1_hu_c336d2b07b77fd7d.png 480w, http://localhost:1313/p/iris/img/029f28fa-92c2-483c-b263-8bd5c0194ec1_hu_fdb47f7ea0debd58.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/029f28fa-92c2-483c-b263-8bd5c0194ec1_hu_c336d2b07b77fd7d.png 480w, https://kotazzz.github.io/p/iris/img/029f28fa-92c2-483c-b263-8bd5c0194ec1_hu_fdb47f7ea0debd58.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -912,10 +912,10 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;Ирис будет принимать все заявки, кроме тех, пользователи которых состоят в «&lt;a class=&#34;link&#34; href=&#34;#%d0%b8%d1%80%d0%b8%d1%81-%d0%b0%d0%bd%d1%82%d0%b8%d1%81%d0%bf%d0%b0%d0%bc&#34; &gt;&lt;strong&gt;Ирис-антиспам&lt;/strong&gt;&lt;/a&gt;» (при этом антиспам-база должна быть подключена).&lt;/p&gt;
 &lt;p&gt;Такие пользователи будут временно заблокированы и оповещены об отклонении заявки в личные сообщения бота:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/aeaa6495-ad63-4cc3-822e-f5d8352ac1b5.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/aeaa6495-ad63-4cc3-822e-f5d8352ac1b5.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;390&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/aeaa6495-ad63-4cc3-822e-f5d8352ac1b5_hu_388af43ae81073e9.png 480w, http://localhost:1313/p/iris/img/aeaa6495-ad63-4cc3-822e-f5d8352ac1b5_hu_e028311ca1897c03.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/aeaa6495-ad63-4cc3-822e-f5d8352ac1b5_hu_388af43ae81073e9.png 480w, https://kotazzz.github.io/p/iris/img/aeaa6495-ad63-4cc3-822e-f5d8352ac1b5_hu_e028311ca1897c03.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -928,10 +928,10 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;проверка-в-чате&#34;&gt;Проверка в чате
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・Проверить в чате&lt;/strong&gt; — проверяет анкеты на присутствие в чате. Полезно, когда Ирис говорит, что такого пользователя нет в чате:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/3571b2ad-d009-42c3-9889-0879e2905913.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/3571b2ad-d009-42c3-9889-0879e2905913.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1233&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/3571b2ad-d009-42c3-9889-0879e2905913_hu_7e29dc98d6f70a3f.png 480w, http://localhost:1313/p/iris/img/3571b2ad-d009-42c3-9889-0879e2905913_hu_8a1cb72f78c76678.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/3571b2ad-d009-42c3-9889-0879e2905913_hu_7e29dc98d6f70a3f.png 480w, https://kotazzz.github.io/p/iris/img/3571b2ad-d009-42c3-9889-0879e2905913_hu_8a1cb72f78c76678.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -943,10 +943,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;А ещё команда помогает убирать вышедших участников из статистики и списка неактив, если они по какой-то причине там остались — достаточно использовать команду на сообщение, содержащие список&amp;hellip;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ec6861ae-8ce7-49aa-b8a9-088d5bf2faca.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ec6861ae-8ce7-49aa-b8a9-088d5bf2faca.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1403&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ec6861ae-8ce7-49aa-b8a9-088d5bf2faca_hu_c320e7b9e76c2561.png 480w, http://localhost:1313/p/iris/img/ec6861ae-8ce7-49aa-b8a9-088d5bf2faca_hu_138f0ebbdda38f1f.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ec6861ae-8ce7-49aa-b8a9-088d5bf2faca_hu_c320e7b9e76c2561.png 480w, https://kotazzz.github.io/p/iris/img/ec6861ae-8ce7-49aa-b8a9-088d5bf2faca_hu_138f0ebbdda38f1f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -958,10 +958,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&amp;hellip;и получись очищенный список:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/bcac797c-6f3c-404b-9972-85f965daab29.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/bcac797c-6f3c-404b-9972-85f965daab29.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;573&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/bcac797c-6f3c-404b-9972-85f965daab29_hu_97da769488889bc5.png 480w, http://localhost:1313/p/iris/img/bcac797c-6f3c-404b-9972-85f965daab29_hu_1a4948323974b2ec.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/bcac797c-6f3c-404b-9972-85f965daab29_hu_97da769488889bc5.png 480w, https://kotazzz.github.io/p/iris/img/bcac797c-6f3c-404b-9972-85f965daab29_hu_1a4948323974b2ec.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -973,10 +973,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;Альтернативное использование:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ae323b4a-abda-49f9-9209-25c5c56f2b50.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ae323b4a-abda-49f9-9209-25c5c56f2b50.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;698&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ae323b4a-abda-49f9-9209-25c5c56f2b50_hu_c35bb8308d2447c.png 480w, http://localhost:1313/p/iris/img/ae323b4a-abda-49f9-9209-25c5c56f2b50_hu_733099c37bf886d7.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ae323b4a-abda-49f9-9209-25c5c56f2b50_hu_c35bb8308d2447c.png 480w, https://kotazzz.github.io/p/iris/img/ae323b4a-abda-49f9-9209-25c5c56f2b50_hu_733099c37bf886d7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -989,10 +989,10 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;другие-команды-настройки-чата&#34;&gt;Другие команды настройки чата
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・+Инлайны / -Инлайны&lt;/strong&gt; — включает / выключает текстовые оповещения о нажатиях инлайн-кнопок.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/e10a5cc0-2e07-4ca9-be09-5ea4848b6eda.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/e10a5cc0-2e07-4ca9-be09-5ea4848b6eda.png&#34;
 	width=&#34;886&#34;
 	height=&#34;636&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/e10a5cc0-2e07-4ca9-be09-5ea4848b6eda_hu_18ffecd654eab3e4.png 480w, http://localhost:1313/p/iris/img/e10a5cc0-2e07-4ca9-be09-5ea4848b6eda_hu_28557a54e8e3f913.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/e10a5cc0-2e07-4ca9-be09-5ea4848b6eda_hu_18ffecd654eab3e4.png 480w, https://kotazzz.github.io/p/iris/img/e10a5cc0-2e07-4ca9-be09-5ea4848b6eda_hu_28557a54e8e3f913.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1005,10 +1005,10 @@
 &gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;・Обновить чат&lt;/strong&gt; — обновляет информацию о чате (кол-ва участников и т.п.). Команда также обновляет информацию о действующем создателе. Если у вас в чате поменялся создатель, обязательно воспользуйтесь этой командой.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/f09915de-a286-4a27-9377-ba8c46369fd8.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/f09915de-a286-4a27-9377-ba8c46369fd8.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;323&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/f09915de-a286-4a27-9377-ba8c46369fd8_hu_20528fe257370c93.png 480w, http://localhost:1313/p/iris/img/f09915de-a286-4a27-9377-ba8c46369fd8_hu_cd6231cca441f42f.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/f09915de-a286-4a27-9377-ba8c46369fd8_hu_20528fe257370c93.png 480w, https://kotazzz.github.io/p/iris/img/f09915de-a286-4a27-9377-ba8c46369fd8_hu_cd6231cca441f42f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1021,10 +1021,10 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;・Код чата&lt;/strong&gt; — покажет персональный код чата. Используется для привязки чата, для переезда и для использования команд через личные сообщения.
 &lt;em&gt;— Синоним: код беседы&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/4d332b17-34ba-4484-8574-931d0bb79c7e.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/4d332b17-34ba-4484-8574-931d0bb79c7e.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;322&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/4d332b17-34ba-4484-8574-931d0bb79c7e_hu_c064a45a13db7709.png 480w, http://localhost:1313/p/iris/img/4d332b17-34ba-4484-8574-931d0bb79c7e_hu_21199d64beebee5a.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/4d332b17-34ba-4484-8574-931d0bb79c7e_hu_c064a45a13db7709.png 480w, https://kotazzz.github.io/p/iris/img/4d332b17-34ba-4484-8574-931d0bb79c7e_hu_21199d64beebee5a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1041,10 +1041,10 @@
 &lt;strong&gt;・!Привязать {код чата}&lt;/strong&gt; — привязывает личные сообщения Ириса к чату с указанным кодом.&lt;/p&gt;
 &lt;p&gt;В л/с Ириса вам станут доступны следующие команды: &lt;em&gt;чат инфо, дк, мдк, команда {команда} {ранг}, бан/кик {ссылка}, кто ты {ссылка}, кто я, -смс&lt;/em&gt;, &lt;em&gt;общий сбор&lt;/em&gt;, &lt;em&gt;кик молчунов, кик актив, кик новичков, мрп&lt;/em&gt;, а также применять действия в отношениях.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;・Импорт команд из {код чата}&lt;/strong&gt; — копирует «доступ команд» из чата, чей код взяли — в вашу. При этом, вы должны являться 5 рангом в своем чате и иметь доступ к &lt;em&gt;«доступ команд»&lt;/em&gt; в чате, откуда переносите.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd.png&#34;
 	width=&#34;869&#34;
 	height=&#34;204&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd_hu_f128e775c047f63a.png 480w, http://localhost:1313/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd_hu_622cf8174e7ecf67.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd_hu_f128e775c047f63a.png 480w, https://kotazzz.github.io/p/iris/img/fa73e02c-b49b-4a7e-8dea-98188a0464cd_hu_622cf8174e7ecf67.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1057,10 +1057,10 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;・Смс ид&lt;/strong&gt; — показывает ID сообщения в чате (использовать ответом на сообщение).
 &lt;strong&gt;・Перейти к смс (ид)&lt;/strong&gt; — выдаёт прямую ссылку на переход к смс (ид) в чате.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/d0e5b699-7b6e-405b-94b4-09dd3bac3516.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/d0e5b699-7b6e-405b-94b4-09dd3bac3516.png&#34;
 	width=&#34;1495&#34;
 	height=&#34;715&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/d0e5b699-7b6e-405b-94b4-09dd3bac3516_hu_e2a3a1e0bb035081.png 480w, http://localhost:1313/p/iris/img/d0e5b699-7b6e-405b-94b4-09dd3bac3516_hu_92317be98b2ae1b1.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/d0e5b699-7b6e-405b-94b4-09dd3bac3516_hu_e2a3a1e0bb035081.png 480w, https://kotazzz.github.io/p/iris/img/d0e5b699-7b6e-405b-94b4-09dd3bac3516_hu_92317be98b2ae1b1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1082,10 +1082,10 @@
 &lt;strong&gt;・+Сайты&lt;/strong&gt; / &lt;strong&gt;-Сайты&lt;/strong&gt; — разрешает / запрещает отправлять сообщения содержащие ссылки на сторонние сайты.
 &lt;strong&gt;・+Теги&lt;/strong&gt; / &lt;strong&gt;-Теги&lt;/strong&gt; — разрешает / запрещает отправлять сообщения содержащие ссылки на ресурсы Телеграм.
 &lt;strong&gt;・+Боты&lt;/strong&gt; / &lt;strong&gt;-Боты&lt;/strong&gt; — разрешает / запрещает приглашать ботов в чат.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/89979750-e678-455c-8c8a-cf04de0241ff.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/89979750-e678-455c-8c8a-cf04de0241ff.png&#34;
 	width=&#34;866&#34;
 	height=&#34;475&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/89979750-e678-455c-8c8a-cf04de0241ff_hu_e613a57d07945bcb.png 480w, http://localhost:1313/p/iris/img/89979750-e678-455c-8c8a-cf04de0241ff_hu_789558f4ba91652b.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/89979750-e678-455c-8c8a-cf04de0241ff_hu_e613a57d07945bcb.png 480w, https://kotazzz.github.io/p/iris/img/89979750-e678-455c-8c8a-cf04de0241ff_hu_789558f4ba91652b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1130,10 +1130,10 @@
 &lt;strong&gt;・Сетка передать создателя {ссылка}&lt;/strong&gt; — передает права создателя сетки.&lt;/p&gt;
 &lt;h3 id=&#34;подробнее-об-установке-и-других-командах-&#34;&gt;Подробнее об установке и других командах — &lt;a class=&#34;link&#34; href=&#34;https://teletype.in/@iris_cm/grid&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://teletype.in/@iris_cm/grid&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/3f92fb5c-5c90-413f-8027-cb4822f7cbbf.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/3f92fb5c-5c90-413f-8027-cb4822f7cbbf.png&#34;
 	width=&#34;975&#34;
 	height=&#34;571&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/3f92fb5c-5c90-413f-8027-cb4822f7cbbf_hu_a72a0b892a936f3b.png 480w, http://localhost:1313/p/iris/img/3f92fb5c-5c90-413f-8027-cb4822f7cbbf_hu_95a718d951612b03.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/3f92fb5c-5c90-413f-8027-cb4822f7cbbf_hu_a72a0b892a936f3b.png 480w, https://kotazzz.github.io/p/iris/img/3f92fb5c-5c90-413f-8027-cb4822f7cbbf_hu_95a718d951612b03.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1161,10 +1161,10 @@
 &lt;strong&gt;・-Мой город&lt;/strong&gt; — удаляет город из вашей анкеты.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;・Мой др {дд.мм.гг} [всё/месяц/год]&lt;/strong&gt; — установит вашу дату рождения. В квадратных скобках указана настройка видимости вашего др в анкете.
 &lt;strong&gt;・-Мой др&lt;/strong&gt; — удаляет вашу дату рождения из анкеты.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ee978578-f78e-4ae5-939c-42cc412dfa51.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ee978578-f78e-4ae5-939c-42cc412dfa51.png&#34;
 	width=&#34;869&#34;
 	height=&#34;406&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ee978578-f78e-4ae5-939c-42cc412dfa51_hu_4ce1f6b1b4f989cc.png 480w, http://localhost:1313/p/iris/img/ee978578-f78e-4ae5-939c-42cc412dfa51_hu_278434340dbbb670.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ee978578-f78e-4ae5-939c-42cc412dfa51_hu_4ce1f6b1b4f989cc.png 480w, https://kotazzz.github.io/p/iris/img/ee978578-f78e-4ae5-939c-42cc412dfa51_hu_278434340dbbb670.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1179,10 +1179,10 @@
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・ Кто я&lt;/strong&gt; — выводит информацию о пользователе, вызвавшем команду.
 &lt;em&gt;— Синонимы: !роль, профиль, хто я&lt;/em&gt; &lt;strong&gt;・ Кто ты {ссылка}&lt;/strong&gt; — выводит информацию об указанном пользователе.
 &lt;em&gt;— Синоним: Профиль {ссылка}&lt;/em&gt; &lt;strong&gt;・Моя стата&lt;/strong&gt; — выводит информацию о пользователе в виде графика.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/0a6cb6af-eb5f-4608-abc7-58fc26133f8a.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/0a6cb6af-eb5f-4608-abc7-58fc26133f8a.png&#34;
 	width=&#34;867&#34;
 	height=&#34;844&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/0a6cb6af-eb5f-4608-abc7-58fc26133f8a_hu_4f1c342c8f058a45.png 480w, http://localhost:1313/p/iris/img/0a6cb6af-eb5f-4608-abc7-58fc26133f8a_hu_41822a3cf5e13f07.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/0a6cb6af-eb5f-4608-abc7-58fc26133f8a_hu_4f1c342c8f058a45.png 480w, https://kotazzz.github.io/p/iris/img/0a6cb6af-eb5f-4608-abc7-58fc26133f8a_hu_41822a3cf5e13f07.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1200,10 +1200,10 @@
 &lt;strong&gt;🎩・!Удалить описание {ссылка}&lt;/strong&gt; — удалит описание указанного пользователя.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ограничение в 3800 символов.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/b1ff1054-dd33-41c8-9fce-78b8b08abfa5.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/b1ff1054-dd33-41c8-9fce-78b8b08abfa5.png&#34;
 	width=&#34;869&#34;
 	height=&#34;386&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/b1ff1054-dd33-41c8-9fce-78b8b08abfa5_hu_445af81feeb8db68.png 480w, http://localhost:1313/p/iris/img/b1ff1054-dd33-41c8-9fce-78b8b08abfa5_hu_be4a2db124e5a1a3.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/b1ff1054-dd33-41c8-9fce-78b8b08abfa5_hu_445af81feeb8db68.png 480w, https://kotazzz.github.io/p/iris/img/b1ff1054-dd33-41c8-9fce-78b8b08abfa5_hu_be4a2db124e5a1a3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1224,10 +1224,10 @@
 &lt;strong&gt;🎩・!Удалить ник {ссылка}&lt;/strong&gt; — удалит никнейм указанного пользователя.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ограничение в 30 символов.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/de17ba9f-2338-4db8-8fc1-722befd872e9.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/de17ba9f-2338-4db8-8fc1-722befd872e9.png&#34;
 	width=&#34;876&#34;
 	height=&#34;333&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/de17ba9f-2338-4db8-8fc1-722befd872e9_hu_238fd3a69ba36641.png 480w, http://localhost:1313/p/iris/img/de17ba9f-2338-4db8-8fc1-722befd872e9_hu_b4c98b7ef8fd45a.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/de17ba9f-2338-4db8-8fc1-722befd872e9_hu_238fd3a69ba36641.png 480w, https://kotazzz.github.io/p/iris/img/de17ba9f-2338-4db8-8fc1-722befd872e9_hu_b4c98b7ef8fd45a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1248,10 +1248,10 @@
 &lt;strong&gt;🎩・!Удалить звание {ссылка}&lt;/strong&gt; — удалит звание указанного пользователя.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ограничение в 30 символов.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/255ee772-0c95-4b67-a393-ade7d493f843.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/255ee772-0c95-4b67-a393-ade7d493f843.png&#34;
 	width=&#34;873&#34;
 	height=&#34;641&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/255ee772-0c95-4b67-a393-ade7d493f843_hu_5765c90c811ea0fc.png 480w, http://localhost:1313/p/iris/img/255ee772-0c95-4b67-a393-ade7d493f843_hu_1a851f3bdedd9dc7.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/255ee772-0c95-4b67-a393-ade7d493f843_hu_5765c90c811ea0fc.png 480w, https://kotazzz.github.io/p/iris/img/255ee772-0c95-4b67-a393-ade7d493f843_hu_1a851f3bdedd9dc7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1268,10 +1268,10 @@
 &lt;strong&gt;・&lt;/strong&gt;!&lt;strong&gt;Девиз&lt;/strong&gt; — просмотр своего девиза.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ограничение в 100 символов.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/d12b8991-b349-4b5a-91e3-77fd80e299b6.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/d12b8991-b349-4b5a-91e3-77fd80e299b6.png&#34;
 	width=&#34;864&#34;
 	height=&#34;544&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/d12b8991-b349-4b5a-91e3-77fd80e299b6_hu_8f1822347dbb6aff.png 480w, http://localhost:1313/p/iris/img/d12b8991-b349-4b5a-91e3-77fd80e299b6_hu_4b450f53f30020ae.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/d12b8991-b349-4b5a-91e3-77fd80e299b6_hu_8f1822347dbb6aff.png 480w, https://kotazzz.github.io/p/iris/img/d12b8991-b349-4b5a-91e3-77fd80e299b6_hu_4b450f53f30020ae.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1288,10 +1288,10 @@
 &lt;em&gt;— Синоним: кто гражданин, кто граждане&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Гражданство просто помечает, что вы гражданин какого-то чата. В статистике рядом с вашем именем будет отображаться значок «🏡».&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/aa8eea51-9513-4504-bed2-f9898e9b64f7.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/aa8eea51-9513-4504-bed2-f9898e9b64f7.png&#34;
 	width=&#34;863&#34;
 	height=&#34;520&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/aa8eea51-9513-4504-bed2-f9898e9b64f7_hu_bdb806475ffe36a1.png 480w, http://localhost:1313/p/iris/img/aa8eea51-9513-4504-bed2-f9898e9b64f7_hu_422927f35ffddb3e.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/aa8eea51-9513-4504-bed2-f9898e9b64f7_hu_bdb806475ffe36a1.png 480w, https://kotazzz.github.io/p/iris/img/aa8eea51-9513-4504-bed2-f9898e9b64f7_hu_422927f35ffddb3e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1307,10 +1307,10 @@
 &lt;strong&gt;・+Ачивки&lt;/strong&gt; / &lt;strong&gt;-Ачивки&lt;/strong&gt; — откроет / скроет просмотр ваших ачивок от посторонних глаз (если открыть, то список ваших ачивок будет показан прямо в профиле).
 &lt;strong&gt;・Твои ачивки&lt;/strong&gt; — покажет список ачивок выбранного пользователя (если он разрешил их просматривать другим пользователям).
 &lt;em&gt;— Синоним: покажи ачивки&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/6e5acaed-127d-4bfe-8cf0-ddd5cf9a64b0.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/6e5acaed-127d-4bfe-8cf0-ddd5cf9a64b0.png&#34;
 	width=&#34;1088&#34;
 	height=&#34;636&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/6e5acaed-127d-4bfe-8cf0-ddd5cf9a64b0_hu_c928a5b8abafcad3.png 480w, http://localhost:1313/p/iris/img/6e5acaed-127d-4bfe-8cf0-ddd5cf9a64b0_hu_46e664544b4a107d.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/6e5acaed-127d-4bfe-8cf0-ddd5cf9a64b0_hu_c928a5b8abafcad3.png 480w, https://kotazzz.github.io/p/iris/img/6e5acaed-127d-4bfe-8cf0-ddd5cf9a64b0_hu_46e664544b4a107d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1327,10 +1327,10 @@
 &lt;p&gt;&lt;strong&gt;・Мои подписки&lt;/strong&gt; — список людей, на которых Вы подписаны.
 &lt;strong&gt;・Мои сабы&lt;/strong&gt; — список людей, подписанных на вас
 &lt;strong&gt;・Подписки {ссылка}&lt;/strong&gt; — список подписанных на пользователя людей.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/d6aaddf6-745a-426a-b982-5ada0f5b608c.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/d6aaddf6-745a-426a-b982-5ada0f5b608c.png&#34;
 	width=&#34;879&#34;
 	height=&#34;382&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/d6aaddf6-745a-426a-b982-5ada0f5b608c_hu_31ed9a2a41b5e55f.png 480w, http://localhost:1313/p/iris/img/d6aaddf6-745a-426a-b982-5ada0f5b608c_hu_91dd0f5f8695e53e.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/d6aaddf6-745a-426a-b982-5ada0f5b608c_hu_31ed9a2a41b5e55f.png 480w, https://kotazzz.github.io/p/iris/img/d6aaddf6-745a-426a-b982-5ada0f5b608c_hu_91dd0f5f8695e53e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1346,10 +1346,10 @@
 &lt;strong&gt;・ !Регистрация {ссылка}&lt;/strong&gt; — выводит дату регистрации во вселенной Ириса.
 &lt;em&gt;— Синоним: !рег {ссылка}&lt;/em&gt; &lt;strong&gt;・!Ид {ссылка}&lt;/strong&gt; — выводит цифренный ID пользователя, канала, бота и анонимного администратора.
 &lt;em&gt;— Синоним: !id&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/8a02fabd-e0e4-4fc9-87e7-dc751973cc34.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/8a02fabd-e0e4-4fc9-87e7-dc751973cc34.png&#34;
 	width=&#34;867&#34;
 	height=&#34;202&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/8a02fabd-e0e4-4fc9-87e7-dc751973cc34_hu_bff1249a1e0d7ed9.png 480w, http://localhost:1313/p/iris/img/8a02fabd-e0e4-4fc9-87e7-dc751973cc34_hu_bea8ca0ea50fde73.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/8a02fabd-e0e4-4fc9-87e7-dc751973cc34_hu_bff1249a1e0d7ed9.png 480w, https://kotazzz.github.io/p/iris/img/8a02fabd-e0e4-4fc9-87e7-dc751973cc34_hu_bea8ca0ea50fde73.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1386,10 +1386,10 @@
 💔 - показатель плохого состояния&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Сердечки в [ ] — это &amp;ldquo;морозы&amp;rdquo; от Telegram (они в основном есть у всех недавно-созданных ботов). Очередь — это через сколько бот примерно ответит.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/f16d9241-29b1-44e0-bac2-78e508edf0c7.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/f16d9241-29b1-44e0-bac2-78e508edf0c7.png&#34;
 	width=&#34;915&#34;
 	height=&#34;942&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/f16d9241-29b1-44e0-bac2-78e508edf0c7_hu_8717b25a62d52a35.png 480w, http://localhost:1313/p/iris/img/f16d9241-29b1-44e0-bac2-78e508edf0c7_hu_a8d564e30afd8f33.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/f16d9241-29b1-44e0-bac2-78e508edf0c7_hu_8717b25a62d52a35.png 480w, https://kotazzz.github.io/p/iris/img/f16d9241-29b1-44e0-bac2-78e508edf0c7_hu_a8d564e30afd8f33.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1418,10 +1418,10 @@
 &lt;h3 id=&#34;статистика-чата&#34;&gt;Статистика чата
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Чат инфо&lt;/strong&gt; — выведет общую информацию чата.
 ・&lt;strong&gt;Чат стата&lt;/strong&gt; — выведет общую информацию чата в виде картинки.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/a764522f-fbc5-4048-bd7a-09c913923a11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/a764522f-fbc5-4048-bd7a-09c913923a11.png&#34;
 	width=&#34;858&#34;
 	height=&#34;567&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/a764522f-fbc5-4048-bd7a-09c913923a11_hu_549b891f29860099.png 480w, http://localhost:1313/p/iris/img/a764522f-fbc5-4048-bd7a-09c913923a11_hu_20fe7aab3004bf4.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/a764522f-fbc5-4048-bd7a-09c913923a11_hu_549b891f29860099.png 480w, https://kotazzz.github.io/p/iris/img/a764522f-fbc5-4048-bd7a-09c913923a11_hu_20fe7aab3004bf4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1434,10 +1434,10 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;статистика-о-пользователе&#34;&gt;Статистика о пользователе
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Моя стата&lt;/strong&gt; — выведет активность пользователя в чате в виде графика.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/86ac200b-e126-487a-a51c-c235f1ae71fe.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/86ac200b-e126-487a-a51c-c235f1ae71fe.png&#34;
 	width=&#34;864&#34;
 	height=&#34;491&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/86ac200b-e126-487a-a51c-c235f1ae71fe_hu_a8ee19d8cd96954d.png 480w, http://localhost:1313/p/iris/img/86ac200b-e126-487a-a51c-c235f1ae71fe_hu_1bd6636cc5878a80.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/86ac200b-e126-487a-a51c-c235f1ae71fe_hu_a8ee19d8cd96954d.png 480w, https://kotazzz.github.io/p/iris/img/86ac200b-e126-487a-a51c-c235f1ae71fe_hu_1bd6636cc5878a80.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1458,10 +1458,10 @@
 &lt;p&gt;Если вы хотите вывести определённое количество участников, то укажите цифру после команды «Стата» или «Топ» (до 100). Например:
 &lt;strong&gt;・Топ 10 неделя&lt;/strong&gt; — топ 10 активных пользователей за неделю.
 &lt;strong&gt;・Стата 1 вся&lt;/strong&gt; — самый активный пользователь за всё время и т.п.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/c25d5dd7-1af0-4dfa-945e-53964ed616c9.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/c25d5dd7-1af0-4dfa-945e-53964ed616c9.png&#34;
 	width=&#34;868&#34;
 	height=&#34;568&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/c25d5dd7-1af0-4dfa-945e-53964ed616c9_hu_7ef578f3b2e7e945.png 480w, http://localhost:1313/p/iris/img/c25d5dd7-1af0-4dfa-945e-53964ed616c9_hu_87fba5f3bb89e14d.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/c25d5dd7-1af0-4dfa-945e-53964ed616c9_hu_7ef578f3b2e7e945.png 480w, https://kotazzz.github.io/p/iris/img/c25d5dd7-1af0-4dfa-945e-53964ed616c9_hu_87fba5f3bb89e14d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1475,10 +1475,10 @@
 &lt;h3 id=&#34;статистика-вложений-ирис-коинов&#34;&gt;Статистика вложений ирис-коинов
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Бтоп стата&lt;/strong&gt; — покажет историю вложений ирис-коинов в чат.&lt;/p&gt;
 &lt;p&gt;・&lt;strong&gt;Бкоин {число}&lt;/strong&gt; — зачислит &lt;em&gt;{число}&lt;/em&gt; ирис-коинов в баланс чата с вашего мешка.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/63419d98-ef7f-464b-ada7-88bb07284cc5.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/63419d98-ef7f-464b-ada7-88bb07284cc5.png&#34;
 	width=&#34;960&#34;
 	height=&#34;681&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/63419d98-ef7f-464b-ada7-88bb07284cc5_hu_c2054fc4d2b70e6c.png 480w, http://localhost:1313/p/iris/img/63419d98-ef7f-464b-ada7-88bb07284cc5_hu_885b790596cebf45.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/63419d98-ef7f-464b-ada7-88bb07284cc5_hu_c2054fc4d2b70e6c.png 480w, https://kotazzz.github.io/p/iris/img/63419d98-ef7f-464b-ada7-88bb07284cc5_hu_885b790596cebf45.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1537,10 +1537,10 @@
 ・&lt;strong&gt;!Темы {номер/тема}&lt;/strong&gt; — установка темы &amp;ldquo;из коробки&amp;rdquo; по порядковому номеру или названию.&lt;/p&gt;
 &lt;p&gt;Ещё больше тем модераторов вы можете найти &lt;a class=&#34;link&#34; href=&#34;https://t.me/iris_topics&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;на этом канале&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/19b4876b-e0a7-48c5-9b69-bc9c5f93c5d0.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/19b4876b-e0a7-48c5-9b69-bc9c5f93c5d0.png&#34;
 	width=&#34;876&#34;
 	height=&#34;830&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/19b4876b-e0a7-48c5-9b69-bc9c5f93c5d0_hu_bca7b0e656322066.png 480w, http://localhost:1313/p/iris/img/19b4876b-e0a7-48c5-9b69-bc9c5f93c5d0_hu_40038bdfa054d751.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/19b4876b-e0a7-48c5-9b69-bc9c5f93c5d0_hu_bca7b0e656322066.png 480w, https://kotazzz.github.io/p/iris/img/19b4876b-e0a7-48c5-9b69-bc9c5f93c5d0_hu_40038bdfa054d751.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1563,10 +1563,10 @@
 должность и=модератор;р=модератора;д=модератору;т=модератором;мн=модераторы&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;и&lt;/strong&gt; — именительный, &lt;strong&gt;р&lt;/strong&gt; — родительный, &lt;strong&gt;д&lt;/strong&gt; — дательный, т — творительный падежи, &lt;strong&gt;мн&lt;/strong&gt; — во множественном числе.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/16f33116-0e6b-4e64-beca-715d5535b3fc.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/16f33116-0e6b-4e64-beca-715d5535b3fc.png&#34;
 	width=&#34;1210&#34;
 	height=&#34;756&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/16f33116-0e6b-4e64-beca-715d5535b3fc_hu_8e2ce08833572742.png 480w, http://localhost:1313/p/iris/img/16f33116-0e6b-4e64-beca-715d5535b3fc_hu_761ecdc3e5604ab0.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/16f33116-0e6b-4e64-beca-715d5535b3fc_hu_8e2ce08833572742.png 480w, https://kotazzz.github.io/p/iris/img/16f33116-0e6b-4e64-beca-715d5535b3fc_hu_761ecdc3e5604ab0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1584,10 +1584,10 @@
 ・-&lt;strong&gt;Иконка модераторов&lt;/strong&gt; — установка иконки по умолчанию (⭐️).&lt;/p&gt;
 &lt;p&gt;Кроме того, &lt;strong&gt;любой чат&lt;/strong&gt; может установить специальную иконку, соответствующую конкретному празднику&lt;/p&gt;
 &lt;p&gt;・+Иконка хэллоуин — иконка 💀&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/83c49218-e802-4f25-894b-650028bdec29.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/83c49218-e802-4f25-894b-650028bdec29.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1318&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/83c49218-e802-4f25-894b-650028bdec29_hu_9df77a421506fe44.png 480w, http://localhost:1313/p/iris/img/83c49218-e802-4f25-894b-650028bdec29_hu_495b3244d6688e4f.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/83c49218-e802-4f25-894b-650028bdec29_hu_9df77a421506fe44.png 480w, https://kotazzz.github.io/p/iris/img/83c49218-e802-4f25-894b-650028bdec29_hu_495b3244d6688e4f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1607,10 +1607,10 @@
 ・&lt;strong&gt;Гб стоп {ссылка}&lt;/strong&gt; — удаляет голосование за бан.
 ・&lt;strong&gt;Гб инфо {ссылка}&lt;/strong&gt; — информация о процессе голосования за бан указанного участника.
 ・&lt;strong&gt;Гб список&lt;/strong&gt; — список всех голосований за бан в чате за бан / против бана - голосование за / против бан.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/9aa5f875-cbf3-4ac6-a811-6a0ea027fb61.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/9aa5f875-cbf3-4ac6-a811-6a0ea027fb61.png&#34;
 	width=&#34;867&#34;
 	height=&#34;409&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/9aa5f875-cbf3-4ac6-a811-6a0ea027fb61_hu_8ae093c7d010ee65.png 480w, http://localhost:1313/p/iris/img/9aa5f875-cbf3-4ac6-a811-6a0ea027fb61_hu_b1fcdd53c15fa4a1.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/9aa5f875-cbf3-4ac6-a811-6a0ea027fb61_hu_8ae093c7d010ee65.png 480w, https://kotazzz.github.io/p/iris/img/9aa5f875-cbf3-4ac6-a811-6a0ea027fb61_hu_b1fcdd53c15fa4a1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1634,10 +1634,10 @@
 ・&lt;strong&gt;-Ирис антиспам&lt;/strong&gt; — отключит «Ирис-антиспам»&lt;/p&gt;
 &lt;h3 id=&#34;подробнее-об-ирис-антиспам-&#34;&gt;Подробнее об «Ирис-антиспам» — &lt;a class=&#34;link&#34; href=&#34;https://teletype.in/@iris_cm/spam&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://teletype.in/@iris_cm/spam&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/24ea057e-ba6f-4f0f-94e0-91a8823ddfd0.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/24ea057e-ba6f-4f0f-94e0-91a8823ddfd0.png&#34;
 	width=&#34;920&#34;
 	height=&#34;285&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/24ea057e-ba6f-4f0f-94e0-91a8823ddfd0_hu_2021898ef8b95929.png 480w, http://localhost:1313/p/iris/img/24ea057e-ba6f-4f0f-94e0-91a8823ddfd0_hu_c944040de6f33941.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/24ea057e-ba6f-4f0f-94e0-91a8823ddfd0_hu_2021898ef8b95929.png 480w, https://kotazzz.github.io/p/iris/img/24ea057e-ba6f-4f0f-94e0-91a8823ddfd0_hu_c944040de6f33941.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1654,10 +1654,10 @@
 &lt;p&gt;В отличие от базы «&lt;strong&gt;Ирис-Антиспам&lt;/strong&gt;», пользователь сможет присоединиться к чату и использовать команды бота, но с специальной пометкой (🆘) и некоторыми ограничениями в использовании функционала Ириса.&lt;/p&gt;
 &lt;h3 id=&#34;подробнее-о-базе-scam-&#34;&gt;Подробнее о базе «SCAM» — &lt;a class=&#34;link&#34; href=&#34;https://teletype.in/@iris_cm/scam&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://teletype.in/@iris_cm/scam&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/b9de1117-fcb2-4dbc-8096-477704784094.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/b9de1117-fcb2-4dbc-8096-477704784094.png&#34;
 	width=&#34;869&#34;
 	height=&#34;304&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/b9de1117-fcb2-4dbc-8096-477704784094_hu_615e95b00dfc0726.png 480w, http://localhost:1313/p/iris/img/b9de1117-fcb2-4dbc-8096-477704784094_hu_ba73ec5d5bf16114.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/b9de1117-fcb2-4dbc-8096-477704784094_hu_615e95b00dfc0726.png 480w, https://kotazzz.github.io/p/iris/img/b9de1117-fcb2-4dbc-8096-477704784094_hu_ba73ec5d5bf16114.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1689,10 +1689,10 @@
 ・&lt;strong&gt;Передать {число} {ссылка}&lt;/strong&gt; — передать &lt;em&gt;{число}&lt;/em&gt; ирисок пользователю.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ириски можно передавать только пользователям и в неограниченном количестве.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/d2da7ac3-7e04-41ba-b32d-c19b56253dd0.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/d2da7ac3-7e04-41ba-b32d-c19b56253dd0.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;403&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/d2da7ac3-7e04-41ba-b32d-c19b56253dd0_hu_f24ebdd9ca18ba81.png 480w, http://localhost:1313/p/iris/img/d2da7ac3-7e04-41ba-b32d-c19b56253dd0_hu_859360f33faa8b96.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/d2da7ac3-7e04-41ba-b32d-c19b56253dd0_hu_f24ebdd9ca18ba81.png 480w, https://kotazzz.github.io/p/iris/img/d2da7ac3-7e04-41ba-b32d-c19b56253dd0_hu_859360f33faa8b96.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1715,10 +1715,10 @@
 &lt;h3 id=&#34;история-путешествия-ирисок-&#34;&gt;История путешествия ирисок 🚀
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Где мои ириски&lt;/strong&gt; — история путешествия ваших ирисок за последнее время.
 &lt;em&gt;— Синоним: куда пропали мои ириски, !история ирисок, !путешествие ирисок&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ece8277a-a62f-40af-bef5-4fb26f5144f1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ece8277a-a62f-40af-bef5-4fb26f5144f1.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1245&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ece8277a-a62f-40af-bef5-4fb26f5144f1_hu_b2c8db6d9b2c3ef0.png 480w, http://localhost:1313/p/iris/img/ece8277a-a62f-40af-bef5-4fb26f5144f1_hu_43931bae713f6649.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ece8277a-a62f-40af-bef5-4fb26f5144f1_hu_b2c8db6d9b2c3ef0.png 480w, https://kotazzz.github.io/p/iris/img/ece8277a-a62f-40af-bef5-4fb26f5144f1_hu_43931bae713f6649.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1731,10 +1731,10 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;порог-передачи-ирисок-&#34;&gt;Порог передачи ирисок 🛑
 &lt;/h3&gt;&lt;p&gt;В одном из обновлений появились уведомления при переводе ирисок. Они появляются когда вы &lt;strong&gt;передаёте ириски&lt;/strong&gt; пользователю &lt;strong&gt;впервые&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/3319243d-dcd2-4144-8c69-bd197a895769.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/3319243d-dcd2-4144-8c69-bd197a895769.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1015&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/3319243d-dcd2-4144-8c69-bd197a895769_hu_9f149e4969dd967f.png 480w, http://localhost:1313/p/iris/img/3319243d-dcd2-4144-8c69-bd197a895769_hu_e93b824e233c7e2c.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/3319243d-dcd2-4144-8c69-bd197a895769_hu_9f149e4969dd967f.png 480w, https://kotazzz.github.io/p/iris/img/3319243d-dcd2-4144-8c69-bd197a895769_hu_e93b824e233c7e2c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1754,10 +1754,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;Узнать свою дату регистрации во вселенной Ириса можно с помощью следующей команды: &lt;code&gt;!регистрация&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Кстати, при использовании двойного префикса для передачи ирисок, уведомление в любом случае не появится. Например: &lt;code&gt;!!передать (число)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/145e7437-9854-4245-9705-3a4981e6ebd6.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/145e7437-9854-4245-9705-3a4981e6ebd6.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;1067&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/145e7437-9854-4245-9705-3a4981e6ebd6_hu_abf95e085e9bda4.png 480w, http://localhost:1313/p/iris/img/145e7437-9854-4245-9705-3a4981e6ebd6_hu_cd23eddbf0fee901.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/145e7437-9854-4245-9705-3a4981e6ebd6_hu_abf95e085e9bda4.png 480w, https://kotazzz.github.io/p/iris/img/145e7437-9854-4245-9705-3a4981e6ebd6_hu_cd23eddbf0fee901.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1776,10 +1776,10 @@
 &lt;p&gt;Также, если вы модератор чата, вы можете установить свою цену для покупки випа от 10 до 10 000 ирисок.&lt;/p&gt;
 &lt;h3 id=&#34;подробнее-о-vip-статусе-&#34;&gt;Подробнее о VIP-статусе — &lt;a class=&#34;link&#34; href=&#34;https://teletype.in/@iris_cm/vip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://teletype.in/@iris_cm/vip&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/a243662f-6807-4814-8658-671e7dd506dd.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/a243662f-6807-4814-8658-671e7dd506dd.png&#34;
 	width=&#34;968&#34;
 	height=&#34;508&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/a243662f-6807-4814-8658-671e7dd506dd_hu_6d0782e1e16bf315.png 480w, http://localhost:1313/p/iris/img/a243662f-6807-4814-8658-671e7dd506dd_hu_d6b1eeac90421df3.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/a243662f-6807-4814-8658-671e7dd506dd_hu_6d0782e1e16bf315.png 480w, https://kotazzz.github.io/p/iris/img/a243662f-6807-4814-8658-671e7dd506dd_hu_d6b1eeac90421df3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1811,10 +1811,10 @@
 ・&lt;strong&gt;Кубы отмена&lt;/strong&gt; — отменяет уже предложенную игру в кубы.&lt;/p&gt;
 &lt;h3 id=&#34;погода&#34;&gt;Погода
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;!Погода {город}&lt;/strong&gt; — выводит погоду на 3 дня в указанном городе.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/a7809f38-c31b-40e8-b8a6-b9bfba27579b.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/a7809f38-c31b-40e8-b8a6-b9bfba27579b.png&#34;
 	width=&#34;871&#34;
 	height=&#34;623&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/a7809f38-c31b-40e8-b8a6-b9bfba27579b_hu_45b1ca6e9dea32d6.png 480w, http://localhost:1313/p/iris/img/a7809f38-c31b-40e8-b8a6-b9bfba27579b_hu_6be0f9edfa256b3c.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/a7809f38-c31b-40e8-b8a6-b9bfba27579b_hu_45b1ca6e9dea32d6.png 480w, https://kotazzz.github.io/p/iris/img/a7809f38-c31b-40e8-b8a6-b9bfba27579b_hu_6be0f9edfa256b3c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1831,10 +1831,10 @@
 &lt;p&gt;・&lt;strong&gt;Пейринг&lt;/strong&gt; — список всех зашипперинных в чате.
 ・&lt;strong&gt;Общий пейринг&lt;/strong&gt; — список всех зашипперинных ирисят.
 ・&lt;strong&gt;!Сбросить пейринг&lt;/strong&gt; — очищает информацию о парах, которых Вы шипперили.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/f0bae3c0-aa31-44bc-8e49-302f6d5d726b.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/f0bae3c0-aa31-44bc-8e49-302f6d5d726b.png&#34;
 	width=&#34;870&#34;
 	height=&#34;228&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/f0bae3c0-aa31-44bc-8e49-302f6d5d726b_hu_b36341a45f8a131f.png 480w, http://localhost:1313/p/iris/img/f0bae3c0-aa31-44bc-8e49-302f6d5d726b_hu_7f4429a9c9cb9f53.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/f0bae3c0-aa31-44bc-8e49-302f6d5d726b_hu_b36341a45f8a131f.png 480w, https://kotazzz.github.io/p/iris/img/f0bae3c0-aa31-44bc-8e49-302f6d5d726b_hu_7f4429a9c9cb9f53.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1847,10 +1847,10 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;повторить-текст&#34;&gt;Повторить текст
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;!Скажи [enter] {текст}&lt;/strong&gt; — бот повторит ваш текст от своего лица.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/366855f0-e62f-4274-bf0c-95cafdd194bd.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/366855f0-e62f-4274-bf0c-95cafdd194bd.png&#34;
 	width=&#34;881&#34;
 	height=&#34;228&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/366855f0-e62f-4274-bf0c-95cafdd194bd_hu_cbb4aaf0cd2af45c.png 480w, http://localhost:1313/p/iris/img/366855f0-e62f-4274-bf0c-95cafdd194bd_hu_de3674cd1ba7057e.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/366855f0-e62f-4274-bf0c-95cafdd194bd_hu_cbb4aaf0cd2af45c.png 480w, https://kotazzz.github.io/p/iris/img/366855f0-e62f-4274-bf0c-95cafdd194bd_hu_de3674cd1ba7057e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1864,10 +1864,10 @@
 &lt;h3 id=&#34;ферма&#34;&gt;Ферма
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Ферма&lt;/strong&gt; — получить бесплатные ирис-коины. Получаемое количество колеблется в значении 5-50 i¢. Фармить можно раз в 4 часа.
 &lt;em&gt;— Синонимы: !бизнес, фарма, фармить, !работа, !работать&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/091ef0d5-4d5b-4bc4-ad1d-a31bd9ec9e4a.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/091ef0d5-4d5b-4bc4-ad1d-a31bd9ec9e4a.png&#34;
 	width=&#34;862&#34;
 	height=&#34;356&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/091ef0d5-4d5b-4bc4-ad1d-a31bd9ec9e4a_hu_bfe5624dd885e4c1.png 480w, http://localhost:1313/p/iris/img/091ef0d5-4d5b-4bc4-ad1d-a31bd9ec9e4a_hu_f717dfcd83a665d9.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/091ef0d5-4d5b-4bc4-ad1d-a31bd9ec9e4a_hu_bfe5624dd885e4c1.png 480w, https://kotazzz.github.io/p/iris/img/091ef0d5-4d5b-4bc4-ad1d-a31bd9ec9e4a_hu_f717dfcd83a665d9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1889,10 +1889,10 @@
 &lt;h3 id=&#34;рп-команды&#34;&gt;РП-команды
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Пример:&lt;/strong&gt; Пожать руку {ссылка}&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/58c11f41-7fde-4ae6-8596-0799ab0e9ff4.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/58c11f41-7fde-4ae6-8596-0799ab0e9ff4.png&#34;
 	width=&#34;877&#34;
 	height=&#34;316&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/58c11f41-7fde-4ae6-8596-0799ab0e9ff4_hu_9a9523008c8cc38c.png 480w, http://localhost:1313/p/iris/img/58c11f41-7fde-4ae6-8596-0799ab0e9ff4_hu_c27099a1e52c137.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/58c11f41-7fde-4ae6-8596-0799ab0e9ff4_hu_9a9523008c8cc38c.png 480w, https://kotazzz.github.io/p/iris/img/58c11f41-7fde-4ae6-8596-0799ab0e9ff4_hu_c27099a1e52c137.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1906,10 +1906,10 @@
 &lt;p&gt;Ирис старается быть доступным для всех категорий пользователей, поэтому мы ввели некоторые возрастные ограничения. Но их можно легко снять, переведя настройки на уровень 18+ командой «&lt;strong&gt;рп доступ к 18+&lt;/strong&gt;».&lt;/p&gt;
 &lt;p&gt;Имеющиеся уровни возрастных ограничений: &lt;code&gt;0+&lt;/code&gt;, &lt;code&gt;13+&lt;/code&gt; и &lt;code&gt;18+&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Важно понимать. Это не ограничение по вашему возрасту, указанному в Telegram. Это типы категорий команд. И старшие модераторы каждого чата сами решают, к рп-командам каких категорий будет открыт доступ.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/974480e1-9579-4e9b-8f48-8103e7cf9fa8.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/974480e1-9579-4e9b-8f48-8103e7cf9fa8.png&#34;
 	width=&#34;882&#34;
 	height=&#34;646&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/974480e1-9579-4e9b-8f48-8103e7cf9fa8_hu_d9f74d2a6a7ec1c1.png 480w, http://localhost:1313/p/iris/img/974480e1-9579-4e9b-8f48-8103e7cf9fa8_hu_2c703c97fc567fc3.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/974480e1-9579-4e9b-8f48-8103e7cf9fa8_hu_d9f74d2a6a7ec1c1.png 480w, https://kotazzz.github.io/p/iris/img/974480e1-9579-4e9b-8f48-8103e7cf9fa8_hu_2c703c97fc567fc3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1939,10 +1939,10 @@
 &lt;p&gt;Помимо прокачки лабораторий, вы будете прокачивать самого себя, улучшать свои навыки. Чем лучше вы будете прокачаны, тем сложнее вас будет заразить. Лучшие будут попадать в локальный и глобальный топ вселенной Ириса.&lt;/p&gt;
 &lt;h3 id=&#34;подробная-информация-по-этой-мини-игре&#34;&gt;Подробная информация по этой мини-игре: &lt;a class=&#34;link&#34; href=&#34;https://teletype.in/@iris_cm/bioattack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://teletype.in/@iris_cm/bioattack&lt;/a&gt;
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/9c605cda-e3c9-4b97-ae48-3caca76d9690.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/9c605cda-e3c9-4b97-ae48-3caca76d9690.png&#34;
 	width=&#34;961&#34;
 	height=&#34;830&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/9c605cda-e3c9-4b97-ae48-3caca76d9690_hu_b8810b6fd21a6113.png 480w, http://localhost:1313/p/iris/img/9c605cda-e3c9-4b97-ae48-3caca76d9690_hu_d54036cf49466e33.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/9c605cda-e3c9-4b97-ae48-3caca76d9690_hu_b8810b6fd21a6113.png 480w, https://kotazzz.github.io/p/iris/img/9c605cda-e3c9-4b97-ae48-3caca76d9690_hu_d54036cf49466e33.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1965,10 +1965,10 @@
 ・&lt;strong&gt;Выстрел&lt;/strong&gt; — выстрелить.
 ・&lt;strong&gt;Прицелиться&lt;/strong&gt; — прицелиться и повысить шанс попадания следующего выстрела.
 ・&lt;strong&gt;Сбросить прицел&lt;/strong&gt; — сбросить накопленные бонусы прицела.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/7f1408d0-9118-470b-ad55-2d11471bb6f8.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/7f1408d0-9118-470b-ad55-2d11471bb6f8.png&#34;
 	width=&#34;2048&#34;
 	height=&#34;872&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/7f1408d0-9118-470b-ad55-2d11471bb6f8_hu_beedceed88dea301.png 480w, http://localhost:1313/p/iris/img/7f1408d0-9118-470b-ad55-2d11471bb6f8_hu_5a5c8a28e4897d83.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/7f1408d0-9118-470b-ad55-2d11471bb6f8_hu_beedceed88dea301.png 480w, https://kotazzz.github.io/p/iris/img/7f1408d0-9118-470b-ad55-2d11471bb6f8_hu_5a5c8a28e4897d83.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -1983,10 +1983,10 @@
 &lt;p&gt;・&lt;strong&gt;Дуэли исход 0 (ничего не делать)&lt;/strong&gt; ・&lt;strong&gt;Дуэли исход кик&lt;/strong&gt; ・&lt;strong&gt;Дуэли исход бан минута&lt;/strong&gt; ・&lt;strong&gt;Дуэли исход бан 10 минут&lt;/strong&gt; ・&lt;strong&gt;Дуэли исход бан час&lt;/strong&gt; ・&lt;strong&gt;Дуэли исход бан сутки&lt;/strong&gt; ・&lt;strong&gt;Дуэли исход бан навсегда&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Также настроить исход дуэлей можно с помощью триггеров.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/9d8177a7-910c-4a5a-9ea0-5ccc5e09f524.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/9d8177a7-910c-4a5a-9ea0-5ccc5e09f524.png&#34;
 	width=&#34;865&#34;
 	height=&#34;230&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/9d8177a7-910c-4a5a-9ea0-5ccc5e09f524_hu_54d0ec41b48db7c0.png 480w, http://localhost:1313/p/iris/img/9d8177a7-910c-4a5a-9ea0-5ccc5e09f524_hu_c35027ddb8f11cc0.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/9d8177a7-910c-4a5a-9ea0-5ccc5e09f524_hu_54d0ec41b48db7c0.png 480w, https://kotazzz.github.io/p/iris/img/9d8177a7-910c-4a5a-9ea0-5ccc5e09f524_hu_c35027ddb8f11cc0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2000,10 +2000,10 @@
 &lt;p&gt;・&lt;strong&gt;Дуэли стата&lt;/strong&gt; — рейтинг дуэлянтов чата &lt;em&gt;(выигрыши | ничьи | проигрыши).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;・&lt;strong&gt;!Дуэли сброс&lt;/strong&gt; — сбрасывает статистику дуэлей.
 &lt;em&gt;— Синоним: !сброс дуэлей&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/7590d356-6967-419f-b8ff-f8f154d5dc3c.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/7590d356-6967-419f-b8ff-f8f154d5dc3c.png&#34;
 	width=&#34;875&#34;
 	height=&#34;204&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/7590d356-6967-419f-b8ff-f8f154d5dc3c_hu_4bce9eb37bd26505.png 480w, http://localhost:1313/p/iris/img/7590d356-6967-419f-b8ff-f8f154d5dc3c_hu_55cffa3b3681bb53.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/7590d356-6967-419f-b8ff-f8f154d5dc3c_hu_4bce9eb37bd26505.png 480w, https://kotazzz.github.io/p/iris/img/7590d356-6967-419f-b8ff-f8f154d5dc3c_hu_55cffa3b3681bb53.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2022,10 +2022,10 @@
 &lt;strong&gt;・&lt;/strong&gt; &lt;em&gt;Отмена дуэли&lt;/em&gt; — 2% от ставки.
 Оплата специальных действий взимается из мешка дуэлянта целым числом, непотраченная дробная часть Ирис-Голд записывается в &lt;strong&gt;остаток&lt;/strong&gt;. Остаток будет использоваться для оплаты специальных действий в последующих золотых дуэлях.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;・Золотые дуэли стата&lt;/strong&gt; — рейтинг золотых дуэлей 🌕&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/9268692b-85ec-4af4-86d8-76e7aa989ade.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/9268692b-85ec-4af4-86d8-76e7aa989ade.png&#34;
 	width=&#34;906&#34;
 	height=&#34;921&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/9268692b-85ec-4af4-86d8-76e7aa989ade_hu_61148ed7a85762f4.png 480w, http://localhost:1313/p/iris/img/9268692b-85ec-4af4-86d8-76e7aa989ade_hu_6d634bc112f25960.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/9268692b-85ec-4af4-86d8-76e7aa989ade_hu_61148ed7a85762f4.png 480w, https://kotazzz.github.io/p/iris/img/9268692b-85ec-4af4-86d8-76e7aa989ade_hu_6d634bc112f25960.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2049,10 +2049,10 @@
 ・&lt;strong&gt;Кто кубы&lt;/strong&gt; — предложить добровольцу сыграть в кубы.
 ・&lt;strong&gt;Кубы да / нет&lt;/strong&gt; — согласиться / отказаться играть в кубы.
 ・&lt;strong&gt;Кубы стата&lt;/strong&gt; — посмотреть статистику игр в вашем чате.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/f1a61939-f260-452c-a98b-7cde65629138.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/f1a61939-f260-452c-a98b-7cde65629138.png&#34;
 	width=&#34;2032&#34;
 	height=&#34;796&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/f1a61939-f260-452c-a98b-7cde65629138_hu_b93cbc8039552c8b.png 480w, http://localhost:1313/p/iris/img/f1a61939-f260-452c-a98b-7cde65629138_hu_d21078a86e6f3ac5.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/f1a61939-f260-452c-a98b-7cde65629138_hu_b93cbc8039552c8b.png 480w, https://kotazzz.github.io/p/iris/img/f1a61939-f260-452c-a98b-7cde65629138_hu_d21078a86e6f3ac5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2067,10 +2067,10 @@
 ・&lt;strong&gt;Кубы исход 0&lt;/strong&gt; — убрать наказание за проигрыш в кубах.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Также настроить исход кубов можно с помощью триггеров.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/f3b6e6aa-5a8d-4a03-862e-7b568c236847.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/f3b6e6aa-5a8d-4a03-862e-7b568c236847.png&#34;
 	width=&#34;2016&#34;
 	height=&#34;512&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/f3b6e6aa-5a8d-4a03-862e-7b568c236847_hu_3b97be5b1fe62b51.png 480w, http://localhost:1313/p/iris/img/f3b6e6aa-5a8d-4a03-862e-7b568c236847_hu_c5f49aa786a2f25f.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/f3b6e6aa-5a8d-4a03-862e-7b568c236847_hu_3b97be5b1fe62b51.png 480w, https://kotazzz.github.io/p/iris/img/f3b6e6aa-5a8d-4a03-862e-7b568c236847_hu_c5f49aa786a2f25f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2091,10 +2091,10 @@
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Кланы&lt;/strong&gt; — группировки внутри чата, включающие в себя неограниченное количество участников.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Можно создать только один клан и состоять только в одном клане. При вступлении в другой клан, вы автоматически покинете предыдущий.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/d9cf7c72-7bdc-4b2c-be07-8872b810e40c.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/d9cf7c72-7bdc-4b2c-be07-8872b810e40c.png&#34;
 	width=&#34;1210&#34;
 	height=&#34;700&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/d9cf7c72-7bdc-4b2c-be07-8872b810e40c_hu_6fe97d327a1e477a.png 480w, http://localhost:1313/p/iris/img/d9cf7c72-7bdc-4b2c-be07-8872b810e40c_hu_e7a267a2050a4cfc.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/d9cf7c72-7bdc-4b2c-be07-8872b810e40c_hu_6fe97d327a1e477a.png 480w, https://kotazzz.github.io/p/iris/img/d9cf7c72-7bdc-4b2c-be07-8872b810e40c_hu_e7a267a2050a4cfc.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2141,10 +2141,10 @@
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Аналогия «&lt;strong&gt;Кланам&lt;/strong&gt;» — несколько группировок внутри чата по интересам.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;В отличие от кланов, можно создать несколько кружков и быть участником в нескольких кружках одновременно.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/c76acbc1-4c92-47e3-877d-813de9a22a8c.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/c76acbc1-4c92-47e3-877d-813de9a22a8c.png&#34;
 	width=&#34;1210&#34;
 	height=&#34;700&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/c76acbc1-4c92-47e3-877d-813de9a22a8c_hu_3c20e6e87454d172.png 480w, http://localhost:1313/p/iris/img/c76acbc1-4c92-47e3-877d-813de9a22a8c_hu_1137b0de86cb444f.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/c76acbc1-4c92-47e3-877d-813de9a22a8c_hu_3c20e6e87454d172.png 480w, https://kotazzz.github.io/p/iris/img/c76acbc1-4c92-47e3-877d-813de9a22a8c_hu_1137b0de86cb444f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2186,10 +2186,10 @@
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Отношения&lt;/strong&gt; — интерактивные действия между участниками, повышающие ваш уровень взаимоотношений.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Существует &lt;strong&gt;более 13&lt;/strong&gt; уровней отношений. Для перехода на следующий уровень необходимо получить определённое количество опыта отношений.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/55dc71a9-312c-4680-861d-eb3db22aedce.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/55dc71a9-312c-4680-861d-eb3db22aedce.png&#34;
 	width=&#34;1210&#34;
 	height=&#34;816&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/55dc71a9-312c-4680-861d-eb3db22aedce_hu_b2209502a2f4f1aa.png 480w, http://localhost:1313/p/iris/img/55dc71a9-312c-4680-861d-eb3db22aedce_hu_f03edf0c3cfbab9d.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/55dc71a9-312c-4680-861d-eb3db22aedce_hu_b2209502a2f4f1aa.png 480w, https://kotazzz.github.io/p/iris/img/55dc71a9-312c-4680-861d-eb3db22aedce_hu_f03edf0c3cfbab9d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2252,10 +2252,10 @@
 ・&lt;strong&gt;Браки {номер страницы}&lt;/strong&gt; — откроет сразу нужную страницу списка браков.&lt;/p&gt;
 &lt;p&gt;・&lt;strong&gt;Поженить пару {ссылка} {ссылка}&lt;/strong&gt; — создаёт брак между выбранными пользователями.
 ・&lt;strong&gt;Развести пару {ссылка} {ссылка}&lt;/strong&gt; — расторгает брак между выбранными.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/f3d3ac84-342f-40cb-b1b4-77cfd6d6c7f0.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/f3d3ac84-342f-40cb-b1b4-77cfd6d6c7f0.png&#34;
 	width=&#34;861&#34;
 	height=&#34;253&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/f3d3ac84-342f-40cb-b1b4-77cfd6d6c7f0_hu_5c04b26bb077f65.png 480w, http://localhost:1313/p/iris/img/f3d3ac84-342f-40cb-b1b4-77cfd6d6c7f0_hu_8772ed594335598b.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/f3d3ac84-342f-40cb-b1b4-77cfd6d6c7f0_hu_5c04b26bb077f65.png 480w, https://kotazzz.github.io/p/iris/img/f3d3ac84-342f-40cb-b1b4-77cfd6d6c7f0_hu_8772ed594335598b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2271,10 +2271,10 @@
 &lt;h3 id=&#34;продление-брака&#34;&gt;Продление брака
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Брак цена продления {число}&lt;/strong&gt; — установит цену продления браков.
 ・&lt;strong&gt;Брак продлить {кол-во дней}&lt;/strong&gt; — продлит количество дней в браке.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/ca01849c-d2d4-400c-a9f6-40b25fed6c4c.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/ca01849c-d2d4-400c-a9f6-40b25fed6c4c.png&#34;
 	width=&#34;890&#34;
 	height=&#34;435&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/ca01849c-d2d4-400c-a9f6-40b25fed6c4c_hu_add3d58ecda80162.png 480w, http://localhost:1313/p/iris/img/ca01849c-d2d4-400c-a9f6-40b25fed6c4c_hu_d8ca25617f300680.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/ca01849c-d2d4-400c-a9f6-40b25fed6c4c_hu_add3d58ecda80162.png 480w, https://kotazzz.github.io/p/iris/img/ca01849c-d2d4-400c-a9f6-40b25fed6c4c_hu_d8ca25617f300680.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2288,10 +2288,10 @@
 &lt;h3 id=&#34;топ-браков&#34;&gt;Топ браков
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Топ браков&lt;/strong&gt; — откроет рейтинг самых долгих браков во вселенной Ириса.
 ・&lt;strong&gt;Топ браков {номер страницы}&lt;/strong&gt; — откроет сразу нужную страницу топа браков.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/0efb14fe-f900-4315-961d-e25a4653e608.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/0efb14fe-f900-4315-961d-e25a4653e608.png&#34;
 	width=&#34;1746&#34;
 	height=&#34;1335&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/0efb14fe-f900-4315-961d-e25a4653e608_hu_d488f1b347813dde.png 480w, http://localhost:1313/p/iris/img/0efb14fe-f900-4315-961d-e25a4653e608_hu_bb80f1e3a62dd7d3.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/0efb14fe-f900-4315-961d-e25a4653e608_hu_d488f1b347813dde.png 480w, https://kotazzz.github.io/p/iris/img/0efb14fe-f900-4315-961d-e25a4653e608_hu_bb80f1e3a62dd7d3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2304,10 +2304,10 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;・&lt;strong&gt;+Брак рейтинг&lt;/strong&gt; — включает вашу пару в топ браков.
 ・&lt;strong&gt;-Брак рейтинг&lt;/strong&gt; — исключает вашу пару из топа браков.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/7abe30b8-053b-4219-9770-988e1a36ba36.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/7abe30b8-053b-4219-9770-988e1a36ba36.png&#34;
 	width=&#34;2018&#34;
 	height=&#34;934&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/7abe30b8-053b-4219-9770-988e1a36ba36_hu_1a7907c1574ff9d6.png 480w, http://localhost:1313/p/iris/img/7abe30b8-053b-4219-9770-988e1a36ba36_hu_1e4c871254c37ac6.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/7abe30b8-053b-4219-9770-988e1a36ba36_hu_1a7907c1574ff9d6.png 480w, https://kotazzz.github.io/p/iris/img/7abe30b8-053b-4219-9770-988e1a36ba36_hu_1e4c871254c37ac6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2343,10 +2343,10 @@
 &lt;em&gt;— Синоним: ^{число}&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Чем выше ранг, тем больше плюсиков за 1 раз вы можете ставить пользователю.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/7cf6edb6-b284-4a7f-b2d7-f0bfb4ec64df.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/7cf6edb6-b284-4a7f-b2d7-f0bfb4ec64df.png&#34;
 	width=&#34;860&#34;
 	height=&#34;380&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/7cf6edb6-b284-4a7f-b2d7-f0bfb4ec64df_hu_43f66c0d46db65e5.png 480w, http://localhost:1313/p/iris/img/7cf6edb6-b284-4a7f-b2d7-f0bfb4ec64df_hu_dde03e16af7c53e8.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/7cf6edb6-b284-4a7f-b2d7-f0bfb4ec64df_hu_43f66c0d46db65e5.png 480w, https://kotazzz.github.io/p/iris/img/7cf6edb6-b284-4a7f-b2d7-f0bfb4ec64df_hu_dde03e16af7c53e8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2366,10 +2366,10 @@
 &lt;p&gt;&lt;strong&gt;・Звёзды чата&lt;/strong&gt; — показывает рейтинг участников чата со звёздами в репутации.
 &lt;strong&gt;・Все звёзды&lt;/strong&gt; — показывает рейтинг участников со звёздами в репутации (среди всех ирисят).
 &lt;strong&gt;・Хранители звёзд&lt;/strong&gt; — показывает рейтинг участников со звёздами в мешке (в чате).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/88f74c91-34a5-4ffe-a698-b4f33c3f15a6.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/88f74c91-34a5-4ffe-a698-b4f33c3f15a6.png&#34;
 	width=&#34;869&#34;
 	height=&#34;618&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/88f74c91-34a5-4ffe-a698-b4f33c3f15a6_hu_7280d5ffbec80117.png 480w, http://localhost:1313/p/iris/img/88f74c91-34a5-4ffe-a698-b4f33c3f15a6_hu_9ad89ba5bd0bc060.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/88f74c91-34a5-4ffe-a698-b4f33c3f15a6_hu_7280d5ffbec80117.png 480w, https://kotazzz.github.io/p/iris/img/88f74c91-34a5-4ffe-a698-b4f33c3f15a6_hu_9ad89ba5bd0bc060.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2385,10 +2385,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;Чтобы попасть в этот топ, вы должны открыть свой мешок для всех.
 Команда: &lt;strong&gt;+мешок&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/d2258a56-01cc-4696-88af-5961a797f2ec.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/d2258a56-01cc-4696-88af-5961a797f2ec.png&#34;
 	width=&#34;868&#34;
 	height=&#34;698&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/d2258a56-01cc-4696-88af-5961a797f2ec_hu_c666be558252fdbd.png 480w, http://localhost:1313/p/iris/img/d2258a56-01cc-4696-88af-5961a797f2ec_hu_73d1aacb4072c50f.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/d2258a56-01cc-4696-88af-5961a797f2ec_hu_c666be558252fdbd.png 480w, https://kotazzz.github.io/p/iris/img/d2258a56-01cc-4696-88af-5961a797f2ec_hu_73d1aacb4072c50f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2404,10 +2404,10 @@
 &lt;strong&gt;・Бтоп&lt;/strong&gt; — показывает топ чатов по i¢.
 &lt;strong&gt;・Бтоп дня&lt;/strong&gt; — показывает топ чатов по i¢ по начисленным с начала дня коинам.
 &lt;strong&gt;・Штоп&lt;/strong&gt; — показывает топ ирис-коин шахтёров чата.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/514584c8-3981-4880-a42c-50ec37068f1d.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/514584c8-3981-4880-a42c-50ec37068f1d.png&#34;
 	width=&#34;864&#34;
 	height=&#34;228&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/514584c8-3981-4880-a42c-50ec37068f1d_hu_2d234d6c1de5b8e3.png 480w, http://localhost:1313/p/iris/img/514584c8-3981-4880-a42c-50ec37068f1d_hu_e3fa0f64723a077f.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/514584c8-3981-4880-a42c-50ec37068f1d_hu_2d234d6c1de5b8e3.png 480w, https://kotazzz.github.io/p/iris/img/514584c8-3981-4880-a42c-50ec37068f1d_hu_e3fa0f64723a077f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2429,10 +2429,10 @@
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Вы можете награждать особо отличившихся пользователей в вашем чате наградными медалями.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Каждый ранг может выдавать определённую степень для участника. Допустим, 1 ранг не сможет выдать участнику награду с 8 степенью, а только с 1 степенью и не больше.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/0b5ed41a-382c-4b9b-b2cb-68f114963355.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/0b5ed41a-382c-4b9b-b2cb-68f114963355.png&#34;
 	width=&#34;1210&#34;
 	height=&#34;707&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/0b5ed41a-382c-4b9b-b2cb-68f114963355_hu_7a0237598771bb89.png 480w, http://localhost:1313/p/iris/img/0b5ed41a-382c-4b9b-b2cb-68f114963355_hu_5baa22efb198a485.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/0b5ed41a-382c-4b9b-b2cb-68f114963355_hu_7a0237598771bb89.png 480w, https://kotazzz.github.io/p/iris/img/0b5ed41a-382c-4b9b-b2cb-68f114963355_hu_5baa22efb198a485.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2452,10 +2452,10 @@
 &lt;strong&gt;・Награды {ссылка}&lt;/strong&gt; — чтобы посмотреть награды участника.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Каждый ранг может выдавать определённую степень для участника. Допустим, 1 ранг не сможет выдать участнику награду с 8 степенью, а только с 1 степенью и не больше.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/73100514-2092-41be-a253-41e0ad611560.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/73100514-2092-41be-a253-41e0ad611560.png&#34;
 	width=&#34;867&#34;
 	height=&#34;388&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/73100514-2092-41be-a253-41e0ad611560_hu_593b503f6a60d143.png 480w, http://localhost:1313/p/iris/img/73100514-2092-41be-a253-41e0ad611560_hu_9e508f6e7d90a9e3.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/73100514-2092-41be-a253-41e0ad611560_hu_593b503f6a60d143.png 480w, https://kotazzz.github.io/p/iris/img/73100514-2092-41be-a253-41e0ad611560_hu_9e508f6e7d90a9e3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2476,10 +2476,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;+Закладка {название} [enter] {текст/вложения}&lt;/strong&gt; — установит закладку.
 Где &lt;strong&gt;[enter]&lt;/strong&gt; — переход на новую строчку.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/def4f5d7-140e-4345-9111-4793ffa62abf.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/def4f5d7-140e-4345-9111-4793ffa62abf.png&#34;
 	width=&#34;866&#34;
 	height=&#34;497&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/def4f5d7-140e-4345-9111-4793ffa62abf_hu_1548b723d2004d75.png 480w, http://localhost:1313/p/iris/img/def4f5d7-140e-4345-9111-4793ffa62abf_hu_636d08e547d8dd63.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/def4f5d7-140e-4345-9111-4793ffa62abf_hu_1548b723d2004d75.png 480w, https://kotazzz.github.io/p/iris/img/def4f5d7-140e-4345-9111-4793ffa62abf_hu_636d08e547d8dd63.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2493,10 +2493,10 @@
 &lt;p&gt;Закладки всех пользователей формируют &lt;strong&gt;чатбук&lt;/strong&gt;. Любой желающий имеет доступ к нему, вызвав команду «&lt;strong&gt;&lt;em&gt;чатбук&lt;/em&gt;&lt;/strong&gt;».&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;При нажатии на название закладки, вы сразу же перейдёте к сообщению.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/aa9dc924-cb42-436a-8553-7918a78ce2a8.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/aa9dc924-cb42-436a-8553-7918a78ce2a8.png&#34;
 	width=&#34;863&#34;
 	height=&#34;308&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/aa9dc924-cb42-436a-8553-7918a78ce2a8_hu_f78d53463c1d16f7.png 480w, http://localhost:1313/p/iris/img/aa9dc924-cb42-436a-8553-7918a78ce2a8_hu_5a3f18751035d3de.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/aa9dc924-cb42-436a-8553-7918a78ce2a8_hu_f78d53463c1d16f7.png 480w, https://kotazzz.github.io/p/iris/img/aa9dc924-cb42-436a-8553-7918a78ce2a8_hu_5a3f18751035d3de.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2525,10 +2525,10 @@
 &lt;h3 id=&#34;другие-команды&#34;&gt;Другие команды
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・+Кладмен {ссылка}&lt;/strong&gt; / &lt;strong&gt;-Кладмен {ссылка}&lt;/strong&gt; — возвращает / исключает все закладки пользователя из чатбука.
 &lt;em&gt;— Синонимы: вернуть кладмена, освободить кладмена, закрыть кладмена, убрать кладмена&lt;/em&gt; &lt;strong&gt;・Закладки рейтинг {число}&lt;/strong&gt; — создавать закладки могут только пользователи с репутацией от уровня &lt;em&gt;{число}.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/b6fc6f58-abfe-43cf-9e87-483f48d7620f.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/b6fc6f58-abfe-43cf-9e87-483f48d7620f.png&#34;
 	width=&#34;882&#34;
 	height=&#34;221&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/b6fc6f58-abfe-43cf-9e87-483f48d7620f_hu_336c7d7fa94d1ed7.png 480w, http://localhost:1313/p/iris/img/b6fc6f58-abfe-43cf-9e87-483f48d7620f_hu_bcb69e2ef0bcf27a.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/b6fc6f58-abfe-43cf-9e87-483f48d7620f_hu_336c7d7fa94d1ed7.png 480w, https://kotazzz.github.io/p/iris/img/b6fc6f58-abfe-43cf-9e87-483f48d7620f_hu_bcb69e2ef0bcf27a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2558,10 +2558,10 @@
 &lt;strong&gt;・Заметки {номер страницы}&lt;/strong&gt; — откроет сразу нужную страницу списка заметок.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Максимальная длина названия 40 символов, описания ~ 4000 символов.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/400160eb-bcee-431d-9dbd-573169e74673.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/400160eb-bcee-431d-9dbd-573169e74673.png&#34;
 	width=&#34;879&#34;
 	height=&#34;542&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/400160eb-bcee-431d-9dbd-573169e74673_hu_d3c7f59f3a41c192.png 480w, http://localhost:1313/p/iris/img/400160eb-bcee-431d-9dbd-573169e74673_hu_5a78760a09075e92.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/400160eb-bcee-431d-9dbd-573169e74673_hu_d3c7f59f3a41c192.png 480w, https://kotazzz.github.io/p/iris/img/400160eb-bcee-431d-9dbd-573169e74673_hu_5a78760a09075e92.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2582,10 +2582,10 @@
 &lt;p&gt;Доступны таймеры модераторам от 1 ранга, а так же участникам, имеющим VIP. Всего можно сделать до 5 таймеров на 1 чат.&lt;/p&gt;
 &lt;h3 id=&#34;таймер-через&#34;&gt;Таймер через
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・Таймер через {период} {enter} {команда}&lt;/strong&gt; — создает таймер. Период писать в минутах, часах, днях, неделях, месяцах. &lt;strong&gt;В пределах 1 года.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/37cd1d42-b6a8-4014-ba6f-c8864dcf38e5.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/37cd1d42-b6a8-4014-ba6f-c8864dcf38e5.png&#34;
 	width=&#34;866&#34;
 	height=&#34;299&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/37cd1d42-b6a8-4014-ba6f-c8864dcf38e5_hu_3f53e326a11b1903.png 480w, http://localhost:1313/p/iris/img/37cd1d42-b6a8-4014-ba6f-c8864dcf38e5_hu_a999eee9e052dbcd.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/37cd1d42-b6a8-4014-ba6f-c8864dcf38e5_hu_3f53e326a11b1903.png 480w, https://kotazzz.github.io/p/iris/img/37cd1d42-b6a8-4014-ba6f-c8864dcf38e5_hu_a999eee9e052dbcd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2600,10 +2600,10 @@
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;・Таймер на {дд.мм.гг чч:мм} {enter} {текст или команда}&lt;/strong&gt; — создает таймер на определенную дату и срок. Все временные параметры указывать необязательно.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;{дд.мм.гг чч:мм}&lt;/strong&gt; — день.месяц.год часы:минуты&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/a169e67e-a1ff-46d7-bb8a-14fcabd7e118.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/a169e67e-a1ff-46d7-bb8a-14fcabd7e118.png&#34;
 	width=&#34;871&#34;
 	height=&#34;254&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/a169e67e-a1ff-46d7-bb8a-14fcabd7e118_hu_13d36ff3ca03e226.png 480w, http://localhost:1313/p/iris/img/a169e67e-a1ff-46d7-bb8a-14fcabd7e118_hu_485ac374ab335b3a.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/a169e67e-a1ff-46d7-bb8a-14fcabd7e118_hu_13d36ff3ca03e226.png 480w, https://kotazzz.github.io/p/iris/img/a169e67e-a1ff-46d7-bb8a-14fcabd7e118_hu_485ac374ab335b3a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2630,10 +2630,10 @@
 &lt;strong&gt;・Каталог добавить&lt;/strong&gt; — обновляет информацию о вашем чате в каталоге: название, фотографию и описание (при указании).
 &lt;strong&gt;・Каталог отменить&lt;/strong&gt; — отменяет подачу заявки на добавление / обновление информации.
 &lt;strong&gt;・Каталог удалить&lt;/strong&gt; — удаляет чат из каталога.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/e61edbc0-9498-4e76-a387-a644addfb39f.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/e61edbc0-9498-4e76-a387-a644addfb39f.png&#34;
 	width=&#34;1495&#34;
 	height=&#34;366&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/e61edbc0-9498-4e76-a387-a644addfb39f_hu_24b8978f9c632c1f.png 480w, http://localhost:1313/p/iris/img/e61edbc0-9498-4e76-a387-a644addfb39f_hu_10d01f6110e23123.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/e61edbc0-9498-4e76-a387-a644addfb39f_hu_24b8978f9c632c1f.png 480w, https://kotazzz.github.io/p/iris/img/e61edbc0-9498-4e76-a387-a644addfb39f_hu_10d01f6110e23123.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2648,10 +2648,10 @@
 &lt;/h3&gt;&lt;p&gt;・&lt;strong&gt;Каталог категории&lt;/strong&gt; — выводит все категории
 ・+&lt;strong&gt;Каталог категории {номера}&lt;/strong&gt; — привязывает чат к категориям каталога с перечисленными через пробел номерами.
 ・-&lt;strong&gt;Каталог категории {номера}&lt;/strong&gt; — исключает чат из перечисленных через пробел номеров категорий.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/2d9b24fc-c63f-44e4-a049-bb79f7e156ee.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/2d9b24fc-c63f-44e4-a049-bb79f7e156ee.png&#34;
 	width=&#34;1496&#34;
 	height=&#34;487&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/2d9b24fc-c63f-44e4-a049-bb79f7e156ee_hu_6db269570b9bb28f.png 480w, http://localhost:1313/p/iris/img/2d9b24fc-c63f-44e4-a049-bb79f7e156ee_hu_96c2efcaa8f146da.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/2d9b24fc-c63f-44e4-a049-bb79f7e156ee_hu_6db269570b9bb28f.png 480w, https://kotazzz.github.io/p/iris/img/2d9b24fc-c63f-44e4-a049-bb79f7e156ee_hu_96c2efcaa8f146da.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2690,10 +2690,10 @@
 &lt;strong&gt;・Карта помощь&lt;/strong&gt; — выводит справку по модулю &lt;em&gt;«Карта».&lt;/em&gt; &lt;strong&gt;・Кто из {город}&lt;/strong&gt; — выводит список участников чата из данного города.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Изменения записываются в вашу анкету, которую вы можете вызвать по команде «&lt;strong&gt;моя анкета&lt;/strong&gt;».&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/f838da09-a76b-4341-94d7-969b237a30b3.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/f838da09-a76b-4341-94d7-969b237a30b3.png&#34;
 	width=&#34;879&#34;
 	height=&#34;693&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/f838da09-a76b-4341-94d7-969b237a30b3_hu_847afda9f820b6ad.png 480w, http://localhost:1313/p/iris/img/f838da09-a76b-4341-94d7-969b237a30b3_hu_ba0dd195149ff55e.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/f838da09-a76b-4341-94d7-969b237a30b3_hu_847afda9f820b6ad.png 480w, https://kotazzz.github.io/p/iris/img/f838da09-a76b-4341-94d7-969b237a30b3_hu_ba0dd195149ff55e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2715,10 +2715,10 @@
 &lt;p&gt;&lt;strong&gt;!!! ВАЖНО !!!&lt;/strong&gt; Ваша прибыль от вложений в ирис-голд не гарантируется. Нужно понимать риски участия на бирже — перегревы курса и его негативную динамику.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Если коротко, то смысл биржевой торговли: купил за 1 ириску — продал за 3&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/iris/img/667a232d-2ea4-4d29-9c71-2e8bf14bb4e9.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://kotazzz.github.io/p/iris/img/667a232d-2ea4-4d29-9c71-2e8bf14bb4e9.png&#34;
 	width=&#34;1210&#34;
 	height=&#34;707&#34;
-	srcset=&#34;http://localhost:1313/p/iris/img/667a232d-2ea4-4d29-9c71-2e8bf14bb4e9_hu_c96a093d9ef9c85b.png 480w, http://localhost:1313/p/iris/img/667a232d-2ea4-4d29-9c71-2e8bf14bb4e9_hu_5b7bd411d04caf23.png 1024w&#34;
+	srcset=&#34;https://kotazzz.github.io/p/iris/img/667a232d-2ea4-4d29-9c71-2e8bf14bb4e9_hu_c96a093d9ef9c85b.png 480w, https://kotazzz.github.io/p/iris/img/667a232d-2ea4-4d29-9c71-2e8bf14bb4e9_hu_5b7bd411d04caf23.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Image&#34;
@@ -2737,10 +2737,10 @@
         </item>
         <item>
         <title>Сюжет и планы для игры</title>
-        <link>http://localhost:1313/p/yarik/</link>
+        <link>https://kotazzz.github.io/p/yarik/</link>
         <pubDate>Sun, 24 Jul 2022 04:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/yarik/</guid>
+        <guid>https://kotazzz.github.io/p/yarik/</guid>
         <description>&lt;style&gt;
 .container.extended {
     --left-sidebar-max-width: 10%;
@@ -2930,10 +2930,10 @@ underlined text &amp;ldquo;abc&amp;rdquo;: abc&lt;/li&gt;
         </item>
         <item>
         <title>Первый пост</title>
-        <link>http://localhost:1313/p/first/</link>
+        <link>https://kotazzz.github.io/p/first/</link>
         <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/first/</guid>
+        <guid>https://kotazzz.github.io/p/first/</guid>
         <description>&lt;p&gt;Тут будут публиковаться различные гайды и курсы по различным темам&lt;/p&gt;
 </description>
         </item>

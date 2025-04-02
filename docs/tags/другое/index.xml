@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Другое on KotazIO</title>
-        <link>http://localhost:1313/tags/%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5/</link>
+        <link>https://kotazzz.github.io/tags/%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5/</link>
         <description>Recent content in Другое on KotazIO</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ru</language>
-        <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/tags/%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B5/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Первый пост</title>
-        <link>http://localhost:1313/p/first/</link>
+        <link>https://kotazzz.github.io/p/first/</link>
         <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/first/</guid>
+        <guid>https://kotazzz.github.io/p/first/</guid>
         <description>&lt;p&gt;Тут будут публиковаться различные гайды и курсы по различным темам&lt;/p&gt;
 </description>
         </item>

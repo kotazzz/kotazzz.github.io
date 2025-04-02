@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Lists on KotazIO</title>
-        <link>http://localhost:1313/tags/lists/</link>
+        <link>https://kotazzz.github.io/tags/lists/</link>
         <description>Recent content in Lists on KotazIO</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ru</language>
-        <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/lists/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://kotazzz.github.io/tags/lists/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>HTML Списки и Ссылки: Углубляем знания</title>
-        <link>http://localhost:1313/p/html02/</link>
+        <link>https://kotazzz.github.io/p/html02/</link>
         <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/html02/</guid>
-        <description>&lt;img src="http://localhost:1313/00_placeholder.png" alt="Featured image of post HTML Списки и Ссылки: Углубляем знания" /&gt;&lt;h2 id=&#34;-html-списки&#34;&gt;📜 HTML Списки
+        <guid>https://kotazzz.github.io/p/html02/</guid>
+        <description>&lt;img src="https://kotazzz.github.io/p/html02/00_placeholder.png" alt="Featured image of post HTML Списки и Ссылки: Углубляем знания" /&gt;&lt;h2 id=&#34;-html-списки&#34;&gt;📜 HTML Списки
 &lt;/h2&gt;&lt;p&gt;HTML предлагает три типа списков:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Упорядоченные списки (&lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt;) - элементы нумеруются.&lt;/li&gt;
