@@ -1,9 +1,9 @@
 ---
 title: "Курсы"
-description: "Тут собраны курсы"
-slug: "course"
+description: "Коллекция образовательных приключений и открытий"
+slug: "courses"
 image: "course.jpg"
 style:
-    background: "#2a9d8f"
-    color: "#fff"   
+    background: "#3cb371"
+    color: "#fff"
 ---

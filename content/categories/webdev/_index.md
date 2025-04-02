@@ -1,9 +1,9 @@
 ---
 title: "Webdev"
-description: "Вебдев и все связанное"
+description: "Код, дизайн и магия веб-разработки"
 slug: "webdev"
 image: "webdev.jpg"
 style:
-    background: "#2a9d8f"
-    color: "#fff"   
+    background: "#1e90ff"
+    color: "#fff"
 ---

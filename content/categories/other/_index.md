@@ -1,9 +1,9 @@
 ---
 title: "Другое"
-description: "Контет без категории"
+description: "Самые неожиданные заметки и вдохновение на каждый день"
 slug: "other"
 image: "other.jpg"
 style:
-    background: "#2a9d8f"
-    color: "#fff"   
+    background: "#9370db"
+    color: "#fff"
 ---

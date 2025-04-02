@@ -1,9 +1,9 @@
 ---
 title: "Проекты"
-description: "Тут собраны мои проекты"
+description: "Воплощенные идеи, смелые проекты и эксперименты"
 slug: "projects"
 image: "projects.jpg"
 style:
-    background: "#2a9d8f"
-    color: "#fff"   
+    background: "#ff7f50"
+    color: "#fff"
 ---
