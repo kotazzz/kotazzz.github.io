@@ -1,7 +1,7 @@
 ---
 author: Kotaz
 title: "Разбор проектов Club Programmer"
-date: 2025-03-28 00:00:00
+date: 2125-03-28 00:00:00
 description: "Анонс серии статей с разбором интересных Python проектов от автора Club Programmer"
 categories: ["projects"]
 tags: ["Python", "Tutorial", "TikTok"]
