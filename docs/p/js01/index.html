@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и управляющие конструкции.">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и современные возможности ES6+.">
 <title>Введение в JavaScript: Основы для начинающих</title>
 
 <link rel='canonical' href='https://kotazzz.github.io/p/js01/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Введение в JavaScript: Основы для начинающих">
-<meta property='og:description' content="Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и управляющие конструкции.">
+<meta property='og:description' content="Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и современные возможности ES6+.">
 <meta property='og:url' content='https://kotazzz.github.io/p/js01/'>
 <meta property='og:site_name' content='KotazIO'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='JavaScript' /><meta property='article:tag' content='Tutorial' /><meta property='article:tag' content='Beginner' /><meta property='article:tag' content='Programming' /><meta property='article:published_time' content='2025-04-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-04-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/js01/00_placeholder.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='JavaScript' /><meta property='article:tag' content='Tutorial' /><meta property='article:tag' content='Beginner' /><meta property='article:tag' content='Programming' /><meta property='article:tag' content='ES6' /><meta property='article:published_time' content='2025-04-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-04-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://kotazzz.github.io/p/js01/00_placeholder.png' />
 <meta name="twitter:title" content="Введение в JavaScript: Основы для начинающих">
-<meta name="twitter:description" content="Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и управляющие конструкции."><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и современные возможности ES6+."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://kotazzz.github.io/p/js01/00_placeholder.png' />
     </head>
     <body class="
@@ -231,12 +231,27 @@
   <ol>
     <li><a href="#-что-такое-javascript">💡 Что такое JavaScript?</a></li>
     <li><a href="#-синтаксис-javascript">🧱 Синтаксис JavaScript</a></li>
-    <li><a href="#variables-in-javascript">Variables in JavaScript</a>
+    <li><a href="#-переменные-в-javascript">📦 Переменные в JavaScript</a>
       <ol>
         <li><a href="#объявление-переменных">Объявление переменных</a></li>
+        <li><a href="#область-видимости-scope">Область видимости (Scope)</a></li>
         <li><a href="#типы-данных">Типы данных</a></li>
       </ol>
     </li>
+    <li><a href="#-современный-javascript-es6">🔄 Современный JavaScript (ES6+)</a>
+      <ol>
+        <li><a href="#стрелочные-функции">Стрелочные функции</a></li>
+        <li><a href="#шаблонные-строки">Шаблонные строки</a></li>
+        <li><a href="#деструктуризация">Деструктуризация</a></li>
+        <li><a href="#оператор-spreadrest">Оператор spread/rest</a></li>
+        <li><a href="#классы">Классы</a></li>
+        <li><a href="#promise-и-asyncawait">Promise и async/await</a></li>
+        <li><a href="#модули">Модули</a></li>
+      </ol>
+    </li>
+    <li><a href="#-взаимодействие-с-dom">🌐 Взаимодействие с DOM</a></li>
+    <li><a href="#-инструменты-разработчика">🛠️ Инструменты разработчика</a></li>
+    <li><a href="#-популярные-фреймворки-и-библиотеки">📚 Популярные фреймворки и библиотеки</a></li>
     <li><a href="#-практическое-задание">🚀 Практическое задание</a></li>
     <li><a href="#-следующие-шаги">🎯 Следующие шаги</a></li>
   </ol>
@@ -283,7 +298,7 @@
     
         
         <h3 class="article-subtitle">
-            Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и управляющие конструкции.
+            Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и современные возможности ES6&#43;.
         </h3>
         
     </div>
@@ -319,7 +334,7 @@
 
 
                 <time class="article-time--reading">
-                    Время чтения: 2 мин.
+                    Время чтения: 5 мин.
                 </time>
             </div>
         
@@ -336,6 +351,13 @@
     
     <h2 id="-что-такое-javascript">💡 Что такое JavaScript?
 </h2><p>JavaScript - это язык программирования, который используется для добавления интерактивности на веб-страницы. С помощью JavaScript можно изменять содержимое HTML, реагировать на действия пользователя и выполнять другие динамические операции.</p>
+<p>Сегодня JavaScript используется не только в браузерах, но и для:</p>
+<ul>
+<li>Серверной разработки (Node.js)</li>
+<li>Мобильных приложений (React Native)</li>
+<li>Десктопных приложений (Electron)</li>
+<li>Игр и 3D-визуализаций</li>
+</ul>
 <h2 id="-синтаксис-javascript">🧱 Синтаксис JavaScript
 </h2><p>JavaScript имеет свой синтаксис, который определяет, как писать код.</p>
 <ul>
@@ -362,7 +384,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Сумма: &#34;</span> <span class="o">+</span> <span class="nx">sum</span><span class="p">);</span> <span class="c1">// Вывод суммы в консоль
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="variables-in-javascript">Variables in JavaScript
+</div><h2 id="-переменные-в-javascript">📦 Переменные в JavaScript
 </h2><h3 id="объявление-переменных">Объявление переменных
 </h3><p>В JavaScript переменные объявляются с помощью ключевых слов <code>let</code>, <code>const</code> или <code>var</code>.</p>
 <ul>
@@ -370,7 +392,6 @@
 <li><code>const</code> - используется для объявления констант, которые не могут изменять свое значение после присваивания.</li>
 <li><code>var</code> - устаревшее ключевое слово для объявления переменных (не рекомендуется использовать в современном JavaScript).</li>
 </ul>
-<p>Пример:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -378,24 +399,94 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">PI</span> <span class="o">=</span> <span class="mf">3.14159</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;John&#34;</span><span class="p">;</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>        <span class="c1">// Можно изменить позже
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">PI</span> <span class="o">=</span> <span class="mf">3.14159</span><span class="p">;</span>  <span class="c1">// Нельзя изменить
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;John&#34;</span><span class="p">;</span>   <span class="c1">// Устаревший способ, лучше не использовать
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="область-видимости-scope">Область видимости (Scope)
+</h3><p><code>let</code> и <code>const</code> имеют блочную область видимости, а <code>var</code> - функциональную:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// x и y здесь недоступны
+</span></span></span><span class="line"><span class="cl"><span class="c1">// z доступна (это может привести к ошибкам)
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="типы-данных">Типы данных
 </h3><p>JavaScript поддерживает различные типы данных:</p>
 <ul>
-<li><code>Number</code> - числа (целые и дробные).</li>
-<li><code>String</code> - строки (текст).</li>
-<li><code>Boolean</code> - логические значения (true или false).</li>
-<li><code>Null</code> - отсутствие значения.</li>
-<li><code>Undefined</code> - переменная не имеет значения.</li>
-<li><code>Symbol</code> - уникальный идентификатор.</li>
-<li><code>Object</code> - объекты (коллекции свойств).</li>
+<li><code>Number</code> - числа (целые и дробные)</li>
+<li><code>String</code> - строки (текст)</li>
+<li><code>Boolean</code> - логические значения (true или false)</li>
+<li><code>Null</code> - отсутствие значения</li>
+<li><code>Undefined</code> - переменная не имеет значения</li>
+<li><code>Symbol</code> - уникальный идентификатор</li>
+<li><code>BigInt</code> - целые числа произвольной длины</li>
+<li><code>Object</code> - объекты (включая массивы, функции, даты)</li>
 </ul>
-<p>Пример:</p>
 <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>               <span class="c1">// Number
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">price</span> <span class="o">=</span> <span class="mf">99.99</span><span class="p">;</span>          <span class="c1">// Number
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;John&#34;</span><span class="p">;</span>          <span class="c1">// String
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">isActive</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>        <span class="c1">// Boolean
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">empty</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>           <span class="c1">// Null
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">undef</span><span class="p">;</span>                  <span class="c1">// Undefined
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">id</span> <span class="o">=</span> <span class="nx">Symbol</span><span class="p">(</span><span class="s2">&#34;id&#34;</span><span class="p">);</span>      <span class="c1">// Symbol
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">bigNumber</span> <span class="o">=</span> <span class="mi">9007199254740991</span><span class="nx">n</span><span class="p">;</span> <span class="c1">// BigInt
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">30</span> <span class="p">};</span> <span class="c1">// Object
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-современный-javascript-es6">🔄 Современный JavaScript (ES6+)
+</h2><p>Современный JavaScript (ES6 и новее) добавил множество полезных возможностей:</p>
+<h3 id="стрелочные-функции">Стрелочные функции
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Обычная функция
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Стрелочная функция
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">add</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="шаблонные-строки">Шаблонные строки
+</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -404,24 +495,220 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span> <span class="c1">// Number
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;John&#34;</span><span class="p">;</span> <span class="c1">// String
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">isMarried</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// Boolean
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">empty</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="c1">// Null
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">let</span> <span class="nx">undef</span><span class="p">;</span> <span class="c1">// Undefined
-</span></span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&#34;Мир&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Старый способ
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;Привет, &#34;</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="s2">&#34;!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Новый способ с шаблонными строками
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Привет, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="-практическое-задание">🚀 Практическое задание
+</div><h3 id="деструктуризация">Деструктуризация
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Деструктуризация объектов
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">30</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">age</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">user</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Деструктуризация массивов
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;красный&#34;</span><span class="p">,</span> <span class="s2">&#34;зеленый&#34;</span><span class="p">,</span> <span class="s2">&#34;синий&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">[</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">]</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="оператор-spreadrest">Оператор spread/rest
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Spread - &#34;разворачивает&#34; массив или объект
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">newNumbers</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">numbers</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span> <span class="c1">// [1, 2, 3, 4, 5]
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Rest - собирает оставшиеся элементы
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">first</span><span class="p">,</span> <span class="p">...</span><span class="nx">others</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">others</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">sum</span><span class="p">,</span> <span class="nx">num</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">num</span><span class="p">,</span> <span class="nx">first</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="классы">Классы
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="sb">`Привет, меня зовут </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">john</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="promise-и-asyncawait">Promise и async/await
+</h3><p>Для асинхронных операций:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Promise
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Async/await (более современный способ)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">async</span> <span class="kd">function</span> <span class="nx">fetchData</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="модули">Модули
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Экспорт из файла math.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">export</span> <span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Импорт в другом файле
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">sum</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./math.js&#39;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-взаимодействие-с-dom">🌐 Взаимодействие с DOM
+</h2><p>JavaScript позволяет взаимодействовать с HTML-страницей через DOM (Document Object Model):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Выбор элементов
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">heading</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">paragraphs</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Изменение содержимого
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">heading</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;Новый заголовок&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Изменение стилей
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">heading</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Добавление обработчиков событий
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">heading</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Вы кликнули на заголовок!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-инструменты-разработчика">🛠️ Инструменты разработчика
+</h2><p>Современная разработка на JavaScript включает различные инструменты:</p>
+<ul>
+<li><strong>Webpack/Vite</strong> - для сборки проектов</li>
+<li><strong>Babel</strong> - для обратной совместимости</li>
+<li><strong>ESLint</strong> - для проверки кода</li>
+<li><strong>Jest/Mocha</strong> - для тестирования</li>
+<li><strong>npm/yarn</strong> - менеджеры пакетов</li>
+</ul>
+<h2 id="-популярные-фреймворки-и-библиотеки">📚 Популярные фреймворки и библиотеки
+</h2><p>Для более сложных проектов используются фреймворки:</p>
+<ul>
+<li><strong>React</strong> - библиотека для создания пользовательских интерфейсов</li>
+<li><strong>Vue.js</strong> - прогрессивный фреймворк</li>
+<li><strong>Angular</strong> - полнофункциональный фреймворк</li>
+<li><strong>Svelte</strong> - компилирующий фреймворк</li>
+</ul>
+<h2 id="-практическое-задание">🚀 Практическое задание
 </h2><ol>
-<li>Создайте HTML-страницу.</li>
-<li>Подключите JavaScript к HTML-странице с помощью тега <code>&lt;script&gt;</code>.</li>
-<li>Объявите несколько переменных разных типов данных.</li>
-<li>Выведите значения переменных в консоль с помощью <code>console.log()</code>.</li>
-<li>Используйте операторы для выполнения математических операций.</li>
-<li>Проверьте, как работает JavaScript в браузере.</li>
+<li>Создайте HTML-страницу с базовой структурой.</li>
+<li>Подключите JavaScript с помощью тега <code>&lt;script&gt;</code>.</li>
+<li>Объявите переменные с использованием <code>let</code> и <code>const</code>.</li>
+<li>Создайте и вызовите стрелочную функцию.</li>
+<li>Используйте шаблонные строки для вывода сообщений.</li>
+<li>Добавьте интерактивность: изменение страницы при клике на кнопку.</li>
 </ol>
 <h2 id="-следующие-шаги">🎯 Следующие шаги
-</h2><p>В следующих статьях мы рассмотрим более сложные темы, такие как работа с функциями, массивами, объектами и DOM. Следите за обновлениями!</p>
+</h2><p>В следующих статьях мы рассмотрим более сложные темы, такие как:</p>
+<ul>
+<li>Продвинутая работа с DOM</li>
+<li>AJAX и Fetch API</li>
+<li>Современные паттерны JavaScript</li>
+<li>Разработка одностраничных приложений (SPA)</li>
+</ul>
+<p>Следите за обновлениями!</p>
 
 </section>
 
@@ -437,6 +724,8 @@
             <a href="/tags/beginner/">Beginner</a>
         
             <a href="/tags/programming/">Programming</a>
+        
+            <a href="/tags/es6/">ES6</a>
         
     </section>
 
@@ -520,6 +809,30 @@
             
                 
 <article class="has-image">
+    <a href="/p/web01/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web01/00_placeholder.c1f928e93b5e374f907327c5ff301514_hu_a0956a405278e912.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Как работает интернет: Введение в веб для начинающих"
+                        data-key="web01" 
+                        data-hash="md5-wfko6TteN0&#43;QcyfF/zAVFA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Как работает интернет: Введение в веб для начинающих</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
     <a href="/p/html01/">
         
         
@@ -544,6 +857,30 @@
             
                 
 <article class="has-image">
+    <a href="/p/web02/">
+        
+        
+            <div class="article-image">
+                <img src="/p/web02/00_placeholder.c1f928e93b5e374f907327c5ff301514_hu_a0956a405278e912.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post DNS и Домены: Как работают адреса в интернете"
+                        data-key="web02" 
+                        data-hash="md5-wfko6TteN0&#43;QcyfF/zAVFA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">DNS и Домены: Как работают адреса в интернете</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
     <a href="/p/html02/">
         
         
@@ -561,30 +898,6 @@
 
         <div class="article-details">
             <h2 class="article-title">HTML Списки и Ссылки: Углубляем знания</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/html03/">
-        
-        
-            <div class="article-image">
-                <img src="/p/html03/00_placeholder.c1f928e93b5e374f907327c5ff301514_hu_a0956a405278e912.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post HTML Формы: Собираем данные от пользователей"
-                        data-key="html03" 
-                        data-hash="md5-wfko6TteN0&#43;QcyfF/zAVFA==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">HTML Формы: Собираем данные от пользователей</h2>
         </div>
     </a>
 </article>
