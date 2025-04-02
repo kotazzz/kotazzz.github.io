@@ -1,7 +1,7 @@
 ---
 author: Kotaz
 title: "Введение в CSS: Стилизуем HTML"
-date: 2025-04-04 00:00:00
+date: 2025-04-02 00:00:00
 description: "Изучаем основы CSS: синтаксис, селекторы, свойства и способы подключения CSS к HTML."
 categories: ["webdev"]
 tags: ["CSS", "Tutorial", "Beginner", "Styling"]
