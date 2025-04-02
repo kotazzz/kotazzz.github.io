@@ -1,7 +1,7 @@
 ---
 author: Kotaz
 title: "HTML Формы: Собираем данные от пользователей"
-date: 2025-04-03 00:00:00
+date: 2025-04-01 00:00:00
 description: "Изучаем HTML формы: элементы, атрибуты и способы отправки данных на сервер."
 categories: ["webdev"]
 tags: ["HTML", "Forms", "Input", "Tutorial"]

@@ -1,7 +1,7 @@
 ---
 author: Kotaz
 title: "Введение в JavaScript: Основы для начинающих"
-date: 2025-04-05 00:00:00
+date: 2025-04-01 00:00:00
 description: "Изучаем основы JavaScript: синтаксис, переменные, типы данных, операторы и управляющие конструкции."
 categories: ["webdev"]
 tags: ["JavaScript", "Tutorial", "Beginner", "Programming"]
